@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School model</title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js">
+  </script>
+  <style>
+      .school, .charter, .resources {
+      width: 1000px;
+      border: 2px solid black;
+      background-color: lightyellow;
+      margin: 5px; 
+      }
+      .school, .charter {
+           height: 50px;
+      }
+      .resources {
+      font-size: 15px;
+      height: auto;
+      overflow: auto; 
+      }
+      .charter {
+      background-color: pink;
+      }
+      .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      }
+      .info {
+      width: 80px;
+      height: 53px;
+      margin: 1px;
+      white-space: pre-line;
+      font-size: 10px;
+      float: left;
+      }
+      .resources .info {
+      font-size: inherit;
+      font-weight: bold;
+      }
+      .section {
+      float: left;
+      width: 28px;
+      height: 43px;
+      border: 2px solid black;
+      background-color: white;
+      margin: 1px;
+      }
+      .student {
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxjaXJjbGUgY3g9IjMyIiBjeT0iMTUiIHI9IjE1Ii8+DQoJCTwvZz4NCgk8L2c+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTM4LjYsMzRIMjUuNEMxNi40LDM0LDksNDEuNCw5LDUwLjRWNjRoNDZWNTAuNEM1NSw0MS40LDQ3LjYsMzQsMzguNiwzNHoiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat;
+      background-size: 120% 120%;
+      border: none;
+      height: 15px;
+      width: 10px;
+      float: left;
+      margin: 0.5px;
+      }
+      .resource {
+      float: right;
+      width: 20px;
+      height: 30px;
+      margin: 1px;
+      }
+      .resource.lost:after {
+      background: url('img/nosign.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 2;
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      content: "";
+      }
+      .resourceGroup {
+      display: inline-block;
+      overflow: auto;
+      border: 1px solid black;
+      margin: 1px;
+      padding: 0px;
+      float: right;
+      white-space: pre-line;
+      }
+      .resourceGroup.music .resource {
+      background: white url('img/music.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+      .resourceGroup.art .resource {
+      background: white url('img/art.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+      .resourceGroup.library .resource {
+      background: white url('img/library.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+      .resourceGroup.languages .resource {
+      background: white url('img/languages.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+      .resourceGroup.physed .resource {
+      background: white url('img/physed.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+      .resourceGroup.counselor .resource {
+      background: white url('img/counselor.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+      .resourceGroup.reading .resource {
+      background: white url('img/reading.svg') no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+      }
+  </style>
+  <script>
+      var currentYear = 0;
+      
+      // a school is an object
+      var MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION = 23;
+      var FUNDING_PER_STUDENT = 16336;
+      var FUNDING_FRAC_REMOVED_STUDENT = [1, 0.25, 0.25, 0.25, 0.25, 0.25];
+      var COST_PER_SECTION = 73266;
+      
+      var resourceTypes = {};
+      var makeResourceType = function(typeId, typeName, cost) {
+        resourceTypes[typeId] = {'typeName':typeName, 'cost':cost};
+      }
+      makeResourceType('music','Music Teachers', COST_PER_SECTION);
+      makeResourceType('art','Art Teachers', COST_PER_SECTION);
+      makeResourceType('library','Librarians', COST_PER_SECTION);
+      makeResourceType('languages','World Languages Teachers', COST_PER_SECTION);
+      makeResourceType('physed','Physical Education Teachers', COST_PER_SECTION);
+      makeResourceType('counselor','Counselor Educators', COST_PER_SECTION);
+            makeResourceType('reading','Reading Teachers', COST_PER_SECTION);
+      var getResource = function(typeId) {
+ 
+        var type = resourceTypes[typeId];
+        var getType = function(){return type;};
+	var getCost = function(){return type.cost;};
+	var getName = function(){return type.typeName;};
+	var getTypeId = function(){return typeId;};
+	return {
+	  getType: getType,
+	  getCost: getCost,
+	  getName: getName,
+	  getTypeId: getTypeId
+
+	}
+      };
+
+      var getSchool = function(schoolName, initialNumberOfStudents) {
+        var name = schoolName ? schoolName : "unnamed school";
+        var getName = function(){return name;};
+        var numberOfStudents = initialNumberOfStudents ? initialNumberOfStudents : 0;
+        var getNumberOfStudents = function(){return numberOfStudents;};
+        
+        var addStudent = function(){numberOfStudents++; return true;};
+	var addStudents = function(num){for (var i=0; i< num; i++) addStudent();};
+        var removeStudent = function(){
+          if (numberOfStudents<=0) return false;
+          numberOfStudents--;
+          return true;
+          };
+        
+        var getNumberOfSections = function(){
+            return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);
+        }; 
+        
+            
+        var toString = function() {
+            return name +": " + getNumberOfStudents() +" students, "+ getNumberOfSections() + " sections, change in spending : $" + (Math.round(getNetAvailableFunds()/1000))+"K";
+        };
+        
+        return {
+         getName: getName,
+         getNumberOfStudents: getNumberOfStudents,
+                 addStudent : addStudent,
+		 addStudents : addStudents,
+         removeStudent: removeStudent,
+         getNumberOfSections: getNumberOfSections,
+         toString: toString,
+         
+        };
+      };
+      
+      var getCompositeSchool = function(name, schools) {
+        
+        var sumOver = function(fname){return function(){
+            var sum=0;
+            for (var i=0; i<schools.length; i++) {
+                sum += schools[i][fname]();
+            }
+            return sum;
+        };};
+        var getNumberOfStudents = sumOver('getNumberOfStudents'); 
+        return {
+        getName : function(){return name;},
+        getNumberOfStudents : getNumberOfStudents,
+        getNumberOfSections : sumOver('getNumberOfSections'),
+        toString : function(){
+            var s='';
+            schools.forEach(function(x){s+=x.toString()+'\n';});
+            return s;},
+         
+         addStudent : function(){
+            var ind = Math.floor(Math.random()*schools.length);
+            schools[ind].addStudent();
+        },
+        removeStudent : function() {
+           if (getNumberOfStudents()<=0) return false;
+           while (true) {
+            var ind = Math.floor(Math.random()*schools.length);
+            if (schools[ind].removeStudent()) return true;
+           }
+        }
+      
+        };
+      
+      }
+      
+      var gradeNames = ['K','1','2','3','4','5','6','7','8'];
+      var getDistrict = function(numberOfSchools, initialNumberOfStudentsPerSchool) {
+        var getNumberOfSchools = function(){return numberOfSchools;}
+        var schools = [];
+        for (var i=0; i<numberOfSchools; i++) {
+      
+            var grades = [];
+            var numKids = 0;
+            var kidsPerGrade = initialNumberOfStudentsPerSchool/gradeNames.length;
+            for (var g=0; g<gradeNames.length; g++) {
+                numKids = Math.floor(kidsPerGrade*(g+1))-Math.floor(kidsPerGrade*g);
+                grades[g]=getSchool("DS#"+(i+1)+", "+gradeNames[g], numKids);
+            }
+            
+            schools[i]=getCompositeSchool("District School #"+(i+1),grades);
+        }
+        
+        var getNumberOfStudents = function(){
+            var n = 0;
+            for (var i=0; i<numberOfSchools; i++) {
+                n += schools[i].getNumberOfStudents();
+            }
+            return n;
+        };
+        
+        var getNumberOfSections = function(){
+            var n = 0;
+            for (var i=0; i<numberOfSchools; i++) {
+                n += schools[i].getNumberOfSections();
+            }
+            return n;
+        };
+      
+        var resources = [];
+        var addResourceType = function(resourceType) {
+	   var resource = getResource(resourceType);
+	   resources.push(resource);
+	};
+	var getResources = function(){
+	  var netFunds = getNetAvailableFunds();
+	  for (var i=0; i<resources.length; i++) {
+	    netFunds += resources[i].getCost();
+	  }
+	  var ret = [];
+	  var resourceCosts = 0;
+	  for (var i=0; i<resources.length; i++) {
+	    var resource = Object.assign({},resources[i]);
+	    resourceCosts += resource.getCost();
+	    var exists = (netFunds >= resourceCosts);
+	    resource.getExists = (function(e){return function(){return e;}})(exists);
+	    ret.push(resource);
+	  }
+	  return ret;
+	}
+	
+
+        var toString = function() {
+        s="";
+           for (var i=0; i<numberOfSchools; i++) {
+              s += schools[i].toString() + "\n";
+           }
+           s+="DISTRICT TOTAL: ";
+            s +=getNumberOfStudents() +" students, "+ 
+        getNumberOfSections() + " sections, change in spending : $" + 
+        (Math.round(getNetAvailableFunds()/1000))+"K\n";
+           return s;
+        };
+
+	var removedStudents={};
+        var removeStudent = function(){
+	  if (getNumberOfStudents()<=0) return false;
+          if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
+          removedStudents[currentYear]++;
+           while (true) {
+            var ind = Math.floor(Math.random()*schools.length);
+            if (schools[ind].removeStudent()) return true;
+           }
+
+
+          };
+
+        var getAvailableFunds = function() {
+          var funding = 0;
+        var status = '';
+          status+=(getNumberOfStudents()+' students @ '+FUNDING_PER_STUDENT+' ea');
+          funding += FUNDING_PER_STUDENT * getNumberOfStudents();
+              for (var i=0; i<FUNDING_FRAC_REMOVED_STUDENT.length; i++) {
+            var year = currentYear - i;
+            status+=(i+'years ago, frac student is '+FUNDING_FRAC_REMOVED_STUDENT[i]);
+            if (year in removedStudents) { 
+              status+=(removedStudents[year]+' removed');
+              funding += FUNDING_PER_STUDENT*FUNDING_FRAC_REMOVED_STUDENT[i]*removedStudents[year];
+            }
+          }
+          status+=(getNumberOfSections()+' sections @ -'+COST_PER_SECTION+' ea');
+          funding -= COST_PER_SECTION * getNumberOfSections();
+                       status+=(funding);
+        //console.log(status);
+            return funding;
+        };
+        
+        var initialAvailableFunds = getAvailableFunds();
+	var initialNumberOfSections = getNumberOfSections();
+        var getNetAvailableFunds = function() {
+      
+            return getAvailableFunds()-initialAvailableFunds;
+        };
+
+      var removeStudents = function(numberOfStudents) {
+        for (var i=0; i<numberOfStudents; i++) {
+            if (!removeStudent()) return i;
+        }
+        return numberOfStudents;
+      };        
+
+      var getNumberOfRemovedTeachers = function(){
+        var numRemovedSpecialists = getResources().filter(
+	  function(r){return !r.getExists();}).length;
+	var numRemovedSections = initialNumberOfSections-getNumberOfSections();
+	return numRemovedSpecialists + numRemovedSections;	
+
+      };
+        return {
+            schools: schools,
+            getNumberOfStudents: getNumberOfStudents,
+            removeStudent: removeStudent,
+            removeStudents: removeStudents,
+            toString: toString,
+            getNetAvailableFunds: getNetAvailableFunds,
+            getNumberOfSections: getNumberOfSections,
+	    addResourceType: addResourceType,
+	    getResources: getResources,
+	    getNumberOfRemovedTeachers : getNumberOfRemovedTeachers
+        };
+      };
+      
+
+
+      var getAll = function(obj) {
+        var ret = {};
+	for (var prop in obj) {
+	  if (prop.startsWith('get')) ret[prop.substring(3)]=(obj[prop])();
+	  else ret[prop]=obj[prop];
+	}
+	return ret;
+      }
+       
+      var setCurrentYear = function(y) {currentYear=y;};
+      var getCurrentYear = function() {return currentYear;}
+      
+  </script>
+</head>
+<body>
+  <div id="display">
+    <div id="district">
+      <b>DISTRICT ENROLLMENT BY SCHOOL AND GRADE</b>
+      <div class="school"></div>
+      <div class="school"></div>
+      <div class="school"></div>
+      <div class="school"></div>
+      <div class="school"></div>
+      <div class="school"></div>
+      <div class="resources"></div>
+  <div id="districtStats"></div>
+    </div>
+      <b>ENROLLMENT IN CHARTER SCHOOLS</b>
+    <div class="charter" id="charter"></div>
+  </div><button id="go">Go</button>
+
+  <div id="results"></div>
+  <script>
+          var entityMap = {
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;',
+          '/': '&#x2F;',
+          '`': '&#x60;',
+          '=': '&#x3D;'
+        };
+      
+        function money(val, plusSign) {
+          var sign = val<0;
+          var abs = Math.round(Math.abs(val));
+          var suffix = '';
+          if (abs>999) {
+             abs=Math.round(abs/1000);
+             suffix='K';
+          }
+          if (abs>999) {
+             abs=Math.round(abs/100)/10;
+             suffix='M';
+          }
+          if (abs>999) {
+             abs=Math.round(abs/100)/10;
+             suffix='G';
+          }
+	  if (plusSign === undefined) {plusSign = '+';}
+	  if (plusSign === false) {plusSign = '';}
+          return ((abs==0)?'':(sign?'-':plusSign))+'$'+abs+suffix;
+        }
+      
+        function escapeHtml (string) {
+          return String(string).replace(/[&<>"'`=\/]/g, function fromEntityMap (s) {
+            return entityMap[s];
+          });
+        }
+        
+        function println(elem, str) {
+            elem.innerHTML += escapeHtml(str).replace(/\n/g, "<br>") + "<br>";
+        };
+        
+	
+      
+        
+        var districtSchoolElems = $('#district .school');
+        var district = getDistrict(districtSchoolElems.length, 553);
+        district.schools.forEach(function(x,i){x.element=districtSchoolElems[i];});
+	
+	{
+	  var m = 'music';
+	  var a = 'art';    
+	  var r = 'library';
+	  var repeat = function(array, element, times) {
+	    for (var i=0; i<times; i++) array.push(element);
+	  }
+	  var arr = [];
+	  repeat(arr, 'languages', 4);//13);
+	  repeat(arr, 'art', 6);//12);
+	  repeat(arr, 'music', 12);//20);
+	  repeat(arr, 'physed', 7);//19);
+	  repeat(arr, 'library', 7);//25);
+	  repeat(arr, 'counselor', 12);//23);
+	  repeat(arr, 'reading', 8);
+	  
+
+	  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+          shuffle(arr);
+	  arr.forEach(function(x){district.addResourceType(x);});
+        } 
+	district.resourceElement = $('#district .resources');
+	
+	function drawResources(district){
+	   var resourceElem = $(district.resourceElement);
+	   resourceElem.html('');
+
+	   var resources = district.getResources();
+	   // organize by type
+	   resources.sort(function(a,b){
+	     var ai = a.getTypeId();
+	     var bi = b.getTypeId();
+	     if (ai<bi) return -1;
+	     if (ai>bi) return 1;
+	     return 0;
+	   });
+
+	   
+	   
+          var infoElem = resourceElem.find('.info');
+          if (infoElem.length==0) {
+            $('<div>').addClass('info').appendTo(resourceElem);
+          }
+          infoElem = resourceElem.find('.info')[0];
+          var text = 'DISTRICT RESOURCES:';
+
+	      $(infoElem).text(text);
+
+	   var types={};
+	   for (var i=0; i<resources.length; i++) {
+	     var r = resources[i];
+	     types[r.getTypeId()] = r.getType();
+	   }   
+	   var groupElems={};
+	   for (var t in types) {
+	     var e = $('<div>').addClass('resourceGroup').addClass(t);
+	     e.text(types[t].typeName);//+'@'+money(types[t].cost,'')+' ea');
+	     e.appendTo(resourceElem);
+	     groupElems[t] = e;
+	   }
+	      
+	   for (var i=0; i<resources.length; i++) {
+	     var r = resources[i];
+	     var typeId = r.getTypeId();
+	     $('<div>').addClass('resource').toggleClass('lost',!r.getExists()).appendTo(groupElems[typeId]);
+	   }
+	   
+	}
+
+        var charterSchoolElem = $('#charter');
+        var charter = getSchool('Charter School');
+        charter.element=charterSchoolElem;
+      
+        var STUDENTS_PER_ICON = 7;
+        
+        function drawSchool(schoolObject) {
+        
+          var schoolElem = $(schoolObject.element);
+          
+      
+          var infoElem = schoolElem.find('.info');
+          if (infoElem.length==0) {
+            $('<div>').addClass('info').appendTo(schoolElem);
+          }
+          var infoElem = schoolElem.find('.info')[0];
+          var text = schoolObject.getName()+':\n';
+          text += schoolObject.getNumberOfSections()+' sections\n';
+          text += schoolObject.getNumberOfStudents()+' students\n';
+                   $(infoElem).text(text);
+      
+          var sectionElems = schoolElem.find('.section');
+          var numSections =  schoolObject.getNumberOfSections();
+          if (numSections < sectionElems.length) {
+            sectionElems.slice(numSections).detach();
+          } else if (numSections > sectionElems.length) {
+            var newSection = $('<div>').addClass('section');
+            for (var i=sectionElems.length; i<numSections; i++) {
+              newSection.clone().appendTo(schoolElem);
+            }
+          }
+      
+          sectionElems = schoolElem.find('.section');
+          
+      
+      
+          var studentElems = schoolElem.find('.student');
+          var numStudentIcons = Math.ceil(schoolObject.getNumberOfStudents()/STUDENTS_PER_ICON); // ceil? floor?
+          if (numStudentIcons < studentElems.length) {
+            studentElems.slice(numStudentIcons).detach();
+          } else if (numStudentIcons > studentElems.length) {
+            var newStudent = $('<div>').addClass('student');
+            for (var i=studentElems.length; i<numStudentIcons; i++) {
+             newStudent.clone().appendTo(sectionElems[numSections-1]);
+             }
+          }
+          studentElems = schoolElem.find('.student');
+          // distribute students in sections
+      
+      
+      
+          var studentIconsPerSection = numStudentIcons / numSections;
+          var sectionNum = 0;
+          var studentsInThisSection = 0;
+         
+          for (var i=0; i<numStudentIcons; i++) {
+      
+            while (studentsInThisSection >= studentIconsPerSection) {
+              sectionNum++;
+              studentsInThisSection -= studentIconsPerSection;
+            }
+            studentsInThisSection++;
+      
+            var stu = studentElems[i]
+            var sec = sectionElems[sectionNum];
+            $(stu).detach();
+             $(sec).append(stu); 
+      
+             }
+      
+      
+          
+          
+      
+        
+        }
+      
+        function drawSchools() {
+          district.schools.forEach(function(x){drawSchool(x);});
+	  drawResources(district);
+	  drawSchool(charter);
+
+        var results = document.getElementById("districtStats");   
+        var text = '<b>DISTRICT STATS</b><BR>';
+          text += district.getNumberOfSections()+' sections<BR>';
+          text += district.getNumberOfStudents()+' students<BR>';
+          text += '<span class="highlight">change in spending: '+money(district.getNetAvailableFunds());
+	  text += '<BR>teachers laid off: '+district.getNumberOfRemovedTeachers()+
+	  '</span>';
+	  results.innerHTML = text;
+
+        }
+      
+        
+
+        drawSchools();
+
+      
+      
+      
+      
+      
+        var year = 0;
+        $('#go').click(function(){
+        $(results).text('');
+        year++;
+        setCurrentYear(year);
+          println(results, 'YEAR '+year);
+            var mov = 100;
+            if (charter.getNumberOfStudents() < 600) {
+                    println(results, "Moving "+mov+" students to charter school...");
+                            var success = district.removeStudents(mov);
+			    charter.addStudents(success);
+                if (success<mov) println(results, "...could only move "+success);
+            } else {
+            println(results, "charter school full");
+            } 
+      
+      
+          drawSchools();
+      
+        });
+      
+      
+            
+        
+  </script>
+
+</html>
