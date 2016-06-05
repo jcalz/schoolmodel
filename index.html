@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model pp</title>
+  <title>School model qq</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -464,7 +464,7 @@
        function setup(){
         
         var districtSchoolElems = $('#district .school');
-        var district = getDistrict(districtSchoolElems.length, 553);
+        district = getDistrict(districtSchoolElems.length, 553);
         district.schools.forEach(function(x,i){x.element=districtSchoolElems[i];});
 	
 	  var m = 'music';
@@ -487,10 +487,9 @@
 	  arr.forEach(function(x){district.addResourceType(x);});
        	district.resourceElement = $('#district .resources');
         var charterSchoolElem = $('#charter');
-        var charter = getCharter('Charter School');
+        charter = getCharter('Charter School');
         charter.element=charterSchoolElem;
-      	return {district: district, charter: charter};
-       };
+      	};
        
 	function drawResources(district){
 	   var resourceElem = $(district.resourceElement);
@@ -612,12 +611,12 @@
         
         }
       
-        function drawSchools(district, charter) {
+        function drawSchools() {
           district.schools.forEach(function(x){drawSchool(x);});
 	  drawResources(district);
 	  drawSchool(charter);
-
         var results = document.getElementById("districtStats");   
+
         var text = '<b>DISTRICT STATS</b><BR>';
           text += district.getNumberOfSections()+' sections<BR>';
           text += district.getNumberOfStudents()+' students<BR>';
@@ -628,30 +627,31 @@
 
         }
       
-        var obj = setup();
-        drawSchools(obj.district, obj.charter);
+      	var charter;
+      	var district;
+        setup();
+        drawSchools();
         var year = 0;
         
         $('#go').click(function(){
-        var results = document.getElementById("districtStats");   
-
+        var results = document.getElementById("results");   
         $(results).text('');
         year++;
         setCurrentYear(year);
         println(results, 'YEAR '+year);
 	charter.takeStudentsFromDistrict(district);
-        drawSchools(obj.district, obj.charter);
+        drawSchools();
         });
         
         $('#restart').click(function(){
         year=0;
         setCurrentYear(year);
                 var results = document.getElementById("districtStats");   
-
+  	$(results).text('');
         println(results, 'Restarted');
 
-        obj = setup();
-        drawSchools(obj.district, obj.charter);
+        setup();
+        drawSchools();
         });
       
       
