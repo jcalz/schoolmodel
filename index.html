@@ -196,7 +196,7 @@
       	return {
       	  getName: function(){return name;},
       	  getNumberOfStudents: function(){return numberOfStudents;},
-      	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
+      	  getNumberOfSections: function(){return Math.ceil(numberOfStudents/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
       	  addStudents: function(n){numberOfStudents += n;}
       	};
       	
