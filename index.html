@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model HIJ</title>
+  <title>School model oo</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -195,13 +195,17 @@
       };
       
       var getCharter = function() {
-      	var totalSeats = [80, 70, 70, 60, 60, 70, 80, 60, 60];
-      	var numberOfStudents = [0,0,0,0,0,0,0,0,0];
-      	var getNumberOfStudents = function(){return numberOfStudents.reduce(add,0);}; 
+
+      	var numberOfStudents = [0,0,0,0,0,0,0,0,0]; // array index represents grade, kindergarten - 8th grade
+       	var getNumberOfStudents = function(){return numberOfStudents.reduce(add,0);}; 
+ 	var yearOpened = null;
  	var takeStudentsFromDistrict = function(district) {
+ 		if (yearOpened === null) yearOpened = getCurrentYear();
+ 		var yearsSinceOpened = getCurrentYear()-yearOpened;
+ 		// every year, take 2 students from each grade, plus 30 students in grade Y (where Y is years since opened)
  		for (var g = 0; g<totalSeats.length; g++) {
- 			var vacancies = (totalSeats[g]-numberOfStudents[g]);
- 			var numberToTake = Math.round(0.5 * vacancies);
+ 			var numberToTake = 2;
+ 			if (yearsSinceOpened==g) numberToTake+=30;
  			var numRemoved = district.removeStudentsFromGrade(numberToTake,g);
  			numberOfStudents[g]+=numRemoved;
  		}	
