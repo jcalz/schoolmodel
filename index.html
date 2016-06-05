@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model qq</title>
+  <title>School model rr</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -332,13 +332,18 @@
           
           if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
 
-	  var districtStudentsInGrade = getNumberOfStudentsInGrade(g);
+	  var fracToRemove = num/getNumberOfStudentsInGrade(g);
           var ret = 0;
           for (var s=0; s < schools.length; s++) {
 	       var school = schools[s];
-	       var toBeRemoved = Math.round(num*school.getNumberOfStudentsInGrade(g)/districtStudentsInGrade);
+	       var toBeRemoved = Math.round(fracToRemove*school.getNumberOfStudentsInGrade(g));
 		ret += school.removeStudentsFromGrade(toBeRemoved,g);          		
-          	}
+          }
+          while (ret < num) {
+          	if (getNumberOfStudentsInGrade(g)==0) break;
+          	school = schools[Math.floor((Math.random()*schools.length))];
+          	ret += school.removeStudentsFromGrade(1,g);
+          }
           
           removedStudents[currentYear]+= ret;
           return ret;
@@ -414,7 +419,7 @@
     </div>
       <b>ENROLLMENT IN CHARTER SCHOOLS</b>
     <div class="charter" id="charter"></div>
-  </div><button id="go">Go</button>
+  </div><button id="go">Advance year</button><button id="restart">Restart</button>
 
   <div id="results"></div>
   <script>
