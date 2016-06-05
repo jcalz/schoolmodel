@@ -116,6 +116,8 @@
       }
   </style>
   <script>
+      function add(x,y) {return x+y;}
+      
       var currentYear = 0;
       
       // a school is an object
@@ -159,29 +161,36 @@
         
         var addStudent = function(){numberOfStudents++; return true;};
 	var addStudents = function(num){for (var i=0; i< num; i++) addStudent();};
-        var removeStudent = function(){
-          if (numberOfStudents<=0) return false;
-          numberOfStudents--;
-          return true;
-          };
         
+        var getProbabilityOfLeavingPerStudentPerYear = function() {
+        
+        	return 0.01;	
+        	
+        };
+        
+        var allowStudentsToLeave = function() {
+       	  	var prob = getProbabilityOfLeavingPerStudentPerYear(); 
+       	  	var numRemoved = 0;
+       	  	for (var i = 0; i < numberOfStudents; i++) {
+       	  		if (Math.random()<prob) numRemoved++;
+       	  	}
+       	  	numberOfStudents -= numRemoved;
+        	return numRemoved;
+        };
+        
+
         var getNumberOfSections = function(){
             return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);
         }; 
         
             
-        var toString = function() {
-            return name +": " + getNumberOfStudents() +" students, "+ getNumberOfSections() + " sections, change in spending : $" + (Math.round(getNetAvailableFunds()/1000))+"K";
-        };
-        
         return {
          getName: getName,
          getNumberOfStudents: getNumberOfStudents,
                  addStudent : addStudent,
 		 addStudents : addStudents,
-         removeStudent: removeStudent,
+         allowStudentsToLeave: allowStudentsToLeave,
          getNumberOfSections: getNumberOfSections,
-         toString: toString,
          
         };
       };
@@ -200,23 +209,12 @@
         getName : function(){return name;},
         getNumberOfStudents : getNumberOfStudents,
         getNumberOfSections : sumOver('getNumberOfSections'),
-        toString : function(){
-            var s='';
-            schools.forEach(function(x){s+=x.toString()+'\n';});
-            return s;},
-         
+        
          addStudent : function(){
             var ind = Math.floor(Math.random()*schools.length);
             schools[ind].addStudent();
         },
-        removeStudent : function() {
-           if (getNumberOfStudents()<=0) return false;
-           while (true) {
-            var ind = Math.floor(Math.random()*schools.length);
-            if (schools[ind].removeStudent()) return true;
-           }
-        }
-      
+        allowStudentsToLeave : sumOver('allowStudentsToLeave') 
         };
       
       }
@@ -276,31 +274,13 @@
 	  return ret;
 	}
 	
-
-        var toString = function() {
-        s="";
-           for (var i=0; i<numberOfSchools; i++) {
-              s += schools[i].toString() + "\n";
-           }
-           s+="DISTRICT TOTAL: ";
-            s +=getNumberOfStudents() +" students, "+ 
-        getNumberOfSections() + " sections, change in spending : $" + 
-        (Math.round(getNetAvailableFunds()/1000))+"K\n";
-           return s;
-        };
-
 	var removedStudents={};
-        var removeStudent = function(){
-	  if (getNumberOfStudents()<=0) return false;
-          if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
-          removedStudents[currentYear]++;
-           while (true) {
-            var ind = Math.floor(Math.random()*schools.length);
-            if (schools[ind].removeStudent()) return true;
-           }
-
-
-          };
+        var allowStudentsToLeave = function(){
+	  if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
+          var numRemoved = schools.map(function(s){return s.allowStudentsToLeave();}).reduce(add,0);
+          removedStudents[currentYear]+= numRemoved;
+          return numRemoved;
+        };
 
         var getAvailableFunds = function() {
           var funding = 0;
@@ -329,12 +309,6 @@
             return getAvailableFunds()-initialAvailableFunds;
         };
 
-      var removeStudents = function(numberOfStudents) {
-        for (var i=0; i<numberOfStudents; i++) {
-            if (!removeStudent()) return i;
-        }
-        return numberOfStudents;
-      };        
 
       var getNumberOfRemovedTeachers = function(){
         var numRemovedSpecialists = getResources().filter(
@@ -346,9 +320,7 @@
         return {
             schools: schools,
             getNumberOfStudents: getNumberOfStudents,
-            removeStudent: removeStudent,
-            removeStudents: removeStudents,
-            toString: toString,
+            allowStudentsToLeave: allowStudentsToLeave,
             getNetAvailableFunds: getNetAvailableFunds,
             getNumberOfSections: getNumberOfSections,
 	    addResourceType: addResourceType,
@@ -637,11 +609,10 @@
           println(results, 'YEAR '+year);
             var mov = 100;
             if (charter.getNumberOfStudents() < 600) {
-                    println(results, "Moving "+mov+" students to charter school...");
-                            var success = district.removeStudents(mov);
-			    charter.addStudents(success);
-                if (success<mov) println(results, "...could only move "+success);
-            } else {
+                    println(results, "Moving students to charter school...");
+                            var numRemoved = district.allowStudentsToLeave();
+			    charter.addStudents(numRemoved);
+              } else {
             println(results, "charter school full");
             } 
       
