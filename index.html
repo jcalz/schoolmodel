@@ -153,19 +153,17 @@
 	}
       };
 
-      var getSchool = function(schoolName, initialNumberOfStudents) {
-        var name = schoolName ? schoolName : "unnamed school";
+	
+      var getGrade = function(schoolName, initialNumberOfStudents) {
+        var name = schoolName ? schoolName : "unnamed grade";
         var getName = function(){return name;};
         var numberOfStudents = initialNumberOfStudents ? initialNumberOfStudents : 0;
         var getNumberOfStudents = function(){return numberOfStudents;};
         
-        var addStudent = function(){numberOfStudents++; return true;};
-	var addStudents = function(num){for (var i=0; i< num; i++) addStudent();};
-        
+
         var getProbabilityOfLeavingPerStudentPerYear = function() {
-        
-        	return 0.01;	
-        	
+    	        
+        	return 0.02;	
         };
         
         var allowStudentsToLeave = function() {
@@ -187,20 +185,29 @@
         return {
          getName: getName,
          getNumberOfStudents: getNumberOfStudents,
-                 addStudent : addStudent,
-		 addStudents : addStudents,
          allowStudentsToLeave: allowStudentsToLeave,
          getNumberOfSections: getNumberOfSections,
          
         };
       };
       
-      var getCompositeSchool = function(name, schools) {
+      var getCharter = function(name) {
+      	var numberOfStudents = 0;
+      	return {
+      	  getName: function(){return name;},
+      	  getNumberOfStudents: function(){return numberOfStudents;},
+      	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
+      	  addStudents: function(n){numberOfStudents += n;}
+      	};
+      	
+      }
+      
+      var getSchool = function(name, grades) {
         
         var sumOver = function(fname){return function(){
             var sum=0;
-            for (var i=0; i<schools.length; i++) {
-                sum += schools[i][fname]();
+            for (var i=0; i<grades.length; i++) {
+                sum += grades[i][fname]();
             }
             return sum;
         };};
@@ -210,16 +217,13 @@
         getNumberOfStudents : getNumberOfStudents,
         getNumberOfSections : sumOver('getNumberOfSections'),
         
-         addStudent : function(){
-            var ind = Math.floor(Math.random()*schools.length);
-            schools[ind].addStudent();
-        },
         allowStudentsToLeave : sumOver('allowStudentsToLeave') 
         };
       
       }
       
       var gradeNames = ['K','1','2','3','4','5','6','7','8'];
+      
       var getDistrict = function(numberOfSchools, initialNumberOfStudentsPerSchool) {
         var getNumberOfSchools = function(){return numberOfSchools;}
         var schools = [];
@@ -230,10 +234,11 @@
             var kidsPerGrade = initialNumberOfStudentsPerSchool/gradeNames.length;
             for (var g=0; g<gradeNames.length; g++) {
                 numKids = Math.floor(kidsPerGrade*(g+1))-Math.floor(kidsPerGrade*g);
-                grades[g]=getSchool("DS#"+(i+1)+", "+gradeNames[g], numKids);
+                grades[g]=getGrade("DS#"+(i+1)+", "+gradeNames[g], numKids);
+                
             }
             
-            schools[i]=getCompositeSchool("District School #"+(i+1),grades);
+            schools[i]=getSchool("District School #"+(i+1),grades);
         }
         
         var getNumberOfStudents = function(){
@@ -329,17 +334,6 @@
         };
       };
       
-
-
-      var getAll = function(obj) {
-        var ret = {};
-	for (var prop in obj) {
-	  if (prop.startsWith('get')) ret[prop.substring(3)]=(obj[prop])();
-	  else ret[prop]=obj[prop];
-	}
-	return ret;
-      }
-       
       var setCurrentYear = function(y) {currentYear=y;};
       var getCurrentYear = function() {return currentYear;}
       
@@ -500,7 +494,7 @@
 	}
 
         var charterSchoolElem = $('#charter');
-        var charter = getSchool('Charter School');
+        var charter = getCharter('Charter School');
         charter.element=charterSchoolElem;
       
         var STUDENTS_PER_ICON = 7;
@@ -607,7 +601,6 @@
         year++;
         setCurrentYear(year);
           println(results, 'YEAR '+year);
-            var mov = 100;
             if (charter.getNumberOfStudents() < 600) {
                     println(results, "Moving students to charter school...");
                             var numRemoved = district.allowStudentsToLeave();
