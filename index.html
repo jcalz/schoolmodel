@@ -162,7 +162,12 @@
         var numberOfStudents = initialNumberOfStudents ? initialNumberOfStudents : 0;
         var getNumberOfStudents = function(){return numberOfStudents;};
         
-
+	var removeStudents = function(n){
+		if (n > numberOfStudents) n = numberOfStudents;
+		numberOfStudents -= n;
+		return n;
+	};
+/*	
         var allowStudentsToLeave = function(charterAvailabilityPerStudentInGrade) {
        	  	var prob = charterAvailabilityPerStudentInGrade[grade]; 
        	  	var numRemoved = 0;
@@ -172,7 +177,7 @@
        	  	numberOfStudents -= numRemoved;
         	return numRemoved;
         };
-        
+  */      
 
         var getNumberOfSections = function(){
             return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);
@@ -182,7 +187,8 @@
         return {
          getName: getName,
          getNumberOfStudents: getNumberOfStudents,
-         allowStudentsToLeave: allowStudentsToLeave,
+    /*     allowStudentsToLeave: allowStudentsToLeave, */
+    	removeStudents: removeStudents,
          getNumberOfSections: getNumberOfSections,
          
         };
@@ -192,12 +198,21 @@
       	var totalSeats = [80, 70, 70, 60, 60, 70, 80, 60, 60];
       	var numberOfStudents = [0,0,0,0,0,0,0,0,0];
       	var getNumberOfStudents = function(){return numberOfStudents.reduce(add,0);}; 
+ 	var takeStudentsFromDistrict = function(district) {
+ 		for (var g = 0; g<totalSeats.length; g++) {
+ 			var vacancies = (totalSeats[g]-numberOfStudents[g]);
+ 			var numberToTake = Math.round(0.5 * vacancies);
+ 			var numRemoved = district.removeStudentsFromGrade(numberToTake,g);
+ 			numberOfStudents[g]+=numRemoved;
+ 		}	
+ 	};
       	return {
       	  getName: function(){return "Charter School";},
-      	  getAvailability: function(){return totalSeats.map(function(n,g){return n-numberOfStudents[g];});},
+/*      	  getAvailability: function(){return totalSeats.map(function(n,g){return n-numberOfStudents[g];});},*/
       	  getNumberOfStudents: getNumberOfStudents,
+      	  takeStudentsFromDistrict: takeStudentsFromDistrict,
       	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
-      	  addStudents: function(numInGrade){numInGrade.forEach(function(n,g){numberOfStudents[g] += n;});}
+      	 /* addStudents: function(numInGrade){numInGrade.forEach(function(n,g){numberOfStudents[g] += n;});}*/
       	};
       	
       }
@@ -217,9 +232,10 @@
         getNumberOfStudents : getNumberOfStudents,
         getNumberOfSections : sumOver('getNumberOfSections'),
         getNumberOfStudentsInGrade: function(g) {return grades[g].getNumberOfStudents();},
-        allowStudentsToLeave : function(charterAvailabilityPerStudentInGrade){
+        removeStudentsFromGrade: function(num, g) {return grades[g].removeStudents(num);}
+        /*allowStudentsToLeave : function(charterAvailabilityPerStudentInGrade){
         	return grades.map(function(grade){return grade.allowStudentsToLeave(charterAvailabilityPerStudentInGrade);})
-            }
+            }*/
         };
       
       }
@@ -284,12 +300,27 @@
 	}
 	
 	var removedStudents={};
-        var allowStudentsToLeave = function(charterAvailabilityPerStudentInGrade){
+        /*var allowStudentsToLeave = function(charterAvailabilityPerStudentInGrade){
 	  if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
           var numRemoved = schools.map(function(s){return s.allowStudentsToLeave(charterAvailabilityPerStudentInGrade);}).reduce(addArray);
           removedStudents[currentYear]+= numRemoved.reduce(add,0);
           return numRemoved;
-        };
+        };*/
+        var removeStudentsFromGrade = function(num, g) {
+          
+          if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
+
+	  var districtStudentsInGrade = getNumberOfStudentsInGrade(g);
+          var ret = 0;
+          for (var s=0; s < schools.length; s++) {
+	       var school = schools[s];
+	       var toBeRemoved = Math.round(num*school.getNumberOfStudentsInGrade(g)/districtStudentsInGrade);
+		ret += school.removeStudentsFromGrade(toBeRemoved,g);          		
+          	}
+          }
+          removedStudents[currentYear]+= ret;
+          return ret;
+        }
 
         var getAvailableFunds = function() {
           var funding = 0;
@@ -330,7 +361,8 @@
             schools: schools,
             getNumberOfStudents: getNumberOfStudents,
             getNumberOfStudentsInGrade : getNumberOfStudentsInGrade,
-            allowStudentsToLeave: allowStudentsToLeave,
+            /*allowStudentsToLeave: allowStudentsToLeave,*/
+            removeStudentsFromGrade: removeStudentsFromGrade,
             getNetAvailableFunds: getNetAvailableFunds,
             getNumberOfSections: getNumberOfSections,
 	    addResourceType: addResourceType,
@@ -592,32 +624,15 @@
         }
       
         
-
         drawSchools();
-
-      
-      
-      
-      
-      
         var year = 0;
         $('#go').click(function(){
         $(results).text('');
         year++;
         setCurrentYear(year);
-          println(results, 'YEAR '+year);
-            if (charter.getNumberOfStudents() < 600) {
-                    println(results, "Moving students to charter school...");
-                    	
-                    	var probabilities = charter.getAvailability().map(function(a,g){return 0.5*a/district.getNumberOfStudentsInGrade(g);});
-                            var numRemoved = district.allowStudentsToLeave(probabilities);
-			    charter.addStudents(numRemoved);
-              } else {
-            println(results, "charter school full");
-            } 
-      
-      
-          drawSchools();
+        println(results, 'YEAR '+year);
+	charter.takeStudentsFromDistrict(district);
+        drawSchools();
       
         });
       
