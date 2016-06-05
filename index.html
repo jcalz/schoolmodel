@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model ABC</title>
+  <title>School model CDE</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -609,8 +609,8 @@
             if (charter.getNumberOfStudents() < 600) {
                     println(results, "Moving students to charter school...");
                     	
-                    	var charterAvailabilityPerStudentInGrade = charter.getAvailability().map(function(a,g){return a/district.getNumberOfStudentsInGrade(g);});
-                            var numRemoved = district.allowStudentsToLeave(charter.getAvailability());
+                    	var probabilities = charter.getAvailability().map(function(a,g){return 0.5*a/district.getNumberOfStudentsInGrade(g);});
+                            var numRemoved = district.allowStudentsToLeave(probabilities);
 			    charter.addStudents(numRemoved);
               } else {
             println(results, "charter school full");
