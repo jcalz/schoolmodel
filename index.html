@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model oo</title>
+  <title>School model pp</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -117,8 +117,26 @@
   </style>
   <script>
       function add(x,y) {return x+y;}
-      function addArray(xa,ya) {return xa.map(function(x,i){return x+ya[i];});}
-      
+      //function addArray(xa,ya) {return xa.map(function(x,i){return x+ya[i];});}
+      	  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
       var currentYear = 0;
       
       // a school is an object
@@ -443,13 +461,12 @@
         };
         
 	
-      
+       function setup(){
         
         var districtSchoolElems = $('#district .school');
         var district = getDistrict(districtSchoolElems.length, 553);
         district.schools.forEach(function(x,i){x.element=districtSchoolElems[i];});
 	
-	{
 	  var m = 'music';
 	  var a = 'art';    
 	  var r = 'library';
@@ -466,29 +483,15 @@
 	  repeat(arr, 'reading', 8);
 	  
 
-	  function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
           shuffle(arr);
 	  arr.forEach(function(x){district.addResourceType(x);});
-        } 
-	district.resourceElement = $('#district .resources');
-	
+       	district.resourceElement = $('#district .resources');
+        var charterSchoolElem = $('#charter');
+        var charter = getCharter('Charter School');
+        charter.element=charterSchoolElem;
+      	return {district: district, charter: charter};
+       };
+       
 	function drawResources(district){
 	   var resourceElem = $(district.resourceElement);
 	   resourceElem.html('');
@@ -535,10 +538,7 @@
 	   
 	}
 
-        var charterSchoolElem = $('#charter');
-        var charter = getCharter('Charter School');
-        charter.element=charterSchoolElem;
-      
+       
         var STUDENTS_PER_ICON = 7;
         
         function drawSchool(schoolObject) {
@@ -612,7 +612,7 @@
         
         }
       
-        function drawSchools() {
+        function drawSchools(district, charter) {
           district.schools.forEach(function(x){drawSchool(x);});
 	  drawResources(district);
 	  drawSchool(charter);
@@ -628,17 +628,30 @@
 
         }
       
-        
-        drawSchools();
+        var obj = setup();
+        drawSchools(obj.district, obj.charter);
         var year = 0;
+        
         $('#go').click(function(){
+        var results = document.getElementById("districtStats");   
+
         $(results).text('');
         year++;
         setCurrentYear(year);
         println(results, 'YEAR '+year);
 	charter.takeStudentsFromDistrict(district);
-        drawSchools();
-      
+        drawSchools(obj.district, obj.charter);
+        });
+        
+        $('#restart').click(function(){
+        year=0;
+        setCurrentYear(year);
+                var results = document.getElementById("districtStats");   
+
+        println(results, 'Restarted');
+
+        obj = setup();
+        drawSchools(obj.district, obj.charter);
         });
       
       
