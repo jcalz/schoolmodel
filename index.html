@@ -197,7 +197,7 @@
       	  getAvailability: function(){return totalSeats.map(function(n,g){return n-numberOfStudents[g];});},
       	  getNumberOfStudents: getNumberOfStudents,
       	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
-      	  addStudents: function(numIngrade){numInGrade.forEach(function(n,g){numberOfStudents[g] += n;});}
+      	  addStudents: function(numInGrade){numInGrade.forEach(function(n,g){numberOfStudents[g] += n;});}
       	};
       	
       }
