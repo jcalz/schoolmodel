@@ -203,7 +203,7 @@
  		if (yearOpened === null) yearOpened = getCurrentYear();
  		var yearsSinceOpened = getCurrentYear()-yearOpened;
  		// every year, take 2 students from each grade, plus 30 students in grade Y (where Y is years since opened)
- 		for (var g = 0; g<totalSeats.length; g++) {
+ 		for (var g = 0; g<9; g++) {
  			var numberToTake = 2;
  			if (yearsSinceOpened==g) numberToTake+=30;
  			var numRemoved = district.removeStudentsFromGrade(numberToTake,g);
