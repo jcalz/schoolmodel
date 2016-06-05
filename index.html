@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model rr</title>
+  <title>School model ss</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -220,6 +220,7 @@
  	var takeStudentsFromDistrict = function(district) {
  		if (yearOpened === null) yearOpened = getCurrentYear();
  		var yearsSinceOpened = getCurrentYear()-yearOpened;
+ 		if (yearsSinceOpened > 10) return; // only take kids for 10 years?
  		// every year, take 2 students from each grade, plus 30 students in grade Y (where Y is years since opened)
  		for (var g = 0; g<9; g++) {
  			var numberToTake = 2;
@@ -419,7 +420,7 @@
     </div>
       <b>ENROLLMENT IN CHARTER SCHOOLS</b>
     <div class="charter" id="charter"></div>
-  </div><button id="go">Advance year</button><button id="restart">Restart</button>
+  </div><br><button id="go">Advance year</button><button id="restart">Restart</button>
 
   <div id="results"></div>
   <script>
@@ -651,8 +652,8 @@
         $('#restart').click(function(){
         year=0;
         setCurrentYear(year);
-                var results = document.getElementById("districtStats");   
-  	$(results).text('');
+        var results = document.getElementById("results");   
+        $(results).text('');
         println(results, 'Restarted');
 
         setup();
