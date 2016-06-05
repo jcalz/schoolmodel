@@ -217,7 +217,9 @@
         getNumberOfStudents : getNumberOfStudents,
         getNumberOfSections : sumOver('getNumberOfSections'),
         getNumberOfStudentsInGrade: function(g) {return grades[g].getNumberOfStudents();},
-        allowStudentsToLeave : function(){return grades.map(function(grade){return grade.allowStudentsToLeave();})}
+        allowStudentsToLeave : function(charterAvailabilityPerStudentInGrade){
+        	return grades.map(function(grade){return grade.allowStudentsToLeave(charterAvailabilityPerStudentInGrade);})
+            }
         };
       
       }
