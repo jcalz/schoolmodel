@@ -47,7 +47,7 @@
       margin: 1px;
       }
       .student {
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxjaXJjbGUgY3g9IjMyIiBjeT0iMTUiIHI9IjE1Ii8+DQoJCTwvZz4NCgk8L2c+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTM4LjYsMzRIMjUuNEMxNi40LDM0LDksNDEuNCw5LDUwLjRWNjRoNDZWNTAuNEM1NSw0MS40LDQ3LjYsMzQsMzguNiwzNHoiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat;
+      background: url('img/person.svg') no-repeat;
       background-size: 120% 120%;
       border: none;
       height: 15px;
@@ -185,17 +185,7 @@
 		numberOfStudents -= n;
 		return n;
 	};
-/*	
-        var allowStudentsToLeave = function(charterAvailabilityPerStudentInGrade) {
-       	  	var prob = charterAvailabilityPerStudentInGrade[grade]; 
-       	  	var numRemoved = 0;
-       	  	for (var i = 0; i < numberOfStudents; i++) {
-       	  		if (Math.random()<prob) numRemoved++;
-       	  	}
-       	  	numberOfStudents -= numRemoved;
-        	return numRemoved;
-        };
-  */      
+
 
         var getNumberOfSections = function(){
             return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);
@@ -205,7 +195,6 @@
         return {
          getName: getName,
          getNumberOfStudents: getNumberOfStudents,
-    /*     allowStudentsToLeave: allowStudentsToLeave, */
     	removeStudents: removeStudents,
          getNumberOfSections: getNumberOfSections,
          
@@ -221,21 +210,31 @@
  		if (yearOpened === null) yearOpened = getCurrentYear();
  		var yearsSinceOpened = getCurrentYear()-yearOpened;
  		if (yearsSinceOpened > 10) return; // only take kids for 10 years?
- 		// every year, take 2 students from each grade, plus 30 students in grade Y (where Y is years since opened)
- 		for (var g = 0; g<9; g++) {
- 			var numberToTake = 2;
- 			if (yearsSinceOpened==g) numberToTake+=30;
- 			var numRemoved = district.removeStudentsFromGrade(numberToTake,g);
- 			numberOfStudents[g]+=numRemoved;
- 		}	
+
+ 		// take 30 students in grade Y (where Y is years since opened)
+		var g;		   
+		if ((0<=yearsSinceOpened) && (yearsSinceOpened<=8)) {
+                   g = yearsSinceOpened;
+		   numberOfStudents[g]+=district.removeStudentsFromGrade(30,g);
+                }
+
+        	// take 20 students randomly from any grade in the district
+	        num = 0;
+                while (num < 20) {
+		  if (district.getNumberOfStudents()==0) break;
+		  g = Math.floor(Math.random()*9);
+		  var n = district.removeStudentsFromGrade(1,g);
+                  numberOfStudents[g]+=n;
+	          num+=n;			     
+		}						  
+
  	};
       	return {
       	  getName: function(){return "Charter School";},
-/*      	  getAvailability: function(){return totalSeats.map(function(n,g){return n-numberOfStudents[g];});},*/
       	  getNumberOfStudents: getNumberOfStudents,
       	  takeStudentsFromDistrict: takeStudentsFromDistrict,
       	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
-      	 /* addStudents: function(numInGrade){numInGrade.forEach(function(n,g){numberOfStudents[g] += n;});}*/
+
       	};
       	
       }
@@ -256,9 +255,7 @@
         getNumberOfSections : sumOver('getNumberOfSections'),
         getNumberOfStudentsInGrade: function(g) {return grades[g].getNumberOfStudents();},
         removeStudentsFromGrade: function(num, g) {return grades[g].removeStudents(num);}
-        /*allowStudentsToLeave : function(charterAvailabilityPerStudentInGrade){
-        	return grades.map(function(grade){return grade.allowStudentsToLeave(charterAvailabilityPerStudentInGrade);})
-            }*/
+
         };
       
       }
@@ -323,29 +320,17 @@
 	}
 	
 	var removedStudents={};
-        /*var allowStudentsToLeave = function(charterAvailabilityPerStudentInGrade){
-	  if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
-          var numRemoved = schools.map(function(s){return s.allowStudentsToLeave(charterAvailabilityPerStudentInGrade);}).reduce(addArray);
-          removedStudents[currentYear]+= numRemoved.reduce(add,0);
-          return numRemoved;
-        };*/
+       
         var removeStudentsFromGrade = function(num, g) {
           
           if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
-
-	  var fracToRemove = num/getNumberOfStudentsInGrade(g);
+	
           var ret = 0;
-          for (var s=0; s < schools.length; s++) {
-	       var school = schools[s];
-	       var toBeRemoved = Math.round(fracToRemove*school.getNumberOfStudentsInGrade(g));
-		ret += school.removeStudentsFromGrade(toBeRemoved,g);          		
+	  while (ret < num) {
+	    if (getNumberOfStudentsInGrade(g)==0) break;
+            var school = schools[Math.floor(Math.random()*schools.length)];
+            ret += school.removeStudentsFromGrade(1,g);
           }
-          while (ret < num) {
-          	if (getNumberOfStudentsInGrade(g)==0) break;
-          	school = schools[Math.floor((Math.random()*schools.length))];
-          	ret += school.removeStudentsFromGrade(1,g);
-          }
-          
           removedStudents[currentYear]+= ret;
           return ret;
         }
@@ -390,8 +375,7 @@
             schools: schools,
             getNumberOfStudents: getNumberOfStudents,
             getNumberOfStudentsInGrade : getNumberOfStudentsInGrade,
-            /*allowStudentsToLeave: allowStudentsToLeave,*/
-            removeStudentsFromGrade: removeStudentsFromGrade,
+                    removeStudentsFromGrade: removeStudentsFromGrade,
             getNetAvailableFunds: getNetAvailableFunds,
             getNumberOfSections: getNumberOfSections,
 	    addResourceType: addResourceType,
