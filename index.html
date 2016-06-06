@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model</title>
+  <title>School model ss</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <style>
@@ -47,7 +47,7 @@
       margin: 1px;
       }
       .student {
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxjaXJjbGUgY3g9IjMyIiBjeT0iMTUiIHI9IjE1Ii8+DQoJCTwvZz4NCgk8L2c+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTM4LjYsMzRIMjUuNEMxNi40LDM0LDksNDEuNCw5LDUwLjRWNjRoNDZWNTAuNEM1NSw0MS40LDQ3LjYsMzQsMzguNiwzNHoiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat;
+      background: url('img/person.svg') no-repeat;
       background-size: 120% 120%;
       border: none;
       height: 15px;
@@ -116,6 +116,27 @@
       }
   </style>
   <script>
+      function add(x,y) {return x+y;}
+      //function addArray(xa,ya) {return xa.map(function(x,i){return x+ya[i];});}
+      	  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
       var currentYear = 0;
       
       // a school is an object
@@ -151,47 +172,79 @@
 	}
       };
 
-      var getSchool = function(schoolName, initialNumberOfStudents) {
-        var name = schoolName ? schoolName : "unnamed school";
+	
+      var getGrade = function(schoolName, initialNumberOfStudents, grade) {
+        var name = schoolName ? schoolName : "unnamed grade";
+        grade = grade ? grade : 0;
         var getName = function(){return name;};
         var numberOfStudents = initialNumberOfStudents ? initialNumberOfStudents : 0;
         var getNumberOfStudents = function(){return numberOfStudents;};
         
-        var addStudent = function(){numberOfStudents++; return true;};
-	var addStudents = function(num){for (var i=0; i< num; i++) addStudent();};
-        var removeStudent = function(){
-          if (numberOfStudents<=0) return false;
-          numberOfStudents--;
-          return true;
-          };
-        
+	var removeStudents = function(n){
+		if (n > numberOfStudents) n = numberOfStudents;
+		numberOfStudents -= n;
+		return n;
+	};
+
+
         var getNumberOfSections = function(){
             return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);
         }; 
         
             
-        var toString = function() {
-            return name +": " + getNumberOfStudents() +" students, "+ getNumberOfSections() + " sections, change in spending : $" + (Math.round(getNetAvailableFunds()/1000))+"K";
-        };
-        
         return {
          getName: getName,
          getNumberOfStudents: getNumberOfStudents,
-                 addStudent : addStudent,
-		 addStudents : addStudents,
-         removeStudent: removeStudent,
+    	removeStudents: removeStudents,
          getNumberOfSections: getNumberOfSections,
-         toString: toString,
          
         };
       };
       
-      var getCompositeSchool = function(name, schools) {
+      var getCharter = function() {
+
+      	var numberOfStudents = [0,0,0,0,0,0,0,0,0]; // array index represents grade, kindergarten - 8th grade
+       	var getNumberOfStudents = function(){return numberOfStudents.reduce(add,0);}; 
+ 	var yearOpened = null;
+ 	var takeStudentsFromDistrict = function(district) {
+ 		if (yearOpened === null) yearOpened = getCurrentYear();
+ 		var yearsSinceOpened = getCurrentYear()-yearOpened;
+ 		if (yearsSinceOpened > 10) return; // only take kids for 10 years?
+
+ 		// take 30 students in grade Y (where Y is years since opened)
+		var g;		   
+		if ((0<=yearsSinceOpened) && (yearsSinceOpened<=8)) {
+                   g = yearsSinceOpened;
+		   numberOfStudents[g]+=district.removeStudentsFromGrade(30,g);
+                }
+
+        	// take 20 students randomly from any grade in the district
+	        num = 0;
+                while (num < 20) {
+		  if (district.getNumberOfStudents()==0) break;
+		  g = Math.floor(Math.random()*9);
+		  var n = district.removeStudentsFromGrade(1,g);
+                  numberOfStudents[g]+=n;
+	          num+=n;			     
+		}						  
+
+ 	};
+      	return {
+      	  getName: function(){return "Charter School";},
+      	  getNumberOfStudents: getNumberOfStudents,
+      	  takeStudentsFromDistrict: takeStudentsFromDistrict,
+      	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
+
+      	};
+      	
+      }
+      
+      var getSchool = function(name, grades) {
         
         var sumOver = function(fname){return function(){
             var sum=0;
-            for (var i=0; i<schools.length; i++) {
-                sum += schools[i][fname]();
+            for (var i=0; i<grades.length; i++) {
+                sum += grades[i][fname]();
             }
             return sum;
         };};
@@ -200,28 +253,15 @@
         getName : function(){return name;},
         getNumberOfStudents : getNumberOfStudents,
         getNumberOfSections : sumOver('getNumberOfSections'),
-        toString : function(){
-            var s='';
-            schools.forEach(function(x){s+=x.toString()+'\n';});
-            return s;},
-         
-         addStudent : function(){
-            var ind = Math.floor(Math.random()*schools.length);
-            schools[ind].addStudent();
-        },
-        removeStudent : function() {
-           if (getNumberOfStudents()<=0) return false;
-           while (true) {
-            var ind = Math.floor(Math.random()*schools.length);
-            if (schools[ind].removeStudent()) return true;
-           }
-        }
-      
+        getNumberOfStudentsInGrade: function(g) {return grades[g].getNumberOfStudents();},
+        removeStudentsFromGrade: function(num, g) {return grades[g].removeStudents(num);}
+
         };
       
       }
       
       var gradeNames = ['K','1','2','3','4','5','6','7','8'];
+      
       var getDistrict = function(numberOfSchools, initialNumberOfStudentsPerSchool) {
         var getNumberOfSchools = function(){return numberOfSchools;}
         var schools = [];
@@ -232,19 +272,22 @@
             var kidsPerGrade = initialNumberOfStudentsPerSchool/gradeNames.length;
             for (var g=0; g<gradeNames.length; g++) {
                 numKids = Math.floor(kidsPerGrade*(g+1))-Math.floor(kidsPerGrade*g);
-                grades[g]=getSchool("DS#"+(i+1)+", "+gradeNames[g], numKids);
+                grades[g]=getGrade("DS#"+(i+1)+", "+gradeNames[g], numKids, g);
+                
             }
             
-            schools[i]=getCompositeSchool("District School #"+(i+1),grades);
+            schools[i]=getSchool("District School #"+(i+1),grades);
         }
         
         var getNumberOfStudents = function(){
-            var n = 0;
-            for (var i=0; i<numberOfSchools; i++) {
-                n += schools[i].getNumberOfStudents();
-            }
-            return n;
+	    return schools.map(function(x){return x.getNumberOfStudents();}).reduce(add,0);	
         };
+        
+        
+        var getNumberOfStudentsInGrade = function(g){
+	    return schools.map(function(x){return x.getNumberOfStudentsInGrade(g);}).reduce(add,0);	
+        };
+        
         
         var getNumberOfSections = function(){
             var n = 0;
@@ -276,31 +319,21 @@
 	  return ret;
 	}
 	
-
-        var toString = function() {
-        s="";
-           for (var i=0; i<numberOfSchools; i++) {
-              s += schools[i].toString() + "\n";
-           }
-           s+="DISTRICT TOTAL: ";
-            s +=getNumberOfStudents() +" students, "+ 
-        getNumberOfSections() + " sections, change in spending : $" + 
-        (Math.round(getNetAvailableFunds()/1000))+"K\n";
-           return s;
-        };
-
 	var removedStudents={};
-        var removeStudent = function(){
-	  if (getNumberOfStudents()<=0) return false;
+       
+        var removeStudentsFromGrade = function(num, g) {
+          
           if (!(currentYear in removedStudents)) removedStudents[currentYear]=0;
-          removedStudents[currentYear]++;
-           while (true) {
-            var ind = Math.floor(Math.random()*schools.length);
-            if (schools[ind].removeStudent()) return true;
-           }
-
-
-          };
+	
+          var ret = 0;
+	  while (ret < num) {
+	    if (getNumberOfStudentsInGrade(g)==0) break;
+            var school = schools[Math.floor(Math.random()*schools.length)];
+            ret += school.removeStudentsFromGrade(1,g);
+          }
+          removedStudents[currentYear]+= ret;
+          return ret;
+        }
 
         var getAvailableFunds = function() {
           var funding = 0;
@@ -329,12 +362,6 @@
             return getAvailableFunds()-initialAvailableFunds;
         };
 
-      var removeStudents = function(numberOfStudents) {
-        for (var i=0; i<numberOfStudents; i++) {
-            if (!removeStudent()) return i;
-        }
-        return numberOfStudents;
-      };        
 
       var getNumberOfRemovedTeachers = function(){
         var numRemovedSpecialists = getResources().filter(
@@ -343,12 +370,12 @@
 	return numRemovedSpecialists + numRemovedSections;	
 
       };
+        
         return {
             schools: schools,
             getNumberOfStudents: getNumberOfStudents,
-            removeStudent: removeStudent,
-            removeStudents: removeStudents,
-            toString: toString,
+            getNumberOfStudentsInGrade : getNumberOfStudentsInGrade,
+                    removeStudentsFromGrade: removeStudentsFromGrade,
             getNetAvailableFunds: getNetAvailableFunds,
             getNumberOfSections: getNumberOfSections,
 	    addResourceType: addResourceType,
@@ -357,17 +384,6 @@
         };
       };
       
-
-
-      var getAll = function(obj) {
-        var ret = {};
-	for (var prop in obj) {
-	  if (prop.startsWith('get')) ret[prop.substring(3)]=(obj[prop])();
-	  else ret[prop]=obj[prop];
-	}
-	return ret;
-      }
-       
       var setCurrentYear = function(y) {currentYear=y;};
       var getCurrentYear = function() {return currentYear;}
       
@@ -388,7 +404,7 @@
     </div>
       <b>ENROLLMENT IN CHARTER SCHOOLS</b>
     <div class="charter" id="charter"></div>
-  </div><button id="go">Go</button>
+  </div><br><button id="go">Advance year</button><button id="restart">Restart</button>
 
   <div id="results"></div>
   <script>
@@ -435,13 +451,12 @@
         };
         
 	
-      
+       function setup(){
         
         var districtSchoolElems = $('#district .school');
-        var district = getDistrict(districtSchoolElems.length, 553);
+        district = getDistrict(districtSchoolElems.length, 553);
         district.schools.forEach(function(x,i){x.element=districtSchoolElems[i];});
 	
-	{
 	  var m = 'music';
 	  var a = 'art';    
 	  var r = 'library';
@@ -458,29 +473,14 @@
 	  repeat(arr, 'reading', 8);
 	  
 
-	  function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
           shuffle(arr);
 	  arr.forEach(function(x){district.addResourceType(x);});
-        } 
-	district.resourceElement = $('#district .resources');
-	
+       	district.resourceElement = $('#district .resources');
+        var charterSchoolElem = $('#charter');
+        charter = getCharter('Charter School');
+        charter.element=charterSchoolElem;
+      	};
+       
 	function drawResources(district){
 	   var resourceElem = $(district.resourceElement);
 	   resourceElem.html('');
@@ -527,10 +527,7 @@
 	   
 	}
 
-        var charterSchoolElem = $('#charter');
-        var charter = getSchool('Charter School');
-        charter.element=charterSchoolElem;
-      
+       
         var STUDENTS_PER_ICON = 7;
         
         function drawSchool(schoolObject) {
@@ -608,8 +605,8 @@
           district.schools.forEach(function(x){drawSchool(x);});
 	  drawResources(district);
 	  drawSchool(charter);
-
         var results = document.getElementById("districtStats");   
+
         var text = '<b>DISTRICT STATS</b><BR>';
           text += district.getNumberOfSections()+' sections<BR>';
           text += district.getNumberOfStudents()+' students<BR>';
@@ -620,34 +617,31 @@
 
         }
       
-        
-
+      	var charter;
+      	var district;
+        setup();
         drawSchools();
-
-      
-      
-      
-      
-      
         var year = 0;
+        
         $('#go').click(function(){
+        var results = document.getElementById("results");   
         $(results).text('');
         year++;
         setCurrentYear(year);
-          println(results, 'YEAR '+year);
-            var mov = 100;
-            if (charter.getNumberOfStudents() < 600) {
-                    println(results, "Moving "+mov+" students to charter school...");
-                            var success = district.removeStudents(mov);
-			    charter.addStudents(success);
-                if (success<mov) println(results, "...could only move "+success);
-            } else {
-            println(results, "charter school full");
-            } 
-      
-      
-          drawSchools();
-      
+        println(results, 'YEAR '+year);
+	charter.takeStudentsFromDistrict(district);
+        drawSchools();
+        });
+        
+        $('#restart').click(function(){
+        year=0;
+        setCurrentYear(year);
+        var results = document.getElementById("results");   
+        $(results).text('');
+        println(results, 'Restarted');
+
+        setup();
+        drawSchools();
         });
       
       
