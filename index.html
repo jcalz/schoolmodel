@@ -4,6 +4,8 @@
   <title>School model ss</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
+  <script src="js/util.js">
+  </script>
   <style>
       .school, .charter, .resources {
       width: 1000px;
@@ -114,62 +116,63 @@
       background-size: 100% 100%;
       z-index: 1;
       }
+      label {
+      display:block;
+      }
   </style>
+</head>
+<body>
+  <div id="display">
+    <div id="district">
+      <b>DISTRICT ENROLLMENT BY SCHOOL AND GRADE</b>
+      <div class="schools"></div>
+      <div class="resources"></div>
+  <div id="results">Ready to start</div>
+  <div id="districtStats"></div>
+    </div>
+      <b>ENROLLMENT IN CHARTER SCHOOLS</b>
+    <div class="charter" id="charter"></div>
+  </div><br><button id="go">Advance year</button><button id="restart">Restart</button><br>
+  <div id="config">
+   <label>Number of schools in the district: <input data-var="NUMBER_OF_SCHOOLS_IN_DISTRICT"></label>
+   <label>Initial number of students in the district: <input data-var="INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT"></label>
+   <label>Maximum class size: <input data-var="MAXIMUM_CLASS_SIZE"></label>
+   <label>District yearly teacher salary: <input data-var="TEACHER_SALARY"></label>
+   <label>District yearly funding per student: <input data-var="FUNDING_PER_STUDENT"></label>
+   <label>Number of students leaving for charter per year: <input data-var="CHARTER_DRAW_PER_YEAR"></label>
+  </div>
+
+
   <script>
-      function add(x,y) {return x+y;}
-      //function addArray(xa,ya) {return xa.map(function(x,i){return x+ya[i];});}
-      	  function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
+        
+     $(function(){
 
       var currentYear = 0;
       
-      // a school is an object
-      var MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION = 23;
-      var FUNDING_PER_STUDENT = 16336;
-      var FUNDING_FRAC_REMOVED_STUDENT = [1, 0.25, 0.25, 0.25, 0.25, 0.25];
-      var COST_PER_SECTION = 73266;
+      var config = {
+       MAXIMUM_CLASS_SIZE : 23,
+       FUNDING_PER_STUDENT : 16336,
+       FUNDING_FRAC_REMOVED_STUDENT : [1, 0.25, 0.25, 0.25, 0.25, 0.25],
+       TEACHER_SALARY : 73266,
+       INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT : 3318,
+       NUMBER_OF_SCHOOLS_IN_DISTRICT : 6,
+       CHARTER_DRAW_PER_YEAR : 50
+      }
       
       var resourceTypes = {};
-      var makeResourceType = function(typeId, typeName, cost) {
-        resourceTypes[typeId] = {'typeName':typeName, 'cost':cost};
+      var makeResourceType = function(typeId, typeName) {
+        resourceTypes[typeId] = {'typeName':typeName, 'typeId':typeId, 'getCost':function(){return config.TEACHER_SALARY;}};
       }
-      makeResourceType('music','Music Teachers', COST_PER_SECTION);
-      makeResourceType('art','Art Teachers', COST_PER_SECTION);
-      makeResourceType('library','Librarians', COST_PER_SECTION);
-      makeResourceType('languages','World Languages Teachers', COST_PER_SECTION);
-      makeResourceType('physed','Physical Education Teachers', COST_PER_SECTION);
-      makeResourceType('counselor','Counselor Educators', COST_PER_SECTION);
-            makeResourceType('reading','Reading Teachers', COST_PER_SECTION);
-      var getResource = function(typeId) {
- 
-        var type = resourceTypes[typeId];
-        var getType = function(){return type;};
-	var getCost = function(){return type.cost;};
-	var getName = function(){return type.typeName;};
-	var getTypeId = function(){return typeId;};
-	return {
-	  getType: getType,
-	  getCost: getCost,
-	  getName: getName,
-	  getTypeId: getTypeId
+      makeResourceType('music','Music Teachers');
+      makeResourceType('art','Art Teachers');
+      makeResourceType('library','Librarians');
+      makeResourceType('languages','World Languages Teachers');
+      makeResourceType('physed','Physical Education Teachers');
+      makeResourceType('counselor','Counselor Educators');
+      makeResourceType('reading','Reading Teachers');
 
-	}
+      var getResource = function(typeId) {
+        return {'type':resourceTypes[typeId]};
       };
 
 	
@@ -188,7 +191,7 @@
 
 
         var getNumberOfSections = function(){
-            return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);
+            return Math.ceil(getNumberOfStudents()/config.MAXIMUM_CLASS_SIZE);
         }; 
         
             
@@ -210,17 +213,20 @@
  		if (yearOpened === null) yearOpened = getCurrentYear();
  		var yearsSinceOpened = getCurrentYear()-yearOpened;
  		if (yearsSinceOpened > 10) return; // only take kids for 10 years?
-
- 		// take 30 students in grade Y (where Y is years since opened)
+      
+          
+ 		// take 60% of students in grade Y (where Y is years since opened)
+                var numFromOneGrade = Math.round(0.6*config.CHARTER_DRAW_PER_YEAR);
 		var g;		   
+       
 		if ((0<=yearsSinceOpened) && (yearsSinceOpened<=8)) {
                    g = yearsSinceOpened;
-		   numberOfStudents[g]+=district.removeStudentsFromGrade(30,g);
+		   numberOfStudents[g]+=district.removeStudentsFromGrade(numFromOneGrade,g);
                 }
 
-        	// take 20 students randomly from any grade in the district
+        	// take remainder of  students randomly from any grade in the district
 	        num = 0;
-                while (num < 20) {
+                while (num < (config.CHARTER_DRAW_PER_YEAR-numFromOneGrade)) {
 		  if (district.getNumberOfStudents()==0) break;
 		  g = Math.floor(Math.random()*9);
 		  var n = district.removeStudentsFromGrade(1,g);
@@ -233,7 +239,7 @@
       	  getName: function(){return "Charter School";},
       	  getNumberOfStudents: getNumberOfStudents,
       	  takeStudentsFromDistrict: takeStudentsFromDistrict,
-      	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/MAXIMUM_NUMBER_OF_STUDENTS_PER_SECTION);},
+      	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/config.MAXIMUM_CLASS_SIZE);},
 
       	};
       	
@@ -305,18 +311,14 @@
 	var getResources = function(){
 	  var netFunds = getNetAvailableFunds();
 	  for (var i=0; i<resources.length; i++) {
-	    netFunds += resources[i].getCost();
+	    netFunds += resources[i].type.getCost();
 	  }
-	  var ret = [];
 	  var resourceCosts = 0;
 	  for (var i=0; i<resources.length; i++) {
-	    var resource = Object.assign({},resources[i]);
-	    resourceCosts += resource.getCost();
-	    var exists = (netFunds >= resourceCosts);
-	    resource.getExists = (function(e){return function(){return e;}})(exists);
-	    ret.push(resource);
+	    resourceCosts += resources[i].type.getCost();
+	    resources[i].exists = (netFunds >= resourceCosts);
 	  }
-	  return ret;
+	  return resources;
 	}
 	
 	var removedStudents={};
@@ -338,18 +340,18 @@
         var getAvailableFunds = function() {
           var funding = 0;
         var status = '';
-          status+=(getNumberOfStudents()+' students @ '+FUNDING_PER_STUDENT+' ea');
-          funding += FUNDING_PER_STUDENT * getNumberOfStudents();
-              for (var i=0; i<FUNDING_FRAC_REMOVED_STUDENT.length; i++) {
+          status+=(getNumberOfStudents()+' students @ '+config.FUNDING_PER_STUDENT+' ea');
+          funding += config.FUNDING_PER_STUDENT * getNumberOfStudents();
+              for (var i=0; i<config.FUNDING_FRAC_REMOVED_STUDENT.length; i++) {
             var year = currentYear - i;
-            status+=(i+'years ago, frac student is '+FUNDING_FRAC_REMOVED_STUDENT[i]);
+            status+=(i+'years ago, frac student is '+config.FUNDING_FRAC_REMOVED_STUDENT[i]);
             if (year in removedStudents) { 
               status+=(removedStudents[year]+' removed');
-              funding += FUNDING_PER_STUDENT*FUNDING_FRAC_REMOVED_STUDENT[i]*removedStudents[year];
+              funding += config.FUNDING_PER_STUDENT*config.FUNDING_FRAC_REMOVED_STUDENT[i]*removedStudents[year];
             }
           }
-          status+=(getNumberOfSections()+' sections @ -'+COST_PER_SECTION+' ea');
-          funding -= COST_PER_SECTION * getNumberOfSections();
+          status+=(getNumberOfSections()+' sections @ -'+config.TEACHER_SALARY+' ea');
+          funding -= config.TEACHER_SALARY * getNumberOfSections();
                        status+=(funding);
         //console.log(status);
             return funding;
@@ -365,7 +367,7 @@
 
       var getNumberOfRemovedTeachers = function(){
         var numRemovedSpecialists = getResources().filter(
-	  function(r){return !r.getExists();}).length;
+	  function(r){return !r.exists;}).length;
 	var numRemovedSections = initialNumberOfSections-getNumberOfSections();
 	return numRemovedSpecialists + numRemovedSections;	
 
@@ -387,74 +389,23 @@
       var setCurrentYear = function(y) {currentYear=y;};
       var getCurrentYear = function() {return currentYear;}
       
-  </script>
-</head>
-<body>
-  <div id="display">
-    <div id="district">
-      <b>DISTRICT ENROLLMENT BY SCHOOL AND GRADE</b>
-      <div class="school"></div>
-      <div class="school"></div>
-      <div class="school"></div>
-      <div class="school"></div>
-      <div class="school"></div>
-      <div class="school"></div>
-      <div class="resources"></div>
-  <div id="districtStats"></div>
-    </div>
-      <b>ENROLLMENT IN CHARTER SCHOOLS</b>
-    <div class="charter" id="charter"></div>
-  </div><br><button id="go">Advance year</button><button id="restart">Restart</button>
-
-  <div id="results"></div>
-  <script>
-          var entityMap = {
-          '&': '&amp;',
-          '<': '&lt;',
-          '>': '&gt;',
-          '"': '&quot;',
-          "'": '&#39;',
-          '/': '&#x2F;',
-          '`': '&#x60;',
-          '=': '&#x3D;'
-        };
-      
-        function money(val, plusSign) {
-          var sign = val<0;
-          var abs = Math.round(Math.abs(val));
-          var suffix = '';
-          if (abs>999) {
-             abs=Math.round(abs/1000);
-             suffix='K';
-          }
-          if (abs>999) {
-             abs=Math.round(abs/100)/10;
-             suffix='M';
-          }
-          if (abs>999) {
-             abs=Math.round(abs/100)/10;
-             suffix='G';
-          }
-	  if (plusSign === undefined) {plusSign = '+';}
-	  if (plusSign === false) {plusSign = '';}
-          return ((abs==0)?'':(sign?'-':plusSign))+'$'+abs+suffix;
-        }
-      
-        function escapeHtml (string) {
-          return String(string).replace(/[&<>"'`=\/]/g, function fromEntityMap (s) {
-            return entityMap[s];
-          });
-        }
-        
-        function println(elem, str) {
-            elem.innerHTML += escapeHtml(str).replace(/\n/g, "<br>") + "<br>";
-        };
-        
 	
        function setup(){
         
         var districtSchoolElems = $('#district .school');
-        district = getDistrict(districtSchoolElems.length, 553);
+	var nsd = config.NUMBER_OF_SCHOOLS_IN_DISTRICT;
+	if (nsd < districtSchoolElems.length) {
+            districtSchoolElems.slice(nsd).detach();
+          } else if (nsd > districtSchoolElems.length) {
+            var schoolsElem = $('#district .schools');
+            var newSchool = $('<div>').addClass('school');
+            for (var i=districtSchoolElems.length; i<nsd; i++) {
+             newSchool.clone().appendTo(schoolsElem);
+             }
+          }
+        var districtSchoolElems = $('#district .school');
+
+        district = getDistrict(config.NUMBER_OF_SCHOOLS_IN_DISTRICT, Math.round(config.INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT/config.NUMBER_OF_SCHOOLS_IN_DISTRICT));
         district.schools.forEach(function(x,i){x.element=districtSchoolElems[i];});
 	
 	  var m = 'music';
@@ -464,16 +415,15 @@
 	    for (var i=0; i<times; i++) array.push(element);
 	  }
 	  var arr = [];
-	  repeat(arr, 'languages', 4);//13);
-	  repeat(arr, 'art', 6);//12);
-	  repeat(arr, 'music', 12);//20);
-	  repeat(arr, 'physed', 7);//19);
-	  repeat(arr, 'library', 7);//25);
-	  repeat(arr, 'counselor', 12);//23);
+	  repeat(arr, 'languages', 4);
+	  repeat(arr, 'art', 6);
+	  repeat(arr, 'music', 12);
+	  repeat(arr, 'physed', 7);
+	  repeat(arr, 'library', 7);
+	  repeat(arr, 'counselor', 12);
 	  repeat(arr, 'reading', 8);
-	  
+          arrayShuffle(arr);
 
-          shuffle(arr);
 	  arr.forEach(function(x){district.addResourceType(x);});
        	district.resourceElement = $('#district .resources');
         var charterSchoolElem = $('#charter');
@@ -488,8 +438,8 @@
 	   var resources = district.getResources();
 	   // organize by type
 	   resources.sort(function(a,b){
-	     var ai = a.getTypeId();
-	     var bi = b.getTypeId();
+	     var ai = a.type.typeId;
+	     var bi = b.type.typeId;
 	     if (ai<bi) return -1;
 	     if (ai>bi) return 1;
 	     return 0;
@@ -509,20 +459,19 @@
 	   var types={};
 	   for (var i=0; i<resources.length; i++) {
 	     var r = resources[i];
-	     types[r.getTypeId()] = r.getType();
+	     types[r.type.typeId] = r.type;
 	   }   
 	   var groupElems={};
 	   for (var t in types) {
 	     var e = $('<div>').addClass('resourceGroup').addClass(t);
-	     e.text(types[t].typeName);//+'@'+money(types[t].cost,'')+' ea');
+	     e.text(types[t].typeName);//+'@'+money(types[t].getCost(),'')+' ea');
 	     e.appendTo(resourceElem);
 	     groupElems[t] = e;
 	   }
 	      
 	   for (var i=0; i<resources.length; i++) {
 	     var r = resources[i];
-	     var typeId = r.getTypeId();
-	     $('<div>').addClass('resource').toggleClass('lost',!r.getExists()).appendTo(groupElems[typeId]);
+	     $('<div>').addClass('resource').toggleClass('lost',!r.exists).appendTo(groupElems[r.type.typeId]);
 	   }
 	   
 	}
@@ -617,7 +566,9 @@
 
         }
       
-      	var charter;
+      		
+
+        var charter;
       	var district;
         setup();
         drawSchools();
@@ -633,7 +584,7 @@
         drawSchools();
         });
         
-        $('#restart').click(function(){
+        var restart = function(){							       
         year=0;
         setCurrentYear(year);
         var results = document.getElementById("results");   
@@ -642,10 +593,22 @@
 
         setup();
         drawSchools();
+							       
+       };
+
+        $('#restart').click(restart);
+
+        $('input[data-var]').change(function(){
+	
+							       
+		config[$(this).attr('data-var')]=Number($(this).val());
+							       restart();
+							       
+            }).each(function(){
+	   $(this).val(config[$(this).attr('data-var')]);						       
         });
       
-      
-            
+        });    
         
   </script>
 
