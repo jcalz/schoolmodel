@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>School model ss</title>
+  <title>School model</title>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <script src="js/util.js">
   </script>
   <style>
+
+
       .school, .charter, .resources {
       width: 1000px;
       border: 2px solid black;
@@ -16,6 +18,7 @@
       .school, .charter {
            height: 50px;
       }
+     
       .resources {
       font-size: 15px;
       height: auto;
@@ -47,15 +50,44 @@
       border: 2px solid black;
       background-color: white;
       margin: 1px;
+      position: relative;
+      font-family: sans-serif;
       }
-      .student {
-      background: url('img/person.svg') no-repeat;
+      .section .student {
+      background: url('img/person.svg');
       background-size: 120% 120%;
+      background-position: -3px -3px;
       border: none;
-      height: 15px;
-      width: 10px;
-      float: left;
-      margin: 0.5px;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      display: block;
+      }
+       .section .grade {
+       font-size: 10px;
+       margin-top: -7%;
+       text-align: left;
+       left: 0;
+       top: 0;
+       position: absolute;
+      }
+      .section .size {
+       font-size: 20px;
+       clear: both;
+       display: inline-block;
+       text-align: center;
+       font-weight: bold;
+       color: white;
+       position: absolute;
+       margin: auto;
+       text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+       bottom: 1%;
+       width: 100%;
+       
       }
       .resource {
       float: right;
@@ -235,12 +267,19 @@
 		}						  
 
  	};
+        var getNumberOfSections = function() {
+            var sec = 0;
+            for (var g=0; g<numberOfStudents.length; g++) {
+              sec += Math.ceil(numberOfStudents[g]/config.MAXIMUM_CLASS_SIZE);
+            }
+            return sec;
+        }
       	return {
       	  getName: function(){return "Charter School";},
       	  getNumberOfStudents: getNumberOfStudents,
       	  takeStudentsFromDistrict: takeStudentsFromDistrict,
-      	  getNumberOfSections: function(){return Math.ceil(getNumberOfStudents()/config.MAXIMUM_CLASS_SIZE);},
-
+      	  getNumberOfSections: getNumberOfSections,
+	  getNumberOfStudentsInGrade: function(g){return numberOfStudents[g];}	
       	};
       	
       }
@@ -493,7 +532,26 @@
           text += schoolObject.getNumberOfSections()+' sections\n';
           text += schoolObject.getNumberOfStudents()+' students\n';
                    $(infoElem).text(text);
-      
+
+          schoolElem.find('.section').detach(); // obliterate old sections
+          var sectionTemplate = $('<div class="section"><span class="grade"></span><span class="student"><span class="size"></span></span></div>');
+          for (var g=0; g<9; g++) {
+            var numStudents = schoolObject.getNumberOfStudentsInGrade(g);
+            var numSections = Math.ceil(numStudents/config.MAXIMUM_CLASS_SIZE);
+            var avgClassSize = numStudents/numSections;
+            for (var i=0; i<numSections; i++) {
+	      var classSize = Math.floor((i+1)*avgClassSize)-Math.floor(i*avgClassSize);
+              var gradeName = gradeNames[g];
+	      var newSection = sectionTemplate.clone();
+	      newSection.find('.grade').text(gradeName);
+	      newSection.find('.size').text(classSize);
+              newSection.appendTo(schoolElem);
+            }
+          }
+
+					     
+
+          /*
           var sectionElems = schoolElem.find('.section');
           var numSections =  schoolObject.getNumberOfSections();
           if (numSections < sectionElems.length) {
@@ -507,8 +565,7 @@
       
           sectionElems = schoolElem.find('.section');
           
-      
-      
+            
           var studentElems = schoolElem.find('.student');
           var numStudentIcons = Math.ceil(schoolObject.getNumberOfStudents()/STUDENTS_PER_ICON); // ceil? floor?
           if (numStudentIcons < studentElems.length) {
@@ -544,7 +601,7 @@
              }
       
       
-          
+          */
           
       
         
