@@ -474,7 +474,7 @@
 	   var resourceElem = $(district.resourceElement);
 	   resourceElem.html('');
 
-	   var resources = district.getResources();
+	   var resources = district.getResources().slice();
 	   // organize by type
 	   resources.sort(function(a,b){
 	     var ai = a.type.typeId;
