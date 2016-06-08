@@ -78,13 +78,8 @@
        display: inline-block;
        text-align: center;
        font-weight: bold;
-       color: white;
        position: absolute;
        margin: auto;
-       text-shadow: -1px -1px 0 #000,  
-    1px -1px 0 #000,
-   -1px  1px 0 #000,
-    1px  1px 0 #000;
        bottom: 1%;
        width: 100%;
        
@@ -203,11 +198,30 @@
       makeResourceType('counselor','Counselor Educators');
       makeResourceType('reading','Reading Teachers');
 
+      var ensureNumberOfElements = function(desiredNumber, parentElem, childSelector, newChildHtml) {
+       
+        var elems = $(parentElem).find(childSelector);
+
+        // trim
+        if (elems.length > desiredNumber) {
+          elems.slice(desiredNumber).remove();
+        } else if (elems.length < desiredNumber) {
+	  var newElems = $('');
+          for (var i=elems.length; i < desiredNumber; i++) {
+            newElems=newElems.add(newChildHtml);
+	  }
+	  $(parentElem).append(newElems);				 
+        }
+     
+	return $(parentElem).find(childSelector);			  
+
+     }
+
+
       var getResource = function(typeId) {
         return {'type':resourceTypes[typeId]};
       };
 
-	
       var getGrade = function(schoolName, initialNumberOfStudents, grade) {
         var name = schoolName ? schoolName : "unnamed grade";
         grade = grade ? grade : 0;
@@ -306,7 +320,8 @@
       }
       
       var gradeNames = ['K','1','2','3','4','5','6','7','8'];
-      
+      var gradeNameHtml = ['K','1<sup>st</sup>','2<sup>nd</sup>','3<sup>rd</sup>','4<sup>th</sup>','5<sup>th</sup>','6<sup>th</sup>','7<sup>th</sup>','8<sup>th</sup>']
+
       var getDistrict = function(numberOfSchools, initialNumberOfStudentsPerSchool) {
         var getNumberOfSchools = function(){return numberOfSchools;}
         var schools = [];
@@ -430,19 +445,11 @@
       
 	
        function setup(){
-        
-        var districtSchoolElems = $('#district .school');
-	var nsd = config.NUMBER_OF_SCHOOLS_IN_DISTRICT;
-	if (nsd < districtSchoolElems.length) {
-            districtSchoolElems.slice(nsd).detach();
-          } else if (nsd > districtSchoolElems.length) {
-            var schoolsElem = $('#district .schools');
-            var newSchool = $('<div>').addClass('school');
-            for (var i=districtSchoolElems.length; i<nsd; i++) {
-             newSchool.clone().appendTo(schoolsElem);
-             }
-          }
-        var districtSchoolElems = $('#district .school');
+
+      var districtSchoolElems = ensureNumberOfElements (config.NUMBER_OF_SCHOOLS_IN_DISTRICT, '#district .schools', '.school', '<div class="school"></div>');
+
+
+
 
         district = getDistrict(config.NUMBER_OF_SCHOOLS_IN_DISTRICT, Math.round(config.INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT/config.NUMBER_OF_SCHOOLS_IN_DISTRICT));
         district.schools.forEach(function(x,i){x.element=districtSchoolElems[i];});
@@ -533,77 +540,24 @@
           text += schoolObject.getNumberOfStudents()+' students\n';
                    $(infoElem).text(text);
 
-          schoolElem.find('.section').detach(); // obliterate old sections
-          var sectionTemplate = $('<div class="section"><span class="grade"></span><span class="student"><span class="size"></span></span></div>');
-          for (var g=0; g<9; g++) {
+      
+
+      var sectionElems = ensureNumberOfElements (schoolObject.getNumberOfSections(), schoolElem, '.section', '<div class="section"><span class="grade"></span><span class="size"></span></div>');
+
+	  var s = 0;				     
+	  for (var g=0; g<9; g++) {
             var numStudents = schoolObject.getNumberOfStudentsInGrade(g);
             var numSections = Math.ceil(numStudents/config.MAXIMUM_CLASS_SIZE);
             var avgClassSize = numStudents/numSections;
             for (var i=0; i<numSections; i++) {
 	      var classSize = Math.floor((i+1)*avgClassSize)-Math.floor(i*avgClassSize);
-              var gradeName = gradeNames[g];
-	      var newSection = sectionTemplate.clone();
-	      newSection.find('.grade').text(gradeName);
-	      newSection.find('.size').text(classSize);
-              newSection.appendTo(schoolElem);
+	      var sectionElem = $(sectionElems[s]);
+	      sectionElem.find('.grade').html(gradeNameHtml[g]);
+	      sectionElem.find('.size').text(classSize);
+              s++;
             }
-          }
-
-					     
-
-          /*
-          var sectionElems = schoolElem.find('.section');
-          var numSections =  schoolObject.getNumberOfSections();
-          if (numSections < sectionElems.length) {
-            sectionElems.slice(numSections).detach();
-          } else if (numSections > sectionElems.length) {
-            var newSection = $('<div>').addClass('section');
-            for (var i=sectionElems.length; i<numSections; i++) {
-              newSection.clone().appendTo(schoolElem);
-            }
-          }
-      
-          sectionElems = schoolElem.find('.section');
-          
-            
-          var studentElems = schoolElem.find('.student');
-          var numStudentIcons = Math.ceil(schoolObject.getNumberOfStudents()/STUDENTS_PER_ICON); // ceil? floor?
-          if (numStudentIcons < studentElems.length) {
-            studentElems.slice(numStudentIcons).detach();
-          } else if (numStudentIcons > studentElems.length) {
-            var newStudent = $('<div>').addClass('student');
-            for (var i=studentElems.length; i<numStudentIcons; i++) {
-             newStudent.clone().appendTo(sectionElems[numSections-1]);
-             }
-          }
-          studentElems = schoolElem.find('.student');
-          // distribute students in sections
-      
-      
-      
-          var studentIconsPerSection = numStudentIcons / numSections;
-          var sectionNum = 0;
-          var studentsInThisSection = 0;
-         
-          for (var i=0; i<numStudentIcons; i++) {
-      
-            while (studentsInThisSection >= studentIconsPerSection) {
-              sectionNum++;
-              studentsInThisSection -= studentIconsPerSection;
-            }
-            studentsInThisSection++;
-      
-            var stu = studentElems[i]
-            var sec = sectionElems[sectionNum];
-            $(stu).detach();
-             $(sec).append(stu); 
-      
-             }
-      
-      
-          */
-          
-      
+          }				     
+      					     
         
         }
       
