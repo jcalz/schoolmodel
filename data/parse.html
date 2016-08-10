@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://fastcdn.org/Papa-Parse/4.1.2/papaparse.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+var schoolsDeferred = $.Deferred();
+var districtsDeferred = $.Deferred();
+Papa.parse("schools.csv",{download:true, header:true, skipEmptyLines:true, complete: processResults(schoolsDeferred,['schoolId','schoolName','districtId'])});
+Papa.parse("districts.csv",{download:true, header:true, skipEmptyLines:true, complete: processResults(districtsDeferred,['districtId','districtName'])});
+$.when(schoolsDeferred, districtsDeferred).done(function(schools,districts){
+  var grades = ['K','1','2','3','4','5','6','7','8'];
+  
+  schools.forEach(function(school){
+    // calculate number of students per school
+	school.totalEnrollment = grades.reduce(function(acc, g){return acc + school['enrollment'+g];},0);	
+	// strip district name off school name
+	var name = school.schoolName;
+	var loc = name.indexOf(' - ');
+	if (loc>=0) {school.schoolName = name.substring(loc+3);}
+  });
+  
+  // get rid of schools with no students
+  schools = schools.filter(function(school){return school.totalEnrollment > 0;});
+  
+  var schoolsByDistrict = {};
+  schools.forEach(function(school){
+    var districtId = school.districtId;
+	delete school.districtId;
+    if (!(districtId in schoolsByDistrict)) schoolsByDistrict[districtId]=[];
+	schoolsByDistrict[districtId].push(school);
+
+	// assume that if the average class size is very strange that it is approximately 20?
+    school.correctedAverageClassSize = school.averageClassSize
+	if (isNaN(school.averageClassSize) || school.averageClassSize<10) {
+		school.correctedAverageClassSize = 20;
+	}
+	
+	grades.forEach(function(g){
+	    var enrollment = school['enrollment'+g];		
+		var numSections = Math.round(school['enrollment'+g]/school.correctedAverageClassSize);
+		// need at least one section if there are any students... note that increasing the number of sections from 0 to 1
+		// is likely to reduce the actual class size
+		if ((enrollment>0 && numSections<1)) numSections=1;
+		school['sections'+g]=numSections;
+	});
+
+	school.totalSections = grades.reduce(function(acc,g){return acc + school['sections'+g];},0);
+	school.actualAverageClassSize = school.totalEnrollment/school.totalSections;
+	
+	});
+
+  //var districtData = [];
+  districts.forEach(function(district){
+	district.schools = schoolsByDistrict[district.districtId];
+    if (district.schools==undefined) {
+		  district.schools=[];
+	}	
+	// find the actual maximum class size for a section in the district and use it as a cap for class size
+	district.maxAllowableClassSize = Math.ceil(Math.max.apply(null,grades.map(function(g){
+	  return Math.max.apply(null, district.schools.map(function(school){
+		var classSize = school['enrollment'+g]/school['sections'+g];
+		return (isNaN(classSize) ? 0 : classSize);
+	  }));
+	})));
+	
+  });
+  
+  // get rid of districts with no schools
+  districts = districts.filter(function(district){return district.schools.length>0;});
+  
+  // eliminate Charter districts if there are any
+  districts = districts.filter(function(district){
+    return (!/charter/i.test(district.districtName));
+  });
+  
+  districtsObject = {};
+  districts.forEach(function(d){var id = d.districtId; delete d.districtId; districtsObject[id]=d;});
+  
+  saveAsJson(districtsObject, 'districts.json');
+  
+});
+
+function processResults(deferred,stringPropertyNames){return function(results){
+	var stringPropertyNamesObj = {};
+	stringPropertyNames.forEach(function(prop){stringPropertyNamesObj[prop]=true;});
+	var ret = results.data.map(function(row){
+	    var newRow = {};
+		Object.keys(row).forEach(function(key){
+		  var val = row[key];
+		  if (!stringPropertyNamesObj[key]) {
+		    val = parseFloat(val);
+		  }
+		  newRow[key]=val;
+		});
+		return newRow;
+	});
+	deferred.resolve(ret);
+};}
+
+function saveAsJson(data, filename) {
+
+  var a = document.createElement('a');
+  a.style='display:none';
+  var url = window.URL.createObjectURL(new Blob([JSON.stringify(data)], {type:'application/json'}));
+  a.download = filename;
+  a.href = url;
+  document.body.appendChild(a);
+  a.click();
+  window.setTimeout(0,function(){
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);  
+	});
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

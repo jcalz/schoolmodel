@@ -1,0 +1,1862 @@
+schoolId,schoolName,districtId,enrollmentK,enrollment1,enrollment2,enrollment3,enrollment4,enrollment5,enrollment6,enrollment7,enrollment8,averageClassSize
+03480285,Worcester - University Pk Campus School,34800000,0,0,0,0,0,0,0,44,44,0
+03480280,Worcester - Vernon Hill School,34800000,79,71,67,66,63,55,76,0,0,0
+03480026,Worcester - Wawecus Road School,34800000,17,24,24,19,24,25,19,0,0,0
+03480260,Worcester - West Tatnuck,34800000,44,48,42,43,38,34,46,0,0,0
+03480030,Worcester - Woodland Academy,34800000,113,107,83,100,71,66,58,0,0,0
+03480225,Worcester - Worcester Arts Magnet School,34800000,57,70,61,46,58,43,44,0,0,0
+03480420,Worcester - Worcester East Middle,34800000,0,0,0,0,0,0,84,355,349,0
+03480605,Worcester - Worcester Technical High,34800000,0,0,0,0,0,0,0,0,0,0
+03500010,Wrentham - Charles E Roderick,35000000,0,0,0,0,133,163,161,0,0,0
+03500003,Wrentham - Delaney,35000000,110,130,132,148,0,0,0,0,0,0
+07350515,North Middlesex - Peter Fitzpatrick School,07350000,0,0,0,0,0,0,0,0,0,0
+02290005,Peabody - Captain Samuel Brown,02290000,51,61,54,69,64,59,0,0,0,0
+07550515,Ralph C Mahar - Pathways Early College Innovation School,07550000,0,0,0,0,0,0,0,0,0,0
+07550525,Ralph C Mahar - The Gateway to College,07550000,0,0,0,0,0,0,0,0,0,0
+01090005,Gosnold - Cuttyhunk Elementary,01090000,0,0,0,0,1,1,0,0,0,2
+02290007,Peabody - John E Burke,02290000,41,48,38,55,51,53,0,0,0,2
+02290035,Peabody - South Memorial,02290000,66,66,59,61,66,55,0,0,0,2.8
+01600085,Lowell - Laura Lee Therapeutic Day School,01600000,0,2,1,0,4,2,3,4,0,2.9
+01140030,Greenfield - Green River,01140000,0,0,0,0,1,2,3,3,0,3
+02290045,Peabody - West Memorial,02290000,26,39,33,30,52,47,0,0,0,3
+00790515,Dracut - Parker Avenue School,00790000,0,0,0,0,0,0,0,0,0,3.2
+02290015,Peabody - Center,02290000,65,69,80,66,55,75,0,0,0,3.2
+03100310,Wareham - West Academy,03100000,0,0,0,0,0,0,0,0,4,3.2
+01280073,Haverhill - TEACH,01280000,0,0,3,0,4,2,2,2,5,3.6
+01760510,Medford - Curtis-Tufts,01760000,0,0,0,0,0,0,0,0,0,3.7
+02810345,Springfield - Springfield Public Day Middle School,02810000,0,0,0,0,0,0,16,17,25,3.9
+02290016,Peabody - John E. McCarthy,02290000,39,35,33,35,38,31,0,0,0,4
+02580515,Salem - Salem Prep High School,02580000,0,0,0,0,0,0,0,0,0,4.2
+07650015,Southern Berkshire - Monterey,07650000,6,0,0,0,0,0,0,0,0,4.2
+02740410,Somerville - Next Wave Junior High,02740000,0,0,0,0,0,0,2,6,12,4.5
+00930030,Everett - Devens School,00930000,0,1,3,2,1,1,1,3,7,4.6
+02810550,Springfield - Springfield Public Day High School,02810000,0,0,0,0,0,0,0,0,0,4.7
+01210005,Hancock - Hancock Elementary,01210000,5,5,6,4,3,4,6,0,0,4.9
+01630080,Lynn - William R Fallon,01630000,0,4,3,9,8,9,7,0,0,5.1
+00350036,Boston - Carter Developmental Center,00350000,0,0,0,0,0,0,0,1,5,5.3
+00440080,Brockton - B B Russell Alternative School,00440000,0,0,0,0,0,0,0,6,6,5.4
+02810560,Springfield - Liberty Preparatory Academy,02810000,0,0,0,0,0,0,0,0,0,5.4
+00350750,Boston - Horace Mann School for the Deaf,00350000,6,6,9,3,7,7,4,11,7,5.5
+01490537,Lawrence - School for Exceptional Studies,01490000,0,5,17,10,15,16,20,12,19,5.5
+01600320,Lowell - Leblanc Therapeutic Day School,01600000,0,0,0,0,0,0,0,0,7,5.5
+00610021,Chicopee - Chicopee Academy,00610000,0,0,0,0,0,0,2,6,12,5.8
+00440400,Brockton - Goddard Alternative School,00440000,0,0,0,0,1,1,4,4,4,5.9
+07500007,Pioneer Valley - Pearl E Rhodes Elementary,07500000,9,5,2,3,8,5,5,0,0,5.9
+03320515,West Springfield - 21st Century Skills Academy,03320000,0,0,0,0,0,0,0,0,0,6
+02010510,New Bedford - Trinity Day Academy,02010000,0,0,0,0,0,0,0,2,6,6.1
+00950326,Fall River - Stone Therapeutic Day Middle School,00950000,0,0,0,0,0,0,9,10,13,6.2
+06730001,Groton-Dunstable - Boutwell School,06730000,0,0,0,0,0,0,0,0,0,6.2
+01280033,Haverhill - Haverhill Alternative School,01280000,0,0,0,0,0,0,1,6,9,6.4
+01530515,Leominster - Leominster Center for Excellence,01530000,0,0,0,0,0,0,0,0,0,6.4
+00140005,Ashland - William Pittaway Elementary,00140000,0,0,0,0,0,0,0,0,0,6.5
+02630010,Savoy - Emma L Miller Elementary School,02630000,7,9,4,4,3,8,0,0,0,6.5
+01000001,Framingham - Juniper Hill School,01000000,0,0,0,0,0,0,0,0,0,6.7
+01630525,Lynn - Fecteau-Leary Junior/Senior High School,01630000,0,0,0,0,0,0,0,7,14,6.7
+07170015,Mohawk Trail - Heath Elementary,07170000,10,2,5,6,1,2,13,0,0,6.7
+00950055,Fall River - ACESE,00950000,0,0,0,2,4,7,0,0,0,6.8
+07650030,Southern Berkshire - South Egremont,07650000,8,5,0,0,0,0,0,0,0,6.8
+02810005,Springfield - Springfield Public Day Elementary School,02810000,1,7,10,13,16,8,0,0,0,6.8
+00970510,Fitchburg - Goodrich Academy,00970000,0,0,0,0,0,0,0,0,0,6.9
+00350363,Boston - William McKinley,00350000,2,5,12,12,16,32,28,27,29,7.1
+02010515,New Bedford - Whaling City Junior/Senior High School,02010000,0,0,0,0,0,0,2,5,17,7.5
+02260305,Oxford - Project C.O.F.F.E.E.,02260000,0,0,0,0,0,0,0,2,8,7.8
+06350010,Central Berkshire - Berkshire Trail Elementary,06350000,6,12,4,11,7,13,0,0,0,7.9
+02290510,Peabody - Peabody Veterans Memorial High,02290000,0,0,0,0,0,0,0,0,0,7.9
+00250510,Bellingham - Primavera Junior/Senior High School,00250000,0,0,0,0,0,0,0,0,6,8
+00350066,Boston - Dante Alighieri Montessori School,00350000,14,16,12,9,6,0,0,0,0,8.1
+02580001,Salem - Salem Early Childhood,02580000,2,0,0,0,0,0,0,0,0,8.1
+03100315,Wareham - Wareham Cooperative Junior/Senior High School,03100000,0,0,0,0,0,0,0,3,7,8.1
+01760605,Medford - Medford Vocational Technical High,01760000,0,0,0,0,0,0,0,0,0,8.3
+00440515,Brockton - Brockton Champion High School,00440000,0,0,0,0,0,0,0,0,0,8.5
+02740510,Somerville - Full Circle High School,02740000,0,0,0,0,0,0,0,0,0,8.5
+00160515,Attleboro - Attleboro Community Academy,00160000,0,0,0,0,0,0,0,0,0,8.9
+02810360,Springfield - Balliet Middle School,02810000,0,0,0,0,0,0,6,12,34,8.9
+07700605,Tantasqua - Tantasqua Regional Vocational,07700000,0,0,0,0,0,0,0,0,0,8.9
+00490065,Cambridge - John M Tobin,00490000,38,40,39,29,29,32,0,0,0,9
+00950335,Fall River - Resiliency Middle School,00950000,0,0,0,0,0,0,0,21,18,9
+00350518,Boston - Community Academy,00350000,0,0,0,0,0,0,0,0,0,9.1
+02810570,Springfield - Springfield High School,02810000,0,0,0,0,0,0,0,0,0,9.4
+01490536,Lawrence - High School Learning Center,01490000,0,0,0,0,0,0,0,0,0,9.5
+00980005,Florida - Abbott Memorial,00980000,7,10,13,9,4,11,6,11,11,9.6
+01700006,Marlborough - Early Childhood Center,01700000,0,0,0,0,0,0,0,0,0,9.6
+01390003,Hopkinton - Hopkinton Pre-School,01390000,0,0,0,0,0,0,0,0,0,9.7
+01280045,Haverhill - Moody,01280000,0,0,0,0,0,0,0,0,0,9.8
+07500009,Pioneer Valley - Warwick Community School,07500000,10,3,8,11,7,1,10,0,0,9.8
+02430005,Quincy - Amelio Della Chiesa Early Childhood Center,02430000,0,0,0,0,0,0,0,0,0,9.8
+03360003,Weymouth - Johnson Early Childhood Center,03360000,0,0,0,0,0,0,0,0,0,9.8
+04150505,Amesbury Academy Charter Public (District) - Amesbury Academy Charter Public School,04150000,0,0,0,0,0,0,0,0,0,9.9
+07650018,Southern Berkshire - New Marlborough Central,07650000,17,13,18,14,13,0,0,0,0,9.9
+00950325,Fall River - Resiliency Preparatory School,00950000,0,0,0,0,0,0,0,0,0,10
+02930525,Taunton - Taunton Alternative High School,02930000,0,0,0,0,0,0,0,0,0,10
+01530005,Leominster - Lincoln School,01530000,0,0,0,0,0,0,0,0,0,10.2
+07740010,Up-Island Regional - Chilmark Elementary,07740000,9,10,8,11,12,12,0,0,0,10.3
+01500505,Lee - Lee Middle/High School,01500000,0,0,0,0,0,0,0,51,51,10.6
+02480520,Revere - Seacoast School,02480000,0,0,0,0,0,0,0,0,0,10.6
+03260013,Westford - Millennium Elementary,03260000,0,0,0,0,0,0,0,0,0,10.6
+07650505,Southern Berkshire - Mt Everett Regional,07650000,0,0,0,0,0,0,0,55,52,10.8
+01520505,Lenox - Lenox Memorial High,01520000,0,0,0,0,0,0,59,61,49,10.9
+02090505,North Adams - Drury High,02090000,0,0,0,0,0,0,0,0,98,10.9
+02810565,Springfield - Early College High School,02810000,0,0,0,0,0,0,0,0,0,10.9
+00490090,Cambridge - Fletcher/Maynard Academy,00490000,42,40,45,22,30,30,0,0,0,11.1
+00440520,Brockton - Edison Academy,00440000,0,0,0,0,0,0,0,0,0,11.2
+01270505,Hatfield - Smith Academy,01270000,0,0,0,0,0,0,0,31,38,11.2
+03250003,Westfield - Fort Meadow Early Childhood Center,03250000,0,0,0,0,0,0,0,0,0,11.4
+02150505,North Brookfield - North Brookfield High,02150000,0,0,0,0,0,0,0,51,49,11.5
+01370605,Holyoke - Wm J Dean Vocational Technical High,01370000,0,0,0,0,0,0,0,0,0,11.6
+08600605,Pathfinder Regional Vocational Technical - Pathfinder Vocational Technical,08600000,0,0,0,0,0,0,0,0,0,11.6
+00050405,Agawam - Agawam Junior High,00050000,0,0,0,0,0,0,0,300,317,11.7
+01420505,Hull - Hull High,01420000,0,0,0,0,0,0,0,0,0,11.7
+01530003,Leominster - Bennett,01530000,0,0,0,0,0,0,0,0,0,11.7
+02270505,Palmer - Palmer High,02270000,0,0,0,0,0,0,0,0,123,11.7
+02420020,Provincetown - Provincetown Schools,02420000,11,15,5,6,14,8,15,8,10,11.7
+01070025,Gloucester - Milton L Fuller Elementary,01070000,0,0,0,0,0,0,0,0,0,11.8
+01720505,Mashpee - Mashpee High,01720000,0,0,0,0,0,0,0,0,0,11.8
+00050003,Agawam - Agawam Early Childhood Center,00050000,0,0,0,0,0,0,0,0,0,11.9
+00230505,Bedford - Bedford High,00230000,0,0,0,0,0,0,0,0,0,11.9
+00380005,Boxford - Harry Lee Cole,00380000,81,82,87,0,0,0,0,0,0,11.9
+02390003,Plymouth - Mount Pleasant,02390000,0,0,0,0,0,0,0,0,0,11.9
+06740505,Gill-Montague - Turners Fall High,06740000,0,0,0,0,0,0,0,0,0,12
+08230605,Greater Lawrence Regional Vocational Technical - Gr Lawrence Regional Vocational Technical,08230000,0,0,0,0,0,0,0,0,0,12
+07000505,Martha's Vineyard - Martha's Vineyard Regional High,07000000,0,0,0,0,0,0,0,0,0,12
+01840003,Middleton - Fuller Meadow,01840000,79,96,81,0,0,0,0,0,0,12
+07170505,Mohawk Trail - Mohawk Trail Regional High,07170000,0,0,0,0,0,0,0,66,95,12
+07150505,Mount Greylock - Mt Greylock Regional High,07150000,0,0,0,0,0,0,0,97,106,12
+02120020,North Attleborough - North Attleborough Early Learning Center,02120000,0,0,0,0,0,0,0,0,0,12
+04060705,Northampton-Smith Vocational Agricultural - Smith Vocational and Agricultural High,04060000,0,0,0,0,0,0,0,0,0,12
+00490035,Cambridge - King Open,00490000,61,47,51,46,39,43,0,0,0,12.1
+00350537,Boston - Madison Park High,00350000,0,0,0,0,0,0,0,0,0,12.2
+00490030,Cambridge - Martin Luther King Jr.,00490000,53,46,45,32,26,27,0,0,0,12.2
+01030515,Gardner - Gardner Academy for Learning and Technology,01030000,0,0,0,0,0,0,0,0,0,12.2
+04930505,Phoenix Charter Academy - Phoenix Charter Academy,04930000,0,0,0,0,0,0,0,0,0,12.2
+08150605,Cape Cod Regional Vocational Technical - Cape Cod Region Vocational Technical,08150000,0,0,0,0,0,0,0,0,0,12.3
+02360510,Pittsfield - Taconic High,02360000,0,0,0,0,0,0,0,0,0,12.3
+02810060,Springfield - Margaret C Ells,02810000,50,41,0,0,0,0,0,0,0,12.3
+04740505,The Sizer School: A North Central Charter Essential (District) - The Sizer School: A North Central Charter Essential School,04740000,0,0,0,0,0,0,0,71,79,12.3
+07200505,Narragansett - Narragansett Regional High,07200000,0,0,0,0,0,0,0,0,0,12.4
+02100410,Northampton - John F Kennedy Middle School,02100000,0,0,0,0,0,0,194,192,216,12.4
+04790505,Pioneer Valley Performing Arts Charter Public - Pioneer Valley Performing Arts Charter Public School,04790000,0,0,0,0,0,0,0,67,67,12.4
+00160008,Attleboro - Early Learning Center,00160000,0,0,0,0,0,0,0,0,0,12.5
+00460060,Brookline - The Lynch Center,00460000,0,0,0,0,0,0,0,0,0,12.5
+00490045,Cambridge - Morse,00490000,49,38,45,38,42,38,0,0,0,12.5
+01490001,Lawrence - Rollins Early Childhood Center,01490000,94,0,0,0,0,0,0,0,0,12.5
+08180605,Franklin County Regional Vocational Technical - Franklin County Technical,08180000,0,0,0,0,0,0,0,0,0,12.6
+01050505,Georgetown - Georgetown High School,01050000,0,0,0,0,0,0,0,0,0,12.6
+02810620,Springfield - Roger L. Putnam Vocational Technical Academy,02810000,0,0,0,0,0,0,0,0,0,12.6
+03100505,Wareham - Wareham Senior High,03100000,0,0,0,0,0,0,0,0,0,12.6
+06050505,Amherst-Pelham - Amherst Regional High,06050000,0,0,0,0,0,0,0,0,0,12.7
+00230305,Bedford - John Glenn Middle,00230000,0,0,0,0,0,0,145,177,180,12.7
+00350413,Boston - Boston Middle School Academy,00350000,0,0,0,0,0,0,0,1,7,12.7
+02960005,Tisbury - Tisbury Elementary,02960000,37,40,41,35,37,34,38,34,30,12.7
+03310505,Westport - Westport High,03310000,0,0,0,0,0,0,0,0,18,12.7
+35070505,City on a Hill Charter Public School New Bedford (District) - City on a Hill Charter Public School New Bedford,35070000,0,0,0,0,0,0,0,0,0,12.8
+06740310,Gill-Montague - Great Falls Middle,06740000,0,0,0,0,0,0,61,85,75,12.8
+06850005,Hawlemont - Hawlemont Regional,06850000,15,10,10,13,6,11,19,0,0,12.8
+08300605,Minuteman Regional Vocational Technical - Minuteman Regional High,08300000,0,0,0,0,0,0,0,0,0,12.8
+02260505,Oxford - Oxford High,02260000,0,0,0,0,0,0,0,0,0,12.8
+02810320,Springfield - John J Duggan Middle,02810000,0,0,0,0,0,0,177,170,188,12.8
+00350579,Boston - Urban Science Academy,00350000,0,0,0,0,0,0,0,0,0,12.9
+00490040,Cambridge - Kennedy-Longfellow,00490000,55,46,32,21,34,31,0,0,0,12.9
+00500010,Canton - Rodman Early Childhood Center,00500000,0,0,0,0,0,0,0,0,0,12.9
+06700505,Frontier - Frontier Regional,06700000,0,0,0,0,0,0,0,117,106,12.9
+03430040,Winchendon - Memorial,03430000,87,103,109,0,0,0,0,0,0,12.9
+03430010,Winchendon - Winchendon PreSchool Program,03430000,0,0,0,0,0,0,0,0,0,12.9
+00350548,Boston - Boston Adult Academy,00350000,0,0,0,0,0,0,0,0,0,13
+00350167,Boston - UP Academy Holland,00350000,112,141,122,114,109,75,0,0,0,13
+00460002,Brookline - Brookline Early Education Program at Putterham,00460000,0,0,0,0,0,0,0,0,0,13
+06720505,Gateway - Gateway Regional High,06720000,0,0,0,0,0,0,0,0,0,13
+07120515,Monomoy Regional School District - Monomoy Regional High School,07120000,0,0,0,0,0,0,0,0,158,13
+08550605,Old Colony Regional Vocational Technical - Old Colony Regional Vocational Technical,08550000,0,0,0,0,0,0,0,0,0,13
+02430040,Quincy - Atherton Hough,02430000,44,40,38,43,58,42,0,0,0,13
+08730605,South Shore Regional Vocational Technical - So Shore Vocational Technical High,08730000,0,0,0,0,0,0,0,0,0,13
+03070002,Walpole - Daniel Feeney Preschool Center,03070000,0,0,0,0,0,0,0,0,0,13
+04370505,City on a Hill Charter Public School Circuit Street (District) - City on a Hill Charter Public School Circuit Street,04370000,0,0,0,0,0,0,0,0,0,13.1
+00930003,Everett - Adams School,00930000,0,0,0,0,0,0,0,0,0,13.1
+01380003,Hopedale - Park Street School,01380000,0,0,0,0,0,0,0,0,0,13.1
+01530605,Leominster - Center For Technical Education Innovation,01530000,0,0,0,0,0,0,0,0,0,13.1
+02810530,Springfield - Springfield High School of Science and Technology,02810000,0,0,0,0,0,0,0,0,0,13.1
+00350655,Boston - Lyon Upper 9-12,00350000,0,0,0,0,0,0,0,0,0,13.2
+00640505,Clinton - Clinton Senior High,00640000,0,0,0,0,0,0,0,0,0,13.2
+06550505,Dover-Sherborn - Dover-Sherborn Regional High,06550000,0,0,0,0,0,0,0,0,0,13.2
+02430090,Quincy - Snug Harbor Community School,02430000,42,60,46,51,58,43,0,0,0,13.2
+03370005,Whately - Whately Elementary,03370000,18,17,21,19,17,18,15,0,0,13.2
+08850605,Whittier Regional Vocational Technical - Whittier Regional Vocational,08850000,0,0,0,0,0,0,0,0,0,13.2
+00250003,Bellingham - Bellingham Early Childhood Center,00250000,0,0,0,0,0,0,0,0,0,13.3
+01170505,Hadley - Hopkins Academy,01170000,0,0,0,0,0,0,0,42,57,13.3
+01490025,Lawrence - Guilmette Middle School,01490000,0,0,0,0,0,138,118,133,126,13.3
+07500505,Pioneer Valley - Pioneer Valley Regional,07500000,0,0,0,0,0,0,0,73,87,13.3
+02520510,Rockport - Rockport High,02520000,0,0,0,0,0,0,0,0,0,13.3
+08290605,South Middlesex Regional Vocational Technical - Joseph P Keefe Technical High School,08290000,0,0,0,0,0,0,0,0,0,13.3
+03180005,Wellfleet - Wellfleet Elementary,03180000,14,9,30,12,17,25,0,0,0,13.3
+08210605,Greater Fall River Regional Vocational Technical - Diman Regional Vocational Technical High,08210000,0,0,0,0,0,0,0,0,0,13.4
+01140505,Greenfield - Greenfield High,01140000,0,0,0,0,0,0,0,0,120,13.4
+06600505,Nauset - Nauset Regional High,06600000,0,0,0,0,0,0,0,0,0,13.4
+07350002,North Middlesex - Squannacook Early Childhood Center,07350000,0,0,0,0,0,0,0,0,0,13.4
+02140505,Northbridge - Northbridge High,02140000,0,0,0,0,0,0,0,0,0,13.4
+02390515,Plymouth - Plymouth South High,02390000,0,0,0,0,0,0,0,0,0,13.4
+02780505,South Hadley - South Hadley High,02780000,0,0,0,0,0,0,0,0,0,13.4
+00400005,Braintree - Hollis,00400000,27,67,76,74,86,98,0,0,0,13.5
+00850005,Eastham - Eastham Elementary,00850000,28,23,39,23,24,37,0,0,0,13.5
+00990505,Foxborough - Foxborough High,00990000,0,0,0,0,0,0,0,0,0,13.5
+01700505,Marlborough - Marlborough High,01700000,0,0,0,0,0,0,0,0,0,13.5
+08510605,Northern Berkshire Regional Vocational Technical - Charles McCann Vocational Technical,08510000,0,0,0,0,0,0,0,0,0,13.5
+07550505,Ralph C Mahar - Ralph C Mahar Regional,07550000,0,0,0,0,0,0,0,125,143,13.5
+03430515,Winchendon - Murdock High School,03430000,0,0,0,0,0,0,0,0,0,13.5
+07630505,Somerset Berkley Regional School District - Somerset Berkley Regional High School,07630000,0,0,0,0,0,0,0,0,0,13.6
+#VALUE!,West Boylston - West Boylston Junior/Senior High,03220000,0,0,0,0,0,0,77,80,82,13.6
+00350535,Boston - The English High,00350000,0,0,0,0,0,0,0,0,0,13.7
+00610001,Chicopee - Szetela Early Childhood Center,00610000,0,0,0,0,0,0,0,0,0,13.7
+01440505,Ipswich - Ipswich High,01440000,0,0,0,0,0,0,0,0,0,13.7
+02390047,Plymouth - West Elementary,02390000,43,60,76,70,51,64,0,0,0,13.7
+02980010,Topsfield - Steward Elementary,02980000,79,86,68,76,0,0,0,0,0,13.7
+03300505,Weston - Weston High,03300000,0,0,0,0,0,0,0,0,0,13.7
+06180505,Berkshire Hills - Monument Mt Regional High,06180000,0,0,0,0,0,0,0,0,0,13.8
+00350507,Boston - Boston International High School,00350000,0,0,0,0,0,0,0,0,0,13.8
+01610505,Ludlow - Ludlow Senior High,01610000,0,0,0,0,0,0,0,0,0,13.8
+02200505,Norwood - Norwood High,02200000,0,0,0,0,0,0,0,0,0,13.8
+02710040,Shrewsbury - Parker Road Preschool,02710000,0,0,0,0,0,0,0,0,0,13.8
+03250605,Westfield - Westfield Vocational Technical High,03250000,0,0,0,0,0,0,0,0,0,13.8
+00350382,Boston - Mission Hill School,00350000,26,20,32,26,18,19,18,16,21,13.9
+06450505,Dennis-Yarmouth - Dennis-Yarmouth Regional High,06450000,0,0,0,0,0,0,0,0,237,13.9
+04130505,Four Rivers Charter Public - Four Rivers Charter Public School,04130000,0,0,0,0,0,0,0,37,36,13.9
+01140005,Greenfield - The Academy of Early Learning at North Parish,01140000,0,0,0,0,0,0,0,0,0,13.9
+06830505,Hampshire - Hampshire Regional High,06830000,0,0,0,0,0,0,0,140,119,13.9
+06980510,Manchester Essex Regional - Manchester Essex Regional High School,06980000,0,0,0,0,0,0,0,0,0,13.9
+07660505,Southwick-Tolland-Granville Regional School District - Southwick-Tolland Regional High,07660000,0,0,0,0,0,0,0,0,0,13.9
+07700505,Tantasqua - Tantasqua Regional Sr High,07700000,0,0,0,0,0,0,0,0,0,13.9
+00350184,Boston - Joseph P Manning,00350000,22,23,24,25,25,25,0,0,0,14
+00480020,Burlington - Pine Glen Elementary,00480000,42,38,58,39,41,53,0,0,0,14
+00770505,Douglas - Douglas High School,00770000,0,0,0,0,0,0,0,0,0,14
+06720405,Gateway - Gateway Regional Junior High School,06720000,0,0,0,0,0,0,0,85,81,14
+01870505,Millis - Millis High School,01870000,0,0,0,0,0,0,0,0,0,14
+02120030,North Attleborough - Community,02120000,74,46,46,40,36,86,0,0,0,14
+02360305,Pittsfield - John T Reid Middle,02360000,0,0,0,0,0,0,181,167,169,14
+02360505,Pittsfield - Pittsfield High,02360000,0,0,0,0,0,0,0,0,0,14
+02580505,Salem - Salem High,02580000,0,0,0,0,0,0,0,0,0,14
+06030505,Adams-Cheshire - Hoosac Valley Middle & High School,06030000,0,0,0,0,0,0,96,113,115,14.1
+00490007,Cambridge - Cambridgeport,00490000,47,43,40,36,38,28,0,0,0,14.1
+00960505,Falmouth - Falmouth High,00960000,0,0,0,0,0,0,0,0,0,14.1
+01070505,Gloucester - Gloucester High,01070000,0,0,0,0,0,0,0,0,0,14.1
+07170010,Mohawk Trail - Colrain Central,07170000,11,11,12,17,9,16,21,0,0,14.1
+07780505,Quaboag Regional - Quaboag Regional High,07780000,0,0,0,0,0,0,0,0,0,14.1
+04890505,Sturgis Charter Public - Sturgis Charter Public School,04890000,0,0,0,0,0,0,0,0,0,14.1
+00090505,Andover - Andover High,00090000,0,0,0,0,0,0,0,0,0,14.2
+06160505,Ayer Shirley School District - Ayer Shirley Regional High School,06160000,0,0,0,0,0,0,0,0,0,14.2
+00560001,Chelmsford - Community Education Center,00560000,0,0,0,0,0,0,0,0,0,14.2
+01370030,Holyoke - William R. Peck School,01370000,0,0,0,0,62,75,71,63,100,14.2
+04580505,Lowell Middlesex Academy Charter - Lowell Middlesex Academy Charter School,04580000,0,0,0,0,0,0,0,0,0,14.2
+35010505,Paulo Freire Social Justice Charter School (District) - Paulo Freire Social Justice Charter School,35010000,0,0,0,0,0,0,0,0,0,14.2
+35080505,Phoenix Academy Public Charter High School Springfield (District) - Phoenix Academy Public Charter High School Springfield,35080000,0,0,0,0,0,0,0,0,0,14.2
+02620001,Saugus - Ballard School,02620000,0,0,0,0,0,0,0,0,0,14.2
+02810475,Springfield - Conservatory of the Arts,02810000,0,0,0,0,0,0,60,0,0,14.2
+03050001,Wakefield - Early Childhood Center at the Doyle School,03050000,32,0,0,0,0,0,0,0,0,14.2
+00100505,Arlington - Arlington High,00100000,0,0,0,0,0,0,0,0,0,14.3
+06180035,Berkshire Hills - Muddy Brook Regional Elementary School,06180000,77,66,67,66,93,0,0,0,0,14.3
+00350237,Boston - Mozart,00350000,24,23,22,22,25,21,0,0,0,14.3
+00480007,Burlington - Fox Hill,00480000,47,43,55,50,58,70,0,0,0,14.3
+08250605,Greater New Bedford Regional Vocational Technical - Gr New Bedford Vocational Technical,08250000,0,0,0,0,0,0,0,0,0,14.3
+01860505,Millbury - Millbury Junior/Senior High,01860000,0,0,0,0,0,0,0,142,118,14.3
+02460001,Reading - RISE PreSchool,02460000,0,0,0,0,0,0,0,0,0,14.3
+08760605,Southern Worcester County Regional Vocational Technical - Bay Path Regional Vocational Technical High School,08760000,0,0,0,0,0,0,0,0,0,14.3
+02890005,Sunderland - Sunderland Elementary,02890000,18,31,22,31,34,23,28,0,0,14.3
+07730505,Triton - Triton Regional High School,07730000,0,0,0,0,0,0,0,0,0,14.3
+01490003,Lawrence - John Breen School,01490000,124,0,0,0,0,0,0,0,0,14.4
+01550001,Lexington - Lexington Children's Place,01550000,0,0,0,0,0,0,0,0,0,14.4
+01760320,Medford - John J. McGlynn Middle School,01760000,0,0,0,0,0,0,150,143,183,14.4
+02070510,Newton - Newton South High,02070000,0,0,0,0,0,0,0,0,0,14.4
+02840505,Stoneham - Stoneham High,02840000,0,0,0,0,0,0,0,0,0,14.4
+03140505,Watertown - Watertown High,03140000,0,0,0,0,0,0,0,0,0,14.4
+03400020,Williamsburg - Williamsburg Schools,03400000,15,14,17,25,27,17,30,0,0,14.4
+00180510,Avon - Avon Middle High School,00180000,0,0,0,0,0,0,0,62,60,14.5
+00440050,Brockton - Gilmore School Early Childhood Center,00440000,83,0,0,0,0,0,0,0,0,14.5
+07100510,Mendon-Upton - Nipmuc Regional High,07100000,0,0,0,0,0,0,0,0,0,14.5
+02210005,Oak Bluffs - Oak Bluffs Elementary,02210000,48,49,58,48,50,30,56,39,25,14.5
+02770010,Southbridge - Eastford Road,02770000,182,2,2,0,0,0,0,0,0,14.5
+02920505,Swansea - Joseph Case High,02920000,0,0,0,0,0,0,0,0,0,14.5
+03320030,West Springfield - Mittineague,03320000,0,31,31,32,24,27,0,0,0,14.5
+03210505,Westborough - Westborough High,03210000,0,0,0,0,0,0,0,0,0,14.5
+00140505,Ashland - Ashland High,00140000,0,0,0,0,0,0,0,0,0,14.6
+00350546,Boston - Boston Arts Academy,00350000,0,0,0,0,0,0,0,0,0,14.6
+00350074,Boston - Dearborn,00350000,0,0,0,0,0,0,49,62,70,14.6
+00460505,Brookline - Brookline High,00460000,0,0,0,0,0,0,0,0,0,14.6
+00480505,Burlington - Burlington High,00480000,7,0,0,0,0,0,0,0,0,14.6
+00490310,Cambridge - Putnam Avenue Upper School,00490000,0,0,0,0,0,0,82,79,65,14.6
+00730005,Dedham - Early Childhood Center,00730000,194,3,0,0,0,0,0,0,0,14.6
+06620020,Farmington River Reg - Farmington River Elementary,06620000,12,18,15,11,14,16,18,0,0,14.6
+01760315,Medford - Madeleine Dugger Andrews,01760000,0,0,0,0,0,0,173,145,176,14.6
+01780003,Melrose - Early Childhood Center,01780000,0,0,0,0,0,0,0,0,0,14.6
+07530515,Quabbin - IB School of Quabbin,07530000,0,0,0,0,0,0,0,0,0,14.6
+02480013,Revere - Beachmont Veterans Memorial School,02480000,71,71,64,52,47,60,0,0,0,14.6
+00350657,Boston - TechBoston Academy,00350000,0,0,0,0,0,0,123,134,140,14.7
+01370070,Holyoke - H.B. Lawrence School,01370000,79,73,69,70,0,0,0,0,0,14.7
+01570305,Lincoln - Hanscom Middle,01570000,0,0,0,0,54,47,45,40,47,14.7
+01630605,Lynn - Lynn Vocational Technical Institute,01630000,0,0,0,0,0,0,0,4,2,14.7
+01820505,Middleborough - Middleborough High,01820000,0,0,0,0,0,0,0,0,0,14.7
+07530020,Quabbin - New Braintree Grade,07530000,33,24,0,0,0,0,0,0,0,14.7
+07660205,Southwick-Tolland-Granville Regional School District - Granville Village School,07660000,9,16,14,12,11,14,15,14,16,14.7
+07740020,Up-Island Regional - West Tisbury Elementary,07740000,37,37,29,31,39,31,20,38,30,14.7
+00300015,Beverly - Cove Elementary,00300000,106,82,76,66,60,84,0,0,0,14.8
+00350009,Boston - East Boston Early Childhood Center,00350000,58,41,0,0,0,0,0,0,0,14.8
+00350255,Boston - Oliver Hazard Perry,00350000,28,22,27,28,32,23,25,17,32,14.8
+00490080,Cambridge - Graham and Parks,00490000,52,65,69,60,65,46,0,0,0,14.8
+35040505,City on a Hill Charter Public School Dudley Square (District) - City on a Hill Charter Public School Dudley Square,35040000,0,0,0,0,0,0,0,0,0,14.8
+01530045,Leominster - Samoset School,01530000,0,0,0,0,0,0,152,158,168,14.8
+02120010,North Attleborough - Falls,02120000,21,41,52,35,48,51,0,0,0,14.8
+02920020,Swansea - Joseph G Luther,02920000,0,0,0,68,59,78,0,0,0,14.8
+03210305,Westborough - Sarah W Gibbons Middle,03210000,0,0,0,0,0,0,0,268,285,14.8
+06150505,Athol-Royalston - Athol High,06150000,0,0,0,0,0,0,0,0,0,14.9
+04110305,Boston Green Academy Horace Mann Charter School - Boston Green Academy Horace Mann Charter School,04110000,0,0,0,0,0,0,69,0,0,14.9
+00490506,Cambridge - Cambridge Rindge and Latin,00490000,0,0,0,0,0,0,0,0,0,14.9
+01280054,Haverhill - Pentucket Lake Elementary,01280000,44,88,94,122,117,0,0,0,0,14.9
+02440505,Randolph - Randolph High,02440000,0,0,0,0,0,0,0,0,0,14.9
+08010605,Assabet Valley Regional Vocational Technical - Assabet Valley Vocational High School,08010000,0,0,0,0,0,0,0,0,0,15
+06350505,Central Berkshire - Wahconah Regional High,06350000,0,0,0,0,0,0,0,0,0,15
+00560305,Chelmsford - Col Moses Parker School,00560000,0,0,0,0,0,174,184,166,171,15
+01670505,Mansfield - Mansfield High,01670000,0,0,0,0,0,0,0,0,0,15
+01850075,Milford - Shining Star Early Childhood Center,01850000,0,0,0,0,0,0,0,0,0,15
+01970010,Nantucket - Cyrus Peirce,01970000,0,0,0,0,0,0,94,132,108,15
+01970505,Nantucket - Nantucket High,01970000,0,0,0,0,0,0,0,0,0,15
+07670505,Spencer-E Brookfield - David Prouty High,07670000,0,0,0,0,0,0,0,0,0,15
+02850014,Stoughton - Joseph R Dawe Jr Elementary,02850000,63,64,54,74,56,57,0,0,0,15
+06030004,Adams-Cheshire - Cheshire Elementary,06030000,33,29,32,30,26,29,0,0,0,15.1
+00240505,Belchertown - Belchertown High,00240000,0,0,0,0,0,0,0,0,0,15.1
+00350004,Boston - Lyon K-8,00350000,13,12,15,15,17,16,18,14,19,15.1
+06350005,Central Berkshire - Becket Washington School,06350000,18,15,16,17,14,12,0,0,0,15.1
+06720143,Gateway - Littleville Elementary School,06720000,49,48,48,50,47,0,0,0,0,15.1
+01360305,Holliston - Robert H. Adams Middle School,01360000,0,0,0,0,0,0,226,243,215,15.1
+02090015,North Adams - Greylock,02090000,31,36,26,31,32,30,25,22,0,15.1
+07500008,Pioneer Valley - Northfield Elementary,07500000,17,24,28,24,34,31,23,0,0,15.1
+02580005,Salem - Bentley,02580000,53,44,45,38,28,40,0,0,0,15.1
+02810325,Springfield - Forest Park Middle,02810000,0,0,0,0,0,0,232,247,200,15.1
+03080005,Waltham - William F. Stanley Elementary School,03080000,74,80,98,81,62,58,0,0,0,15.1
+00200315,Barnstable - Barnstable Intermediate School,00200000,0,0,0,0,0,0,363,388,0,15.2
+00240005,Belchertown - Cold Spring,00240000,136,0,0,0,0,0,0,0,0,15.2
+00350153,Boston - James W Hennigan,00350000,44,74,89,88,133,100,92,0,0,15.2
+00460001,Brookline - Brookline Early Education Program at Beacon,00460000,0,0,0,0,0,0,0,0,0,15.2
+00520405,Carver - Carver Middle/High School,00520000,0,0,0,0,0,0,159,129,122,15.2
+00930015,Everett - Webster School,00930000,75,58,50,34,20,0,0,0,0,15.2
+01110505,Granby - Granby Jr Sr High School,01110000,0,0,0,0,0,0,0,67,73,15.2
+01140035,Greenfield - Newton School,01140000,54,61,55,50,0,0,0,0,0,15.2
+01580505,Littleton - Littleton High School,01580000,0,0,0,0,0,0,0,0,0,15.2
+01740505,Maynard - Maynard High,01740000,0,0,0,0,0,0,0,0,107,15.2
+01820011,Middleborough - Memorial Early Childhood Center,01820000,212,0,0,0,0,0,0,0,0,15.2
+07450505,Pentucket - Pentucket Regional Sr High,07450000,0,0,0,0,0,0,0,0,0,15.2
+02400010,Plympton - Dennett Elementary,02400000,21,29,29,32,31,38,36,0,0,15.2
+02490005,Richmond - Richmond Consolidated,02490000,18,12,18,23,13,20,10,21,10,15.2
+02660505,Sharon - Sharon High,02660000,0,0,0,0,0,0,0,0,0,15.2
+02740505,Somerville - Somerville High,02740000,0,0,0,0,0,0,0,0,0,15.2
+03050505,Wakefield - Wakefield Memorial High,03050000,0,0,0,0,0,0,0,0,0,15.2
+00090005,Andover - Shawsheen School,00090000,70,50,53,0,0,0,0,0,0,15.3
+00200505,Barnstable - Barnstable High,00200000,0,0,0,0,0,0,0,0,398,15.3
+00350262,Boston - Lyndon,00350000,42,81,62,61,67,44,65,31,32,15.3
+00490020,Cambridge - Haggerty,00490000,50,39,44,35,36,37,0,0,0,15.3
+01110004,Granby - East Meadow,01110000,0,0,0,0,63,79,61,0,0,15.3
+01380505,Hopedale - Hopedale Jr Sr High,01380000,0,0,0,0,0,0,0,90,95,15.3
+01570006,Lincoln - Hanscom Primary,01570000,68,81,73,63,0,0,0,0,0,15.3
+01620505,Lunenburg - Lunenburg High,01620000,0,0,0,0,0,0,0,0,127,15.3
+01910505,Monson - Monson Innovation High School,01910000,0,0,0,0,0,0,0,0,0,15.3
+07250505,Nashoba - Nashoba Regional,07250000,0,0,0,0,0,0,0,0,0,15.3
+02180305,Norton - Norton Middle,02180000,0,0,0,0,0,0,208,205,208,15.3
+02190505,Norwell - Norwell High,02190000,0,0,0,0,0,0,0,0,0,15.3
+02290010,Peabody - Thomas Carroll,02290000,84,105,132,93,88,84,0,0,0,15.3
+02430505,Quincy - Quincy High,02430000,0,0,0,0,0,0,0,0,0,15.3
+02530005,Rowe - Rowe Elementary,02530000,5,5,3,10,6,7,14,0,0,15.3
+02810366,Springfield - Chestnut Accelerated Middle School (South),02810000,0,0,0,0,0,0,98,77,87,15.3
+07750045,Wachusett - Thomas Prince,07750000,28,37,27,39,38,41,53,50,50,15.3
+03080032,Waltham - Douglas MacArthur Elementary School,03080000,65,68,59,58,54,64,0,0,0,15.3
+03470065,Woburn - Mary D Altavesta,03470000,50,49,41,33,33,29,0,0,0,15.3
+00240025,Belchertown - Jabish Middle School,00240000,0,0,0,0,0,0,0,195,206,15.4
+00360505,Bourne - Bourne High School,00360000,0,0,0,0,0,0,0,0,0,15.4
+00940505,Fairhaven - Fairhaven High,00940000,0,0,0,0,0,0,0,0,0,15.4
+06740050,Gill-Montague - Sheffield Elementary School,06740000,0,0,52,53,66,57,0,0,0,15.4
+01330505,Holbrook - Holbrook Jr Sr High,01330000,0,0,0,0,0,0,0,104,89,15.4
+01630090,Lynn - Capt William G Shoemaker,01630000,46,55,59,33,38,52,0,0,0,15.4
+02720005,Shutesbury - Shutesbury Elementary,02720000,19,12,20,20,14,24,26,0,0,15.4
+02760305,Southborough - P Brent Trottier,02760000,0,0,0,0,0,0,153,160,181,15.4
+00070505,Amesbury - Amesbury High,00070000,0,0,0,0,0,0,0,0,0,15.5
+06150050,Athol-Royalston - Royalston Community School,06150000,17,21,26,25,23,20,17,0,0,15.5
+04140305,Berkshire Arts and Technology Charter Public - Berkshire Arts and Technology Charter Public School,04140000,0,0,0,0,0,0,72,64,69,15.5
+00350122,Boston - George H Conley,00350000,19,55,23,30,22,22,0,0,0,15.5
+06350035,Central Berkshire - Kittredge,06350000,14,13,24,22,19,21,0,0,0,15.5
+00610505,Chicopee - Chicopee High,00610000,0,0,0,0,0,0,0,0,0,15.5
+00740015,Deerfield - Deerfield Elementary,00740000,50,56,52,60,60,64,68,0,0,15.5
+06450305,Dennis-Yarmouth - Mattacheese Middle School,06450000,0,0,0,0,0,0,226,235,0,15.5
+01570025,Lincoln - Lincoln School,01570000,65,75,71,68,60,69,66,64,52,15.5
+01640005,Lynnfield - Lynnfield Preschool,01640000,0,0,0,0,0,0,0,0,0,15.5
+01850065,Milford - Brookside,01850000,172,174,172,1,0,2,0,0,0,15.5
+02620505,Saugus - Saugus High,02620000,0,0,0,0,0,0,0,0,0,15.5
+02850010,Stoughton - Helen Hansen Elementary,02850000,46,36,54,48,49,37,0,0,0,15.5
+03000005,Truro - Truro Central,03000000,12,15,18,19,17,18,9,0,0,15.5
+03080065,Waltham - Henry Whittemore Elementary School,03080000,70,82,82,66,59,72,0,0,0,15.5
+03480512,Worcester - Doherty Memorial High,03480000,0,0,0,0,0,0,0,0,0,15.5
+00160050,Attleboro - Peter Thacher Elementary School,00160000,76,89,86,85,85,0,0,0,0,15.6
+06220505,Blackstone-Millville - Blackstone Millville RHS,06220000,0,0,0,0,0,0,0,0,0,15.6
+00490005,Cambridge - Maria L. Baldwin,00490000,67,43,47,44,46,42,0,0,0,15.6
+06350305,Central Berkshire - Nessacus Regional Middle School,06350000,0,0,0,0,0,0,148,129,168,15.6
+00730505,Dedham - Dedham High,00730000,0,0,0,0,0,0,0,0,0,15.6
+00890005,Edgartown - Edgartown Elementary,00890000,45,42,38,41,35,38,39,40,37,15.6
+04960305,Global Learning Charter Public - Global Learning Charter Public School,04960000,0,0,0,0,0,81,90,88,83,15.6
+01310505,Hingham - Hingham High,01310000,0,0,0,0,0,0,0,0,0,15.6
+01410505,Hudson - Hudson High,01410000,0,0,0,0,0,0,0,0,234,15.6
+01610020,Ludlow - Chapin Street Elementary School,01610000,0,0,177,165,0,0,0,0,0,15.6
+07450020,Pentucket - Dr Frederick N Sweetsir,07450000,42,42,70,0,0,0,0,0,0,15.6
+02430325,Quincy - Point Webster Middle,02430000,0,0,0,0,0,89,83,77,99,15.6
+02850012,Stoughton - Edwin A Jones Early Childhood Center,02850000,0,0,0,0,0,0,0,0,0,15.6
+03080040,Waltham - Northeast Elementary School,03080000,74,70,58,68,58,45,0,0,0,15.6
+03170505,Wellesley - Wellesley Sr High,03170000,0,0,0,0,0,0,0,0,0,15.6
+00350226,Boston - Mattahunt,00350000,100,107,109,82,82,58,0,0,0,15.7
+04240505,Boston Day and Evening Academy Charter - Boston Day and Evening Academy Charter School,04240000,0,0,0,0,0,0,0,0,0,15.7
+00610022,Chicopee - Litwin,00610000,26,23,23,103,112,112,0,0,0,15.7
+00960015,Falmouth - Teaticket,00960000,63,48,56,65,69,0,0,0,0,15.7
+01140305,Greenfield - Greenfield Middle,01140000,0,0,0,0,144,147,117,98,0,15.7
+01280505,Haverhill - Haverhill High,01280000,0,0,0,0,0,0,0,0,0,15.7
+01490534,Lawrence - International High School,01490000,0,0,0,0,0,0,0,0,0,15.7
+01490011,Lawrence - Lawrence Family Public Academy,01490000,122,0,0,0,0,0,0,0,0,15.7
+08520605,Nashoba Valley Regional Vocational Technical - Nashoba Valley Technical High School,08520000,0,0,0,0,0,0,0,0,0,15.7
+02430095,Quincy - Squantum,02430000,66,61,56,58,52,64,0,0,0,15.7
+02610505,Sandwich - Sandwich High,02610000,0,0,0,0,0,0,0,0,0,15.7
+02810140,Springfield - Mary M Lynch,02810000,56,61,43,42,35,39,0,0,0,15.7
+03010505,Tyngsborough - Tyngsborough High School,03010000,0,0,0,0,0,0,0,0,0,15.7
+03320505,West Springfield - West Springfield High,03320000,0,0,0,0,0,0,0,0,0,15.7
+03470505,Woburn - Woburn High,03470000,0,0,0,0,0,0,0,0,0,15.7
+06050405,Amherst-Pelham - Amherst Regional Middle School,06050000,0,0,0,0,0,0,0,221,240,15.8
+00350549,Boston - Margarita Muniz Academy,00350000,0,0,0,0,0,0,0,0,0,15.8
+00350542,Boston - New Mission High School,00350000,0,0,0,0,0,0,0,0,0,15.8
+00350470,Boston - Wm B Rogers Middle,00350000,0,0,0,0,0,0,73,100,175,15.8
+00440405,Brockton - East Middle School,00440000,0,0,0,0,0,0,142,133,150,15.8
+00440410,Brockton - North Middle School,00440000,0,0,0,0,0,0,163,183,198,15.8
+06650505,Freetown-Lakeville - Apponequet Regional High,06650000,0,0,0,0,0,0,0,0,0,15.8
+02070505,Newton - Newton North High,02070000,0,0,0,0,0,0,0,0,0,15.8
+02230010,Orange - Dexter Park,02230000,0,0,0,69,80,99,85,0,0,15.8
+02360065,Pittsfield - Crosby,02360000,62,45,74,64,53,42,0,0,0,15.8
+02390011,Plymouth - Federal Furnace School,02390000,69,56,75,77,79,62,0,0,0,15.8
+00170505,Auburn - Auburn Senior High,00170000,0,0,0,0,0,0,0,0,0,15.9
+00350558,Boston - Boston Community Leadership Academy,00350000,0,0,0,0,0,0,0,0,0,15.9
+00350008,Boston - Dr. Catherine Ellison-Rosa Parks Early Ed School,00350000,38,35,33,28,0,0,0,0,0,15.9
+01000305,Framingham - Fuller Middle,01000000,0,0,0,0,0,0,132,157,152,15.9
+01350005,Holland - Holland Elementary,01350000,28,17,27,31,33,29,35,0,0,15.9
+02360310,Pittsfield - Theodore Herberg Middle,02360000,0,0,0,0,0,0,213,217,203,15.9
+07530505,Quabbin - Quabbin Regional High School,07530000,0,0,0,0,0,0,0,0,0,15.9
+02430075,Quincy - Francis W Parker,02430000,45,53,56,55,35,51,0,0,0,15.9
+02430510,Quincy - North Quincy High,02430000,0,0,0,0,0,0,0,0,0,15.9
+02810355,Springfield - South End Middle School,02810000,0,0,0,0,0,0,97,89,105,15.9
+02810340,Springfield - Van Sickle Middle School,02810000,0,0,0,0,0,0,273,298,332,15.9
+08790605,Upper Cape Cod Regional Vocational Technical - Upper Cape Cod Vocational Technical,08790000,0,0,0,0,0,0,0,0,0,15.9
+03150305,Wayland - Wayland Middle School,03150000,0,0,0,0,0,0,234,219,217,15.9
+03320007,West Springfield - Philip G Coburn,03320000,61,105,100,79,75,82,0,0,0,15.9
+03480503,Worcester - Burncoat Senior High,03480000,0,0,0,0,0,0,0,0,0,15.9
+06150020,Athol-Royalston - Riverbend-Sanders Street School,06150000,45,48,49,21,32,0,0,0,0,16
+00280005,Berlin - Berlin Memorial,00280000,20,26,27,36,26,29,0,0,0,16
+08060605,Blue Hills Regional Vocational Technical - Blue Hills Regional Vocational Technical,08060000,0,0,0,0,0,0,0,0,0,16
+00350445,Boston - Washington Irving Middle,00350000,0,0,0,0,0,0,113,105,136,16
+00360005,Bourne - Bournedale Elementary School,00360000,96,71,66,72,79,0,0,0,0,16
+00400505,Braintree - Braintree High,00400000,0,0,0,0,0,0,0,0,0,16
+00610510,Chicopee - Chicopee Comprehensive High School,00610000,0,0,0,0,0,0,0,0,0,16
+01070045,Gloucester - Veterans Memorial,01070000,32,39,28,45,45,33,0,0,0,16
+01360505,Holliston - Holliston High,01360000,0,0,0,0,0,0,0,0,0,16
+01510505,Leicester - Leicester High,01510000,0,0,0,0,0,0,0,0,0,16
+01600055,Lowell - Washington,01600000,39,54,50,51,34,0,0,0,0,16
+01760505,Medford - Medford High,01760000,0,0,0,0,0,0,0,0,0,16
+02910505,Swampscott - Swampscott High,02910000,0,0,0,0,0,0,0,0,0,16
+03080415,Waltham - John W. McDevitt Middle School,03080000,0,0,0,0,0,0,185,201,166,16
+03150505,Wayland - Wayland High School,03150000,0,0,0,0,0,0,0,0,0,16
+03470043,Woburn - Shamrock,03470000,39,44,36,36,36,35,0,0,0,16
+00350003,Boston - Baldwin Early Learning Center,00350000,45,37,0,0,0,0,0,0,0,16.1
+00350515,Boston - Charlestown High,00350000,0,0,0,0,0,0,0,0,0,16.1
+00350651,Boston - Dorchester Academy,00350000,0,0,0,0,0,0,0,0,0,16.1
+00350154,Boston - James J Chittick,00350000,37,47,48,44,39,38,0,0,0,16.1
+00350525,Boston - Jeremiah E Burke High,00350000,0,0,0,0,0,0,0,0,0,16.1
+00670305,Concord - Concord Middle,00670000,0,0,0,0,0,0,240,210,241,16.1
+00950505,Fall River - B M C Durfee High,00950000,0,0,0,0,0,0,0,0,0,16.1
+01110010,Granby - West Street,01110000,49,48,54,69,0,0,0,0,0,16.1
+01220505,Hanover - Hanover High,01220000,0,0,0,0,0,0,0,0,0,16.1
+01480005,Lanesborough - Lanesborough Elementary,01480000,16,29,28,32,19,33,37,0,0,16.1
+01640505,Lynnfield - Lynnfield High,01640000,0,0,0,0,0,0,0,0,0,16.1
+07300505,Northboro-Southboro - Algonquin Regional High,07300000,0,0,0,0,0,0,0,0,0,16.1
+02650505,Seekonk - Seekonk High,02650000,0,0,0,0,0,0,0,0,0,16.1
+02810510,Springfield - High School Of Commerce,02810000,0,0,0,0,0,0,0,0,0,16.1
+03440505,Winchester - Winchester High School,03440000,0,0,0,0,0,0,0,0,0,16.1
+00010505,Abington - Abington High,00010000,0,0,0,0,0,0,0,0,0,16.2
+06200505,Berlin-Boylston - Tahanto Regional High,06200000,0,0,0,0,0,0,86,84,84,16.2
+00350010,Boston - Haynes Early Education Center,00350000,65,70,0,0,0,0,0,0,0,16.2
+08170505,Essex North Shore Agricultural and Technical School District - Essex Technical High School,08170000,0,0,0,0,0,0,0,0,0,16.2
+02290305,Peabody - J Henry Higgins Middle,02290000,0,0,0,0,0,0,426,409,433,16.2
+02740005,Somerville - Capuano Early Childhood Center,02740000,132,0,0,0,0,0,0,0,0,16.2
+02810068,Springfield - Glickman Elementary,02810000,55,43,77,49,52,48,0,0,0,16.2
+02850025,Stoughton - Joseph H Gibbons,02850000,60,64,56,65,52,53,0,0,0,16.2
+02980005,Topsfield - Proctor Elementary,02980000,0,0,0,0,86,95,86,0,0,16.2
+00350328,Boston - Thomas J Kenny,00350000,43,53,37,53,43,37,0,0,0,16.3
+00440421,Brockton - Ashfield Middle School,00440000,0,0,0,0,0,0,151,144,161,16.3
+00490320,Cambridge - Vassal Lane Upper School,00490000,0,0,0,0,0,0,92,100,94,16.3
+01250505,Harvard - Bromfield,01250000,0,0,0,0,0,0,99,94,103,16.3
+04680505,Ma Academy for Math and Science - Ma Academy for Math and Science School,04680000,0,0,0,0,0,0,0,0,0,16.3
+02010505,New Bedford - New Bedford High,02010000,0,0,0,0,0,0,0,0,0,16.3
+02390505,Plymouth - Plymouth North High,02390000,0,0,0,0,0,0,0,0,0,16.3
+08720605,Southeastern Regional Vocational Technical - Southeastern Regional Vocational Technical,08720000,0,0,0,0,0,0,0,0,0,16.3
+02810575,Springfield - Gateway to College at Holyoke Community College,02810000,0,0,0,0,0,0,0,0,0,16.3
+08780605,Tri County Regional Vocational Technical - Tri County Regional Vocational Technical,08780000,0,0,0,0,0,0,0,0,0,16.3
+03260015,Westford - Nabnasset,03260000,106,119,118,0,0,0,0,0,0,16.3
+03420015,Wilmington - Wildwood,03420000,108,0,0,0,0,0,0,0,0,16.3
+03480110,Worcester - Gates Lane,03480000,95,90,68,112,83,99,71,0,0,16.3
+35020405,Baystate Academy Charter Public School (District) - Baystate Academy Charter Public School,35020000,0,0,0,0,0,0,69,79,70,16.4
+00300010,Beverly - Centerville Elementary,00300000,45,64,62,48,68,54,0,0,0,16.4
+00350181,Boston - Joseph P Tynan,00350000,53,73,78,67,43,47,0,0,0,16.4
+00440110,Brockton - Downey,00440000,109,123,126,105,112,107,0,0,0,16.4
+00460035,Brookline - William H Lincoln,00460000,66,63,80,64,57,67,63,54,57,16.4
+00480035,Burlington - Francis Wyman Elementary,00480000,88,85,75,86,87,83,0,0,0,16.4
+06320025,Chesterfield-Goshen - New Hingham Regional Elementary,06320000,20,12,22,18,22,25,21,0,0,16.4
+00730045,Dedham - Riverdale,00730000,0,46,35,34,35,37,0,0,0,16.4
+01140025,Greenfield - Discovery School at Four Corners,01140000,46,54,48,59,0,0,0,0,0,16.4
+07050505,Masconomet - Masconomet Regional High School,07050000,0,0,0,0,0,0,0,0,0,16.4
+07120315,Monomoy Regional School District - Monomoy Regional Middle School,07120000,0,0,0,0,0,154,135,143,0,16.4
+02430055,Quincy - Clifford H Marshall Elementary,02430000,114,135,116,101,109,0,0,0,0,16.4
+02740120,Somerville - Winter Hill Community,02740000,35,39,44,44,40,51,53,57,65,16.4
+02760008,Southborough - Mary E Finn School,02760000,119,107,0,0,0,0,0,0,0,16.4
+07650035,Southern Berkshire - Undermountain,07650000,46,29,49,42,48,54,48,0,0,16.4
+02810365,Springfield - Chestnut Accelerated Middle School (North),02810000,0,0,0,0,0,0,106,83,106,16.4
+02810023,Springfield - Milton Bradley School,02810000,109,104,82,81,70,70,0,0,0,16.4
+02850505,Stoughton - Stoughton High,02850000,0,0,0,0,0,0,0,0,0,16.4
+02950001,Tewksbury - L F Dewing,02950000,130,121,141,0,0,0,0,0,0,16.4
+03080404,Waltham - John F Kennedy Middle,03080000,0,0,0,0,0,0,175,169,190,16.4
+03080505,Waltham - Waltham Sr High,03080000,0,0,0,0,0,0,0,0,0,16.4
+03320001,West Springfield - Cowing Early Childhood,03320000,0,0,0,0,0,0,0,0,0,16.4
+03260310,Westford - Blanchard Middle,03260000,0,0,0,0,0,0,194,192,206,16.4
+03360110,Weymouth - Wessagusset,03360000,71,64,63,67,83,0,0,0,0,16.4
+03480045,Worcester - Canterbury,03480000,61,47,51,56,45,49,46,0,0,16.4
+00350426,Boston - Dr. William Henderson Upper,00350000,0,0,0,0,0,43,66,58,69,16.5
+00350656,Boston - Mario Umana Academy,00350000,64,64,77,69,26,26,170,136,148,16.5
+01030505,Gardner - Gardner High,01030000,0,0,0,0,0,0,0,0,0,16.5
+06800305,Hampden-Wilbraham - Thornton Burgess,06800000,0,0,0,0,0,58,60,78,68,16.5
+09150705,Norfolk County Agricultural - Norfolk County Agricultural,09150000,0,0,0,0,0,0,0,0,0,16.5
+02340005,Petersham - Petersham Center,02340000,16,16,19,13,17,17,15,0,0,16.5
+02580025,Salem - Nathaniel Bowditch,02580000,58,54,67,67,74,65,45,51,67,16.5
+07670415,Spencer-E Brookfield - Knox Trail Junior High,07670000,0,0,0,0,0,0,94,116,135,16.5
+03350505,Westwood - Westwood High,03350000,0,0,0,0,0,0,0,0,0,16.5
+00030305,Acushnet - Albert F Ford Middle School,00030000,0,0,0,0,0,78,116,111,115,16.6
+00350308,Boston - Sarah Greenwood,00350000,41,46,52,51,46,38,42,27,30,16.6
+00390005,Boylston - Boylston Elementary,00390000,36,37,49,55,53,59,0,0,0,16.6
+00960005,Falmouth - East Falmouth Elementary,00960000,51,63,43,47,51,0,0,0,0,16.6
+01000515,Framingham - Framingham High School,01000000,0,0,0,0,0,0,0,0,0,16.6
+06750505,Hamilton-Wenham - Hamilton-Wenham Regional High,06750000,0,0,0,0,0,0,0,0,0,16.6
+06750310,Hamilton-Wenham - Miles River Middle,06750000,0,0,0,0,0,0,139,139,153,16.6
+01490531,Lawrence - Health & Human Services High School,01490000,0,0,0,0,0,0,0,0,0,16.6
+01540005,Leverett - Leverett Elementary,01540000,20,15,14,18,17,14,17,0,0,16.6
+01730005,Mattapoisett - Center,01730000,55,59,67,71,0,0,0,0,0,16.6
+02430310,Quincy - Broad Meadows Middle,02430000,0,0,0,0,0,0,130,104,115,16.6
+03070505,Walpole - Walpole High,03070000,0,0,0,0,0,0,0,0,0,16.6
+03480035,Worcester - Burncoat Street,03480000,37,39,30,36,28,26,22,0,0,16.6
+06250505,Bridgewater-Raynham - Bridgewater-Raynham Regional,06250000,0,0,0,0,0,0,0,0,0,16.7
+00490315,Cambridge - Rindge Avenue Upper School,00490000,0,0,0,0,0,0,79,95,89,16.7
+00680005,Conway - Conway Grammar,00680000,15,18,18,24,26,26,26,0,0,16.7
+00730010,Dedham - Avery,00730000,0,70,77,56,66,43,0,0,0,16.7
+00880405,Easton - Easton Middle School,00880000,0,0,0,0,0,0,299,275,339,16.7
+00970505,Fitchburg - Fitchburg High,00970000,0,0,0,0,0,0,0,0,0,16.7
+04990305,Hampden Charter School of Science - Hampden Charter School of Science,04990000,0,0,0,0,0,0,60,60,59,16.7
+01770505,Medway - Medway High,01770000,0,0,0,0,0,0,0,0,0,16.7
+02200010,Norwood - Cornelius M Callahan,02200000,0,39,47,51,57,43,0,0,0,16.7
+02270305,Palmer - Converse Middle,02270000,0,0,0,0,0,117,123,118,0,16.7
+03080050,Waltham - Thomas R Plympton Elementary School,03080000,80,80,74,75,60,65,0,0,0,16.7
+03140305,Watertown - Watertown Middle,03140000,0,0,0,0,0,0,221,165,185,16.7
+03470410,Woburn - Daniel L Joyce Middle School,03470000,0,0,0,0,0,0,160,180,188,16.7
+00310030,Billerica - Eugene C Vining,00310000,30,33,39,32,39,28,0,0,0,16.8
+00350062,Boston - Curtis Guild,00350000,52,63,81,48,54,38,0,0,0,16.8
+00350378,Boston - Mildred Avenue K-8,00350000,42,0,0,0,25,37,110,62,106,16.8
+00940305,Fairhaven - Hastings Middle,00940000,0,0,0,0,0,0,143,149,133,16.8
+00960405,Falmouth - Lawrence,00960000,0,0,0,0,0,0,0,296,275,16.8
+04780505,Francis W. Parker Charter Essential - Francis W. Parker Charter Essential School,04780000,0,0,0,0,0,0,0,71,69,16.8
+01490532,Lawrence - Humanities & Leadership Development High School,01490000,0,0,0,0,0,0,0,0,0,16.8
+01500025,Lee - Lee Elementary,01500000,41,45,39,46,50,51,58,0,0,16.8
+02070320,Newton - Oak Hill Middle,02070000,0,0,0,0,0,0,209,208,215,16.8
+02430065,Quincy - Montclair,02430000,64,70,64,75,68,58,0,0,0,16.8
+02460505,Reading - Reading Memorial High,02460000,0,0,0,0,0,0,0,0,0,16.8
+08710605,Shawsheen Valley Regional Vocational Technical - Shawsheen Valley Vocational Technical High School,08710000,0,0,0,0,0,0,0,0,0,16.8
+02900510,Sutton - Sutton High School,02900000,0,0,0,0,0,0,0,0,0,16.8
+00250025,Bellingham - Stall Brook,00250000,59,55,50,52,39,0,0,0,0,16.9
+00350485,Boston - James P Timilty Middle,00350000,0,0,0,0,0,0,145,155,186,16.9
+01610010,Ludlow - East Street Elementary School,01610000,156,192,0,0,0,0,0,0,0,16.9
+01680505,Marblehead - Marblehead High,01680000,0,0,0,0,0,0,0,0,0,16.9
+02360090,Pittsfield - Stearns,02360000,45,40,31,40,40,38,0,0,0,16.9
+02440018,Randolph - J F Kennedy Elementary,02440000,64,73,60,59,50,49,0,0,0,16.9
+02810195,Springfield - German Gerena Community School,02810000,111,112,100,93,87,68,0,0,0,16.9
+02810155,Springfield - Mary M Walsh,02810000,46,53,52,54,43,44,0,0,0,16.9
+03210005,Westborough - J Harding Armstrong,03210000,95,91,102,101,0,0,0,0,0,16.9
+03360505,Weymouth - Weymouth High School,03360000,0,0,0,0,0,0,0,0,0,16.9
+00050303,Agawam - Roberta G. Doering School,00050000,0,0,0,0,0,266,316,3,5,17
+00350096,Boston - Eliot Elementary,00350000,74,57,71,39,46,39,39,22,31,17
+00350522,Boston - Excel High School,00350000,0,0,0,0,0,0,0,0,0,17
+04360305,Community Charter School of Cambridge - Community Charter School of Cambridge,04360000,0,0,0,0,0,0,40,49,72,17
+06450015,Dennis-Yarmouth - Marguerite E Small Elementary,06450000,54,64,47,57,0,0,0,0,0,17
+01000055,Framingham - Woodrow Wilson,01000000,93,94,90,81,91,94,0,0,0,17
+01010010,Franklin - Jefferson Elementary,01010000,63,56,73,60,67,88,0,0,0,17
+01370025,Holyoke - Morgan Full Service Community School,01370000,43,57,34,45,34,48,43,42,33,17
+01750305,Medfield - Thomas Blake Middle,01750000,0,0,0,0,0,0,202,216,213,17
+02040005,Newburyport - Francis T Bresnahan Elementary,02040000,130,167,141,178,0,0,0,0,0,17
+02360105,Pittsfield - Silvio O Conte Community,02360000,90,57,52,42,45,58,0,0,0,17
+02610005,Sandwich - Henry T Wing,02610000,47,75,69,67,85,84,68,0,0,17
+03250310,Westfield - South Middle School,03250000,0,0,0,0,0,0,199,207,196,17
+03310305,Westport - Westport Middle,03310000,0,0,0,0,0,0,134,130,140,17
+03480200,Worcester - Nelson Place,03480000,79,64,64,84,64,81,50,0,0,17
+06100505,Ashburnham-Westminster - Oakmont Regional High School,06100000,0,0,0,0,0,0,0,0,0,17.1
+00350581,Boston - Community Academy of Science and Health,00350000,0,0,0,0,0,0,0,0,0,17.1
+00400310,Braintree - South Middle School,00400000,0,0,0,0,0,0,211,229,206,17.1
+00710505,Danvers - Danvers High,00710000,0,0,0,0,0,0,0,0,0,17.1
+00720505,Dartmouth - Dartmouth High,00720000,0,0,0,0,0,0,0,0,0,17.1
+00870505,East Longmeadow - East Longmeadow High,00870000,0,0,0,0,0,0,0,0,0,17.1
+01050305,Georgetown - Georgetown Middle School,01050000,0,0,0,0,0,0,116,127,112,17.1
+01270005,Hatfield - Hatfield Elementary,01270000,31,36,36,30,35,43,34,0,0,17.1
+01520015,Lenox - Morris,01520000,40,48,49,53,54,57,0,0,0,17.1
+02040505,Newburyport - Newburyport High,02040000,0,0,0,0,0,0,0,0,0,17.1
+02130003,Northborough - Lincoln Street,02130000,35,31,49,60,54,53,0,0,0,17.1
+02710505,Shrewsbury - Shrewsbury Sr High,02710000,0,0,0,0,0,0,0,0,0,17.1
+07700405,Tantasqua - Tantasqua Regional Jr High,07700000,0,0,0,0,0,0,0,282,264,17.1
+02950025,Tewksbury - Louise Davy Trahan,02950000,0,0,0,114,128,0,0,0,0,17.1
+03160505,Webster - Bartlett Jr Sr High School,03160000,0,0,0,0,0,0,0,142,160,17.1
+00300033,Beverly - Hannah Elementary,00300000,65,56,81,54,65,66,0,0,0,17.2
+00350530,Boston - East Boston High,00350000,0,0,0,0,0,0,0,0,0,17.2
+00350200,Boston - Harvard-Kent,00350000,76,108,108,90,73,72,0,0,0,17.2
+00350302,Boston - Samuel Adams,00350000,56,50,51,40,39,27,0,0,0,17.2
+00350658,Boston - West Roxbury Academy,00350000,0,0,0,0,0,0,0,0,0,17.2
+00460015,Brookline - Edward Devotion,00460000,111,100,108,101,74,80,82,79,78,17.2
+06740015,Gill-Montague - Hillcrest Elementary School,06740000,54,60,0,0,0,0,0,0,0,17.2
+01840005,Middleton - Howe-Manning,01840000,0,0,0,105,104,100,128,0,0,17.2
+01850310,Milford - Milford Middle East,01850000,0,0,0,0,0,0,0,0,318,17.2
+07120001,Monomoy Regional School District - Chatham Elementary School,07120000,51,50,52,44,59,0,0,0,0,17.2
+02240005,Orleans - Orleans Elementary,02240000,31,48,31,34,32,42,0,0,0,17.2
+04940205,Pioneer Charter School of Science - Pioneer Charter School of Science,04940000,0,0,0,0,0,0,0,69,69,17.2
+02430110,Quincy - Wollaston School,02430000,52,65,60,51,68,53,0,0,0,17.2
+04850485,Salem Academy Charter - Salem Academy Charter School,04850000,0,0,0,0,0,0,61,69,56,17.2
+03080060,Waltham - James Fitzgerald Elementary School,03080000,89,89,88,84,87,71,0,0,0,17.2
+03420505,Wilmington - Wilmington High,03420000,0,0,0,0,0,0,0,0,0,17.2
+03470060,Woburn - Wyman,03470000,38,17,36,29,29,40,0,0,0,17.2
+00350014,Boston - Pauline Agassiz Shaw Elementary School,00350000,54,0,0,0,0,0,0,0,0,17.3
+00350690,Boston - Snowden International School at Copley,00350000,0,0,0,0,0,0,0,0,0,17.3
+00350346,Boston - Warren-Prescott,00350000,69,68,71,71,68,57,56,21,47,17.3
+00380013,Boxford - Spofford Pond,00380000,0,0,0,99,118,120,114,0,0,17.3
+00440002,Brockton - Mary E. Baker School,00440000,94,121,125,137,120,122,0,0,0,17.3
+00870015,East Longmeadow - Mountain View,00870000,0,0,0,95,107,91,0,0,0,17.3
+01600010,Lowell - Joseph McAvinnue,01600000,99,99,85,107,82,0,0,0,0,17.3
+01600018,Lowell - Pyne Arts,01600000,47,53,46,47,47,61,67,60,62,17.3
+01720020,Mashpee - Mashpee Middle School,01720000,0,0,0,0,0,0,0,127,141,17.3
+01750505,Medfield - Medfield Senior High,01750000,0,0,0,0,0,0,0,0,0,17.3
+02070108,Newton - Newton Early Childhood Center,02070000,0,0,0,0,0,0,0,0,0,17.3
+02120505,North Attleborough - North Attleboro High,02120000,0,0,0,0,0,0,0,0,0,17.3
+07530005,Quabbin - Hardwick Elementary,07530000,20,36,34,29,30,35,30,0,0,17.3
+02520305,Rockport - Rockport Middle,02520000,0,0,0,0,0,0,84,80,91,17.3
+02620305,Saugus - Belmonte Saugus Middle,02620000,0,0,0,0,0,0,228,215,239,17.3
+02740083,Somerville - John F Kennedy,02740000,45,49,45,62,39,47,37,50,60,17.3
+02780305,South Hadley - Michael E. Smith Middle School,02780000,0,0,0,0,0,124,143,138,148,17.3
+02810500,Springfield - Springfield Central High,02810000,0,0,0,0,0,0,0,0,0,17.3
+02840405,Stoneham - Stoneham Central Middle School,02840000,0,0,0,0,0,168,192,206,179,17.3
+03480055,Worcester - Clark St Community,03480000,42,40,38,44,28,33,37,0,0,17.3
+03480185,Worcester - Midland Street,03480000,42,34,28,35,36,27,42,0,0,17.3
+00010002,Abington - Center Elementary School,00010000,148,0,0,0,0,0,0,0,0,17.4
+06220405,Blackstone-Millville - Frederick W. Hartnett Middle School,06220000,0,0,0,0,0,0,139,150,154,17.4
+00350072,Boston - David A Ellis,00350000,88,62,75,68,56,33,0,0,0,17.4
+00350015,Boston - Higginson,00350000,42,51,51,0,0,0,0,0,0,17.4
+00350360,Boston - William Ellery Channing,00350000,31,41,43,52,51,48,0,0,0,17.4
+00860505,Easthampton - Easthampton High,00860000,0,0,0,0,0,0,0,0,0,17.4
+01490020,Lawrence - James F Hennessey,01490000,112,96,83,0,0,0,0,0,0,17.4
+02300005,Pelham - Pelham Elementary,02300000,18,18,20,15,17,15,17,0,0,17.4
+02510505,Rockland - Rockland Senior High,02510000,0,0,0,0,0,0,0,0,0,17.4
+02610010,Sandwich - Forestdale,02610000,68,64,75,86,79,65,87,0,0,17.4
+04880550,South Shore Charter Public - South Shore Charter Public School,04880000,43,43,46,45,44,45,46,45,44,17.4
+02810330,Springfield - M Marcus Kiley Middle,02810000,0,0,0,0,0,0,217,203,252,17.4
+02810020,Springfield - Samuel Bowles,02810000,85,67,50,42,45,42,0,0,0,17.4
+02930005,Taunton - Edward F. Leddy Preschool,02930000,0,0,0,0,0,0,0,0,0,17.4
+03320010,West Springfield - John R Fausey,03320000,1,99,72,89,107,71,0,0,0,17.4
+03250020,Westfield - Abner Gibbs,03250000,31,37,39,31,37,41,0,0,0,17.4
+03480100,Worcester - Goddard School/Science Technical,03480000,52,66,66,77,54,50,76,0,0,17.4
+00350505,Boston - Brighton High,00350000,0,0,0,0,0,0,0,0,0,17.5
+00350006,Boston - ELC - West Zone,00350000,38,33,0,0,0,0,0,0,0,17.5
+00400305,Braintree - East Middle School,00400000,0,0,0,0,0,0,256,252,243,17.5
+00430005,Brimfield - Brimfield Elementary,00430000,36,40,33,44,31,39,35,0,0,17.5
+09100705,Bristol County Agricultural - Bristol County Agricultural High,09100000,0,0,0,0,0,0,0,0,0,17.5
+06350025,Central Berkshire - Craneville,06350000,57,60,71,76,64,86,0,0,0,17.5
+00730305,Dedham - Dedham Middle School,00730000,0,0,0,0,0,0,230,233,217,17.5
+06550405,Dover-Sherborn - Dover-Sherborn Regional Middle School,06550000,0,0,0,0,0,0,171,181,160,17.5
+08280605,Greater Lowell Regional Vocational Technical - Gr Lowell Regional Vocational Technical,08280000,0,0,0,0,0,0,0,0,0,17.5
+01610023,Ludlow - Veterans Park Elementary,01610000,0,0,0,0,203,214,0,0,0,17.5
+01630004,Lynn - Early Childhood Center,01630000,231,2,2,1,4,2,0,0,0,17.5
+01700045,Marlborough - 1 LT Charles W. Whitcomb School,01700000,0,0,0,0,0,357,302,317,349,17.5
+04660550,Martha's Vineyard Charter - Martha's Vineyard Charter School,04660000,13,13,17,13,17,11,17,14,18,17.5
+01890505,Milton - Milton High,01890000,0,0,0,0,0,0,0,0,0,17.5
+02100505,Northampton - Northampton High,02100000,0,0,0,0,0,0,0,0,0,17.5
+02360010,Pittsfield - Allendale,02360000,51,48,58,55,54,50,0,0,0,17.5
+02650405,Seekonk - Dr. Kevin M. Hurley Middle School,02650000,0,0,0,0,0,0,171,177,180,17.5
+02810367,Springfield - Chestnut Accelerated Middle School (Talented and Gifted),02810000,0,0,0,0,0,0,77,71,95,17.5
+02910305,Swampscott - Swampscott Middle,02910000,0,0,0,0,0,192,171,160,199,17.5
+03480060,Worcester - Columbus Park,03480000,70,61,69,51,58,44,37,0,0,17.5
+06160002,Ayer Shirley School District - Page Hilltop School,06160000,78,96,96,69,98,86,0,0,0,17.6
+04430205,Brooke Charter School Mattapan - Brooke Charter School Mattapan,04430000,60,64,63,60,60,57,38,34,24,17.6
+00480015,Burlington - Memorial,00480000,71,74,71,67,75,65,0,0,0,17.6
+00500505,Canton - Canton High,00500000,0,0,0,0,0,0,0,0,0,17.6
+06500505,Dighton-Rehoboth - Dighton-Rehoboth Regional High School,06500000,0,0,0,0,0,0,0,0,0,17.6
+01010505,Franklin - Franklin High,01010000,0,0,0,0,0,0,0,0,0,17.6
+01710025,Marshfield - Martinson Elementary,01710000,65,69,71,60,74,94,0,0,0,17.6
+01720035,Mashpee - Quashnet School,01720000,0,0,0,109,136,131,149,0,0,17.6
+01760150,Medford - Milton Fuller Roberts,01760000,95,114,81,89,97,86,0,0,0,17.6
+01810505,Methuen - Methuen High,01810000,0,0,0,0,0,0,0,0,0,17.6
+06600305,Nauset - Nauset Regional Middle,06600000,0,0,0,0,0,0,169,192,195,17.6
+02070305,Newton - Bigelow Middle,02070000,0,0,0,0,0,0,156,168,179,17.6
+02170010,North Reading - J Turner Hood,02170000,60,61,53,49,68,55,0,0,0,17.6
+02130020,Northborough - Marion E Zeh,02130000,40,44,35,53,51,55,0,0,0,17.6
+02430025,Quincy - Charles A Bernazzani Elementary,02430000,54,64,56,68,52,63,0,0,0,17.6
+02430035,Quincy - Lincoln-Hancock Community School,02430000,103,113,98,93,84,0,0,0,0,17.6
+02580050,Salem - Saltonstall School,02580000,40,42,32,46,46,47,37,52,23,17.6
+02810010,Springfield - Edward P. Boland School,02810000,118,101,103,110,105,108,0,0,0,17.6
+03320305,West Springfield - West Springfield Middle,03320000,0,0,0,0,0,0,293,301,299,17.6
+03250025,Westfield - Highland,03250000,76,58,73,73,64,65,0,0,0,17.6
+03410010,Williamstown - Williamstown Elementary,03410000,66,54,58,69,60,56,65,0,0,17.6
+03480052,Worcester - Chandler Magnet,03480000,74,69,57,50,67,74,59,0,0,17.6
+00050505,Agawam - Agawam High,00050000,0,0,0,0,0,0,0,0,0,17.7
+06100305,Ashburnham-Westminster - Overlook Middle School,06100000,0,0,0,0,0,0,191,189,190,17.7
+00440415,Brockton - South Middle School,00440000,0,0,0,0,0,0,189,179,173,17.7
+00610040,Chicopee - Lambert-Lavoie,00610000,58,44,51,43,45,56,0,0,0,17.7
+01390505,Hopkinton - Hopkinton High,01390000,0,0,0,0,0,0,0,0,0,17.7
+01760140,Medford - Christopher Columbus,01760000,73,89,65,84,78,73,0,0,0,17.7
+02010085,New Bedford - Horatio A Kempton,02010000,16,17,24,22,18,15,0,0,0,17.7
+02010125,New Bedford - Thomas R Rodman,02010000,25,26,22,19,23,16,0,0,0,17.7
+07530025,Quabbin - Oakham Center,07530000,0,0,26,29,40,43,47,0,0,17.7
+02430060,Quincy - Merrymount,02430000,60,54,60,68,53,70,0,0,0,17.7
+02480057,Revere - Garfield Middle School,02480000,0,0,0,0,0,0,181,161,168,17.7
+02640505,Scituate - Scituate High School,02640000,0,0,0,0,0,0,0,0,0,17.7
+02810095,Springfield - Alfred G. Zanetti Montessori Magnet School,02810000,44,43,40,40,40,36,26,21,25,17.7
+02810160,Springfield - Sumner Avenue,02810000,64,87,80,95,78,76,0,0,0,17.7
+03040505,Uxbridge - Uxbridge High,03040000,0,0,0,0,0,0,0,0,0,17.7
+07750005,Wachusett - Naquag Elementary School,07750000,96,111,129,0,0,0,0,0,0,17.7
+03090505,Ware - Ware Junior/Senior High School,03090000,0,0,0,0,0,0,0,104,96,17.7
+03100305,Wareham - Wareham Middle,03100000,0,0,0,0,0,196,194,215,189,17.7
+03260055,Westford - Rita E. Miller Elementary School,03260000,103,106,112,0,0,0,0,0,0,17.7
+03360050,Weymouth - Frederick C Murphy,03360000,43,46,59,57,58,0,0,0,0,17.7
+03420005,Wilmington - Boutwell,03420000,103,0,0,0,0,0,0,0,0,17.7
+00350001,Boston - Lee Academy,00350000,78,76,0,0,0,0,0,0,0,17.8
+00350304,Boston - Samuel W Mason,00350000,36,40,36,40,35,32,0,0,0,17.8
+08100605,Bristol-Plymouth Regional Vocational Technical - Bristol-Plymouth Vocational Technical,08100000,0,0,0,0,0,0,0,0,0,17.8
+04570205,Brooke Charter School East Boston - Brooke Charter School East Boston,04570000,61,64,68,59,0,60,45,36,0,17.8
+00490006,Cambridge - Amigos School,00490000,52,47,48,40,39,27,25,30,24,17.8
+00950305,Fall River - Talbot Innovation School,00950000,0,0,0,0,0,0,192,225,243,17.8
+00970315,Fitchburg - Arthur M Longsjo Middle School,00970000,0,0,0,0,0,122,121,112,112,17.8
+01070050,Gloucester - West Parish,01070000,57,43,45,62,49,63,0,0,0,17.8
+06800505,Hampden-Wilbraham - Minnechaug Regional High,06800000,0,0,0,0,0,0,0,0,0,17.8
+01280005,Haverhill - Bartlett Kindergarten Center,01280000,126,1,0,0,0,0,0,0,0,17.8
+01410007,Hudson - Mulready Elementary,01410000,46,57,57,51,61,0,0,0,0,17.8
+01420015,Hull - Lillian M Jacobs,01420000,57,74,65,63,68,71,0,0,0,17.8
+01590017,Longmeadow - Glenbrook Middle,01590000,0,0,0,0,0,0,99,110,91,17.8
+01600015,Lowell - Greenhalge,01600000,91,95,90,91,86,0,0,0,0,17.8
+39010900,Massachusetts Virtual Academy at Greenfield Commonwealth Virtual District - Massachusetts Virtual Academy at Greenfield Commonwealth Virtual School,39010000,44,60,51,45,49,74,81,72,80,17.8
+01910310,Monson - Granite Valley Middle,01910000,0,0,0,0,0,103,102,93,98,17.8
+02010410,New Bedford - Normandin Middle School,02010000,0,0,0,0,0,0,332,358,356,17.8
+02120007,North Attleborough - Amvet Boulevard,02120000,47,62,74,74,64,66,0,0,0,17.8
+02270008,Palmer - Old Mill Pond,02270000,103,102,118,111,128,0,0,0,0,17.8
+04830305,Rising Tide Charter Public - Rising Tide Charter Public School,04830000,0,0,0,0,0,89,89,88,88,17.8
+02810350,Springfield - STEM Middle Academy,02810000,0,0,0,0,0,0,98,95,99,17.8
+02950020,Tewksbury - North Street,02950000,0,0,0,161,146,0,0,0,0,17.8
+03470040,Woburn - Clyde Reeves,03470000,65,92,80,76,75,85,0,0,0,17.8
+03470405,Woburn - John F Kennedy Middle School,03470000,0,0,0,0,0,0,169,174,184,17.8
+03480220,Worcester - Roosevelt,03480000,105,95,99,96,89,84,59,0,0,17.8
+00350020,Boston - Curley K-8 School,00350000,80,94,87,73,89,87,97,85,114,17.9
+00350166,Boston - John F Kennedy,00350000,61,67,73,63,62,55,0,0,0,17.9
+00460020,Brookline - Michael Driscoll,00460000,68,56,67,71,71,71,57,64,47,17.9
+00650505,Cohasset - Cohasset Middle/High School,00650000,0,0,0,0,0,0,148,133,133,17.9
+01100505,Grafton - Grafton High School,01100000,0,0,0,0,0,0,0,0,0,17.9
+01360010,Holliston - Placentino Elementary,01360000,194,205,210,0,0,0,0,0,0,17.9
+02010020,New Bedford - Elwyn G Campbell,02010000,41,33,43,32,22,36,0,0,0,17.9
+02130305,Northborough - Robert E. Melican Middle School,02130000,0,0,0,0,0,0,247,208,218,17.9
+07660010,Southwick-Tolland-Granville Regional School District - Woodland Elementary,07660000,93,87,98,93,107,0,0,0,0,17.9
+02810328,Springfield - John F Kennedy Middle,02810000,0,0,0,0,0,0,143,201,176,17.9
+02920305,Swansea - Joseph Case Jr High,02920000,0,0,0,0,0,0,166,172,174,17.9
+03250305,Westfield - North Middle School,03250000,0,0,0,0,0,0,217,234,210,17.9
+03420330,Wilmington - Wilmington Middle School,03420000,0,0,0,0,0,0,294,265,282,17.9
+03470020,Woburn - Daniel P Hurld,03470000,37,36,41,39,33,31,0,0,0,17.9
+00160505,Attleboro - Attleboro High,00160000,0,0,0,0,0,0,0,0,0,18
+08050605,Blackstone Valley Regional Vocational Technical - Blackstone Valley,08050000,0,0,0,0,0,0,0,0,0,18
+00350094,Boston - Elihu Greenwood Leadership Academy,00350000,51,62,58,68,53,48,0,0,0,18
+00350268,Boston - Paul A Dever,00350000,60,89,90,86,87,72,0,0,0,18
+00460045,Brookline - John D Runkle,00460000,63,70,67,64,47,70,55,62,61,18
+00560310,Chelmsford - McCarthy Middle School,00560000,0,0,0,0,0,201,220,230,220,18
+06400505,Concord-Carlisle - Concord Carlisle High,06400000,0,0,0,0,0,0,0,0,0,18
+06450005,Dennis-Yarmouth - Ezra H Baker Innovation School,06450000,92,85,114,88,0,0,0,0,0,18
+00960030,Falmouth - North Falmouth Elementary,00960000,78,73,69,68,85,0,0,0,0,18
+00990405,Foxborough - John J Ahern,00990000,0,0,0,0,0,206,201,220,223,18
+00990015,Foxborough - Mabelle M Burrell,00990000,33,58,62,48,56,0,0,0,0,18
+01030405,Gardner - Gardner Middle School,01030000,0,0,0,0,0,0,175,213,179,18
+06740005,Gill-Montague - Gill Elementary,06740000,16,21,16,19,22,19,17,0,0,18
+01490540,Lawrence - Phoenix Academy Lawrence,01490000,0,0,0,0,0,0,0,0,0,18
+01650049,Malden - Malden Early Learning Center,01650000,0,0,0,0,0,0,0,0,0,18
+01650505,Malden - Malden High,01650000,0,0,0,0,0,0,0,0,0,18
+01710015,Marshfield - Daniel Webster,01710000,46,49,66,43,58,68,0,0,0,18
+01850505,Milford - Milford High,01850000,0,0,0,0,0,0,0,0,1,18
+07170020,Mohawk Trail - Sanderson Academy,07170000,18,16,18,12,17,20,24,0,0,18
+01990505,Needham - Needham High,01990000,0,0,0,0,0,0,0,0,0,18
+02090008,North Adams - J S Sullivan,02090000,32,34,46,39,39,34,31,29,0,18
+02170003,North Reading - E Ethel Little School,02170000,44,53,39,45,52,53,0,0,0,18
+02620050,Saugus - Oaklandvale,02620000,26,48,39,35,34,50,0,0,0,18
+02850020,Stoughton - West Elementary,02850000,59,51,63,74,54,55,0,0,0,18
+03460505,Winthrop - Winthrop Sr High,03460000,0,0,0,0,0,0,0,0,172,18
+00350541,Boston - Another Course To College,00350000,0,0,0,0,0,0,0,0,0,18.1
+00350021,Boston - Beethoven,00350000,93,86,87,8,0,0,0,0,0,18.1
+00350052,Boston - Charles Sumner,00350000,96,104,102,84,74,57,0,0,0,18.1
+00650010,Cohasset - Joseph Osgood,00650000,104,133,124,0,0,0,0,0,0,18.1
+00930505,Everett - Everett High,00930000,0,0,0,0,0,0,0,0,0,18.1
+01000302,Framingham - Cameron Middle School,01000000,0,0,0,0,0,0,174,163,175,18.1
+01000050,Framingham - Miriam F McCarthy School,01000000,80,108,105,104,101,100,0,0,0,18.1
+01000310,Framingham - Walsh Middle,01000000,0,0,0,0,0,0,217,225,232,18.1
+01370505,Holyoke - Holyoke High,01370000,0,0,0,0,0,0,0,0,0,18.1
+01600027,Lowell - Moody Elementary,01600000,48,62,50,61,47,0,0,0,0,18.1
+01610305,Ludlow - Paul R Baird Middle,01610000,0,0,0,0,0,0,235,198,217,18.1
+01630085,Lynn - Sewell-Anderson,01630000,40,50,58,39,58,44,0,0,0,18.1
+01710505,Marshfield - Marshfield High,01710000,0,0,0,0,0,0,0,0,0,18.1
+01980505,Natick - Natick High,01980000,0,0,0,0,0,0,0,0,0,18.1
+02770415,Southbridge - Southbridge Middle/High School,02770000,0,0,0,0,0,0,176,186,182,18.1
+07730020,Triton - Newbury Elementary,07730000,52,60,56,76,83,83,71,0,0,18.1
+03170305,Wellesley - Wellesley Middle,03170000,0,0,0,0,0,0,423,383,372,18.1
+03230505,West Bridgewater - West Bridgewater Junior/Senior,03230000,0,0,0,0,0,0,0,100,116,18.1
+03210025,Westborough - Elsie A Hastings Elementary,03210000,82,94,95,90,0,0,0,0,0,18.1
+03250055,Westfield - Juniper Park,03250000,42,53,46,41,48,45,0,0,0,18.1
+03470005,Woburn - Goodyear Elementary School,03470000,54,58,51,54,42,63,0,0,0,18.1
+03470025,Woburn - Linscott-Rumford,03470000,31,37,44,33,34,34,0,0,0,18.1
+00270305,Berkley - Berkley Middle School,00270000,0,0,0,0,0,98,87,93,91,18.2
+00410010,Brewster - Eddy Elementary,00410000,0,0,0,78,74,62,0,0,0,18.2
+00410005,Brewster - Stony Brook Elementary,00410000,77,83,71,0,0,0,0,0,0,18.2
+00440420,Brockton - West Middle School,00440000,0,0,0,0,0,0,219,215,217,18.2
+00460025,Brookline - Heath,00460000,65,66,69,60,64,70,55,41,46,18.2
+00610065,Chicopee - Streiber Memorial School,00610000,51,53,55,42,45,46,0,0,0,18.2
+06720410,Gateway - Gateway Regional Middle School,06720000,0,0,0,0,0,74,81,0,0,18.2
+01370040,Holyoke - Kelly Elementary,01370000,70,98,72,78,50,59,52,47,60,18.2
+01420305,Hull - Memorial Middle,01420000,0,0,0,0,0,0,79,85,85,18.2
+01490017,Lawrence - Arlington Middle School,01490000,0,0,0,0,0,118,138,134,130,18.2
+04540205,Lawrence Family Development Charter - Lawrence Family Development Charter School,04540000,165,82,79,61,56,59,56,62,58,18.2
+01760130,Medford - Brooks School,01760000,82,83,72,97,101,86,0,0,0,18.2
+01780505,Melrose - Melrose High,01780000,0,0,0,0,0,0,0,0,0,18.2
+02010130,New Bedford - Jireh Swift,02010000,47,46,44,47,33,35,0,0,0,18.2
+02360045,Pittsfield - Robert T. Capeless Elementary School,02360000,33,37,30,38,34,45,0,0,0,18.2
+02360100,Pittsfield - Williams,02360000,60,51,64,50,53,58,0,0,0,18.2
+02580030,Salem - Horace Mann Laboratory,02580000,58,55,59,36,44,53,0,0,0,18.2
+07750505,Wachusett - Wachusett Regional High,07750000,0,0,0,0,0,0,0,0,0,18.2
+03140020,Watertown - Hosmer,03140000,96,93,99,87,74,70,0,0,0,18.2
+03300015,Weston - Woodland,03300000,67,72,82,79,0,0,0,0,0,18.2
+06030020,Adams-Cheshire - Plunkett Elementary,06030000,83,80,76,73,69,86,0,0,0,18.3
+00270010,Berkley - Berkley Community School,00270000,78,95,78,79,89,0,0,0,0,18.3
+00350377,Boston - Higginson/Lewis K-8,00350000,70,50,48,69,49,42,26,28,29,18.3
+00350286,Boston - Josiah Quincy,00350000,114,127,122,116,127,139,0,0,0,18.3
+00400050,Braintree - Donald Ross,00400000,0,53,54,52,59,48,0,0,0,18.3
+00560505,Chelmsford - Chelmsford High,00560000,0,0,0,0,0,0,0,0,0,18.3
+00710030,Danvers - Riverside,00710000,46,44,52,34,40,42,0,0,0,18.3
+00950017,Fall River - Henry Lord Community School,00950000,80,68,53,55,52,62,74,0,0,18.3
+01000006,Framingham - Brophy,01000000,63,103,89,93,82,74,0,0,0,18.3
+01140010,Greenfield - Federal Street School,01140000,54,58,49,45,0,0,0,0,0,18.3
+01310410,Hingham - Hingham Middle School,01310000,0,0,0,0,0,0,388,335,299,18.3
+01550310,Lexington - Wm Diamond Middle,01550000,0,0,0,0,0,0,258,257,277,18.3
+02010078,New Bedford - Hayden/McFadden,02010000,95,116,94,104,113,87,0,0,0,18.3
+02430020,Quincy - Beechwood Knoll Elementary,02430000,64,52,61,65,60,67,0,0,0,18.3
+02760050,Southborough - Albert S. Woodward Memorial School,02760000,0,0,126,156,0,0,0,0,0,18.3
+02810175,Springfield - Alice B Beal Elementary,02810000,47,36,40,34,44,43,0,0,0,18.3
+07730025,Triton - Pine Grove,07730000,66,61,71,50,91,67,74,0,0,18.3
+03300010,Weston - Country,03300000,72,54,93,80,0,0,0,0,0,18.3
+03440020,Winchester - Lynch Elementary,03440000,74,82,73,66,79,67,0,0,0,18.3
+00050025,Agawam - Robinson Park,00050000,71,73,81,91,82,0,0,0,0,18.4
+00350172,Boston - John D Philbrick,00350000,31,27,23,25,23,23,0,0,0,18.4
+00460030,Brookline - Lawrence,00460000,92,86,88,84,58,89,60,57,59,18.4
+00490305,Cambridge - Cambridge Street Upper School,00490000,0,0,0,0,0,0,88,92,79,18.4
+00630010,Clarksburg - Clarksburg Elementary,00630000,16,25,17,16,16,19,18,15,26,18.4
+01000035,Framingham - Barbieri Elementary,01000000,111,120,110,113,109,96,0,0,0,18.4
+01070042,Gloucester - Plum Cove School,01070000,35,37,37,34,31,47,0,0,0,18.4
+04190305,Helen Y. Davis Leadership Academy Charter Public (District) - Helen Y. Davis Leadership Academy Charter Public School,04190000,0,0,0,0,0,0,69,84,71,18.4
+01370060,Holyoke - Maurice A Donahue Elementary,01370000,75,69,60,63,59,63,75,60,64,18.4
+01870005,Millis - Clyde F Brown,01870000,106,80,92,101,114,0,0,0,0,18.4
+02010123,New Bedford - Casimir Pulaski,02010000,94,91,94,98,101,88,0,0,0,18.4
+02070100,Newton - Peirce,02070000,48,47,46,66,56,43,0,0,0,18.4
+02170305,North Reading - North Reading Middle,02170000,0,0,0,0,0,0,205,222,211,18.4
+02100005,Northampton - Bridge Street,02100000,31,33,40,38,40,45,0,0,0,18.4
+02200075,Norwood - George F. Willett,02200000,273,0,0,0,0,0,0,0,0,18.4
+07450405,Pentucket - Pentucket Regional Middle,07450000,0,0,0,0,0,0,0,251,238,18.4
+07780305,Quaboag Regional - Quaboag Regional Middle Innovation School,07780000,0,0,0,0,0,0,0,95,129,18.4
+02580305,Salem - Collins Middle,02580000,0,0,0,0,0,0,194,209,192,18.4
+02810055,Springfield - Rebecca M Johnson,02810000,123,113,115,117,115,95,0,0,0,18.4
+02920017,Swansea - Mark G Hoyle Elementary,02920000,77,62,85,0,0,0,0,0,0,18.4
+02950010,Tewksbury - Heath-Brook,02950000,104,140,121,0,0,0,0,0,0,18.4
+03140025,Watertown - James Russell Lowell,03140000,72,59,63,48,64,47,0,0,0,18.4
+00050020,Agawam - Benjamin J Phelps,00050000,76,94,79,76,81,0,0,0,0,18.5
+00310007,Billerica - Frederick J Dutile,00310000,53,45,50,58,45,41,0,0,0,18.5
+00350264,Boston - Patrick J Kennedy,00350000,42,73,64,42,34,22,0,0,0,18.5
+00360010,Bourne - Peebles Elementary School,00360000,40,84,86,88,93,0,0,0,0,18.5
+00440065,Brockton - Louis F Angelo Elementary,00440000,89,128,133,110,188,183,0,0,0,18.5
+04380505,Codman Academy Charter Public (District) - Codman Academy Charter Public School,04380000,23,22,23,0,0,16,21,0,0,18.5
+00670005,Concord - Alcott,00670000,76,75,85,73,71,82,0,0,0,18.5
+00910030,Erving - Erving Elementary,00910000,10,16,16,21,15,28,14,0,0,18.5
+06800310,Hampden-Wilbraham - Wilbraham Middle,06800000,0,0,0,0,0,0,161,166,213,18.5
+01650047,Malden - Linden,01650000,98,111,108,106,105,96,97,90,90,18.5
+01980035,Natick - Lilja Elementary,01980000,83,85,82,75,81,0,0,0,0,18.5
+02070120,Newton - John Ward,02070000,46,54,53,55,47,49,0,0,0,18.5
+02070115,Newton - Underwood,02070000,62,51,55,51,58,64,0,0,0,18.5
+07350010,North Middlesex - Ashby Elementary,07350000,44,41,50,38,35,0,0,0,0,18.5
+02620040,Saugus - Lynnhurst,02620000,36,35,55,36,49,41,0,0,0,18.5
+02660305,Sharon - Sharon Middle,02660000,0,0,0,0,0,0,281,251,296,18.5
+02770020,Southbridge - West Street,02770000,0,86,92,81,72,94,0,0,0,18.5
+03480230,Worcester - Tatnuck,03480000,59,62,52,51,52,63,74,0,0,18.5
+00310505,Billerica - Billerica Memorial High School,00310000,0,0,0,0,0,0,0,0,0,18.6
+00350013,Boston - Jackson Mann,00350000,79,82,83,83,83,70,91,60,70,18.6
+00510025,Carlisle - Carlisle School,00510000,52,70,58,70,70,76,72,75,86,18.6
+00960020,Falmouth - Mullen-Hall,00960000,97,94,102,94,113,0,0,0,0,18.6
+01070010,Gloucester - Beeman Memorial,01070000,59,65,52,55,53,58,0,0,0,18.6
+01250005,Harvard - Hildreth Elementary School,01250000,51,65,72,77,71,89,0,0,0,18.6
+01530505,Leominster - Leominster High School,01530000,0,0,0,0,0,0,0,0,0,18.6
+01600050,Lowell - John J Shaughnessy,01600000,90,96,93,94,86,0,0,0,0,18.6
+01600505,Lowell - Lowell High,01600000,0,0,0,0,0,0,0,0,0,18.6
+01600040,Lowell - Peter W Reilly,01600000,111,122,114,117,111,0,0,0,0,18.6
+01890410,Milton - Charles S Pierce Middle,01890000,0,0,0,0,0,0,337,289,289,18.6
+02010050,New Bedford - John B Devalles,02010000,70,72,76,53,52,55,0,0,0,18.6
+02070315,Newton - F A Day Middle,02070000,0,0,0,0,0,0,298,343,285,18.6
+07350005,North Middlesex - Spaulding Memorial,07350000,84,91,89,106,80,0,0,0,0,18.6
+02130015,Northborough - Fannie E Proctor,02130000,42,30,54,45,60,52,0,0,0,18.6
+07400505,Old Rochester - Old Rochester Regional High,07400000,0,0,0,0,0,0,0,0,0,18.6
+02310505,Pembroke - Pembroke High School,02310000,0,0,0,0,0,0,0,0,0,18.6
+02640010,Scituate - Hatherly Elementary,02640000,38,43,50,40,37,54,54,0,0,18.6
+02810080,Springfield - Frederick Harris,02810000,100,96,104,74,98,83,0,0,0,18.6
+02810205,Springfield - The Springfield Renaissance School an Expeditionary Learning School,02810000,0,0,0,0,0,0,101,108,101,18.6
+03210010,Westborough - Annie E Fales,03210000,77,74,75,96,0,0,0,0,0,18.6
+03440005,Winchester - Lincoln Elementary,03440000,59,73,48,73,74,81,0,0,0,18.6
+03480002,Worcester - Head Start,03480000,0,0,0,0,0,0,0,0,0,18.6
+00070013,Amesbury - Amesbury Middle,00070000,0,0,0,0,0,177,175,192,180,18.7
+00300040,Beverly - North Beverly Elementary,00300000,59,87,63,73,72,74,0,0,0,18.7
+00350100,Boston - Ellis Mendell,00350000,38,41,43,34,29,24,0,0,0,18.7
+00350383,Boston - Lilla G. Frederick Middle School,00350000,0,0,0,0,0,0,147,184,221,18.7
+04280305,Brooke Charter School Roslindale - Brooke Charter School Roslindale,04280000,60,66,63,58,66,54,53,51,35,18.7
+00610020,Chicopee - Bowie,00610000,60,71,68,60,62,57,0,0,0,18.7
+06500305,Dighton-Rehoboth - Dighton Middle School,06500000,0,0,0,0,0,77,116,93,85,18.7
+00970060,Fitchburg - South Street Elementary,00970000,126,130,121,119,129,0,0,0,0,18.7
+01000007,Framingham - Charlotte A Dunning,01000000,67,97,95,85,75,76,0,0,0,18.7
+06750015,Hamilton-Wenham - Winthrop School,06750000,61,33,39,45,54,46,0,0,0,18.7
+07250305,Nashoba - Luther Burbank Middle School,07250000,0,0,0,0,0,0,95,76,84,18.7
+02740075,Somerville - Arthur D Healey,02740000,58,62,57,57,59,52,57,64,46,18.7
+03170015,Wellesley - Joseph E Fiske,03170000,55,53,63,60,59,55,0,0,0,18.7
+03250505,Westfield - Westfield High,03250000,0,0,0,0,0,0,0,0,0,18.7
+03480053,Worcester - City View,03480000,73,74,75,76,65,69,65,0,0,18.7
+06180310,Berkshire Hills - Monument Valley Regional Middle School,06180000,0,0,0,0,0,100,94,105,104,18.8
+00350375,Boston - Edison K-8,00350000,49,71,93,75,84,83,109,72,116,18.8
+00350374,Boston - Winship Elementary,00350000,52,47,64,43,41,40,0,0,0,18.8
+00610090,Chicopee - Gen John J Stefanik,00610000,70,79,77,61,67,63,0,0,0,18.8
+00670020,Concord - Thoreau,00670000,59,77,81,88,80,68,0,0,0,18.8
+00710010,Danvers - Highlands,00710000,37,57,67,65,78,53,0,0,0,18.8
+04520505,Edward M. Kennedy Academy for Health Careers - Edward M. Kennedy Academy for Health Careers,04520000,0,0,0,0,0,0,0,0,0,18.8
+01000045,Framingham - Mary E Stapleton Elementary,01000000,55,70,79,90,73,64,0,0,0,18.8
+06750010,Hamilton-Wenham - Cutler School,06750000,41,51,43,37,42,46,0,0,0,18.8
+01590010,Longmeadow - Center,01590000,49,62,57,51,57,64,0,0,0,18.8
+01590505,Longmeadow - Longmeadow High,01590000,0,0,0,0,0,0,0,0,0,18.8
+01710310,Marshfield - Furnace Brook Middle,01710000,0,0,0,0,0,0,328,348,346,18.8
+08320605,Montachusett Regional Vocational Technical - Montachusett Regional Vocational Technical,08320000,0,0,0,0,0,0,0,0,0,18.8
+01990410,Needham - High Rock School,01990000,0,0,0,0,0,0,447,0,0,18.8
+02110505,North Andover - North Andover High,02110000,0,0,0,0,0,0,0,0,0,18.8
+02180505,Norton - Norton High,02180000,0,0,0,0,0,0,0,0,0,18.8
+02190005,Norwell - Grace Farrar Cole,02190000,64,70,86,73,79,69,0,0,0,18.8
+02440040,Randolph - Martin E Young Elementary,02440000,65,57,63,49,59,55,0,0,0,18.8
+02750005,Southampton - William E Norris,02750000,60,66,82,70,65,77,76,0,0,18.8
+02810075,Springfield - Frank H Freedman,02810000,62,48,49,49,44,40,0,0,0,18.8
+03260025,Westford - Col John Robinson,03260000,62,103,100,0,0,0,0,0,0,18.8
+06150305,Athol-Royalston - Athol-Royalston Middle School,06150000,0,0,0,0,0,95,96,112,99,18.9
+00180010,Avon - Ralph D Butler,00180000,43,53,60,58,58,63,59,0,0,18.9
+00310012,Billerica - John F Kennedy,00310000,49,55,56,63,55,66,0,0,0,18.9
+00350326,Boston - Gardner Pilot Academy,00350000,39,36,38,60,46,42,44,37,35,18.9
+00400009,Braintree - Monatiquot Kindergarten Center,00400000,289,0,0,0,0,0,0,0,0,18.9
+00570003,Chelsea - Shurtleff Early Childhood,00570000,617,0,0,0,0,0,0,0,0,18.9
+00610305,Chicopee - Bellamy Middle,00610000,0,0,0,0,0,0,324,302,269,18.9
+00870305,East Longmeadow - Birchland Park,00870000,0,0,0,0,0,0,194,223,223,18.9
+00870010,East Longmeadow - Mapleshade,00870000,0,0,0,84,107,122,0,0,0,18.9
+01220004,Hanover - Cedar Elementary,01220000,65,65,81,90,65,0,0,0,0,18.9
+01710010,Marshfield - South River,01710000,61,53,69,56,66,64,0,0,0,18.9
+01870020,Millis - Millis Middle,01870000,0,0,0,0,0,108,117,118,101,18.9
+07120002,Monomoy Regional School District - Harwich Elementary School,07120000,102,101,126,110,113,0,0,0,0,18.9
+02070130,Newton - Zervas,02070000,53,54,55,43,59,45,0,0,0,18.9
+02080015,Norfolk - H Olive Day,02080000,96,136,99,0,0,0,0,0,0,18.9
+02810030,Springfield - Elias Brookings,02810000,40,47,52,49,51,53,0,0,0,18.9
+03300305,Weston - Weston Middle,03300000,0,0,0,0,0,0,182,170,214,18.9
+03310030,Westport - Westport Elementary,03310000,0,0,127,145,117,132,0,0,0,18.9
+03420020,Wilmington - Woburn Street,03420000,0,171,134,145,0,0,0,0,0,18.9
+03480136,Worcester - Heard Street,03480000,50,37,40,44,40,42,32,0,0,18.9
+00050030,Agawam - James Clark School,00050000,52,73,62,61,84,0,0,0,0,19
+00350543,Boston - Greater Egleston Community High School,00350000,0,0,0,0,0,0,0,0,0,19
+00350138,Boston - O W Holmes,00350000,48,59,56,53,50,34,0,0,0,19
+00780005,Dover - Chickering,00780000,51,66,79,81,88,104,0,0,0,19
+06580505,Dudley-Charlton Reg - Shepherd Hill Regional High,06580000,0,0,0,0,0,0,0,0,0,19
+00950009,Fall River - Carlton M. Viveiros Elementary School,00950000,126,115,127,104,88,84,0,0,0,19
+01220005,Hanover - Center Elementary,01220000,112,101,108,0,0,0,0,0,0,19
+01280020,Haverhill - Crowell,01280000,99,0,0,0,0,0,0,0,0,19
+01490535,Lawrence - Performing & Fine Arts High School,01490000,0,0,0,0,0,0,0,0,0,19
+01600005,Lowell - Rogers Early Learning Center,01600000,118,90,91,0,0,0,0,0,0,19
+01630510,Lynn - Lynn English High,01630000,0,0,0,0,0,0,0,0,0,19
+01670003,Mansfield - Roland Green School,01670000,0,0,0,0,0,0,0,0,0,19
+01850305,Milford - Stacy Middle,01850000,0,0,0,0,0,293,310,316,0,19
+01960010,Nahant - Johnson,01960000,22,12,20,20,14,25,31,0,0,19
+02580003,Salem - Bates,02580000,57,52,58,46,48,41,0,0,0,19
+02640020,Scituate - Wampatuck Elementary,02640000,42,49,49,49,40,60,66,0,0,19
+02840025,Stoneham - Robin Hood,02840000,54,60,62,60,47,0,0,0,0,19
+02840030,Stoneham - South,02840000,59,71,72,57,76,0,0,0,0,19
+03220005,West Boylston - Major Edwards Elementary,03220000,56,67,67,57,84,80,0,0,0,19
+03430315,Winchendon - Murdock Middle School,03430000,0,0,0,0,0,0,113,118,122,19
+03480405,Worcester - Burncoat Middle School,03480000,0,0,0,0,0,0,0,289,293,19
+04450105,Abby Kelley Foster Charter Public (District) - Abby Kelley Foster Charter Public School,04450000,117,125,122,123,121,128,123,117,109,19.1
+00100025,Arlington - Cyrus E Dallin,00100000,74,78,66,76,89,73,0,0,0,19.1
+00100410,Arlington - Ottoson Middle,00100000,0,0,0,0,0,0,397,341,369,19.1
+00350054,Boston - Charles H Taylor,00350000,110,88,86,94,78,75,0,0,0,19.1
+00350146,Boston - James Condon Elementary,00350000,95,125,132,118,135,121,0,0,0,19.1
+00350182,Boston - Joseph J Hurley,00350000,43,49,50,35,40,35,30,18,13,19.1
+00350190,Boston - Joyce Kilmer,00350000,46,69,48,50,55,46,57,21,24,19.1
+00460005,Brookline - Edith C Baker,00460000,112,92,115,88,75,98,87,78,69,19.1
+00490050,Cambridge - Peabody,00490000,50,46,43,45,45,45,0,0,0,19.1
+04390050,Conservatory Lab Charter (District) - Conservatory Lab Charter School,04390000,52,52,47,45,45,42,35,19,12,19.1
+00990050,Foxborough - Charles Taylor Elementary,00990000,43,55,51,59,60,0,0,0,0,19.1
+06730505,Groton-Dunstable - Groton Dunstable Regional,06730000,0,0,0,0,0,0,0,0,0,19.1
+06730005,Groton-Dunstable - Swallow/Union School,06730000,57,51,58,56,63,0,0,0,0,19.1
+01280026,Haverhill - Golden Hill,01280000,64,108,117,124,98,0,0,0,0,19.1
+01990405,Needham - Pollard Middle,01990000,0,0,0,0,0,0,0,403,457,19.1
+02010070,New Bedford - John Hannigan,02010000,0,52,46,49,40,38,0,0,0,19.1
+07450015,Pentucket - Dr John C Page School,07450000,47,46,56,45,66,60,78,0,0,19.1
+35060505,Pioneer Charter School of Science II (PCSS-II) (District) - Pioneer Charter School of Science II (PCSS-II),35060000,0,0,0,0,0,0,0,70,73,19.1
+02430320,Quincy - Reay E Sterling Middle,02430000,0,0,0,0,0,92,81,86,66,19.1
+07600405,Silver Lake - Silver Lake Regional Middle School,07600000,0,0,0,0,0,0,1,313,293,19.1
+03250015,Westfield - Franklin Ave,03250000,36,40,36,37,36,43,0,0,0,19.1
+03420025,Wilmington - Shawsheen Elementary,03420000,0,127,117,129,0,0,0,0,0,19.1
+03480350,Worcester - Claremont Academy,03480000,0,0,0,0,0,0,0,107,98,19.1
+00250505,Bellingham - Bellingham High School,00250000,0,0,0,0,0,0,0,0,0,19.2
+00310005,Billerica - Thomas Ditson,00310000,92,91,101,86,100,106,0,0,0,19.2
+00970048,Fitchburg - Memorial Intermediate,00970000,0,0,0,0,0,164,170,148,165,19.2
+06730305,Groton-Dunstable - Groton Dunstable Regional Middle,06730000,0,0,0,0,0,196,207,207,218,19.2
+01180005,Halifax - Halifax Elementary,01180000,77,80,86,69,88,70,96,0,0,19.2
+01410015,Hudson - Forest Avenue Elementary,01410000,56,56,66,73,63,0,0,0,0,19.2
+04350305,Innovation Academy Charter - Innovation Academy Charter School,04350000,0,0,0,0,0,105,100,100,100,19.2
+01740305,Maynard - Fowler School,01740000,0,0,0,0,95,130,114,116,0,19.2
+01750007,Medfield - Ralph Wheelock School,01750000,0,0,163,186,0,0,0,0,0,19.2
+01970005,Nantucket - Nantucket Elementary,01970000,124,134,110,110,113,109,0,0,0,19.2
+07280015,New Salem-Wendell - Swift River,07280000,16,19,13,21,24,16,22,0,0,19.2
+02090035,North Adams - Brayton,02090000,49,56,65,60,40,35,46,42,0,19.2
+02200025,Norwood - Charles J Prescott,02200000,3,48,51,56,52,46,0,0,0,19.2
+07400405,Old Rochester - Old Rochester Regional Jr High,07400000,0,0,0,0,0,0,0,223,246,19.2
+02230015,Orange - Fisher Hill,02230000,78,82,88,0,0,0,0,0,0,19.2
+04820050,River Valley Charter - River Valley Charter School,04820000,34,32,32,33,33,32,31,32,28,19.2
+02580070,Salem - Witchcraft Heights,02580000,86,96,87,75,92,66,0,0,0,19.2
+02880010,Sudbury - Josiah Haynes,02880000,65,48,78,64,73,78,0,0,0,19.2
+07730015,Triton - Salisbury Elementary,07730000,57,74,78,59,61,61,65,0,0,19.2
+07750310,Wachusett - Central Tree Middle,07750000,0,0,0,0,0,0,133,129,160,19.2
+03270005,Westhampton - Westhampton Elementary School,03270000,17,16,17,19,16,23,23,0,0,19.2
+00100055,Arlington - M Norcross Stratton,00100000,67,68,69,68,66,70,0,0,0,19.3
+00250315,Bellingham - Bellingham Memorial Middle School,00250000,0,0,0,0,0,184,191,192,167,19.3
+06220010,Blackstone-Millville - Millville Elementary,06220000,36,26,49,30,48,35,0,0,0,19.3
+00350135,Boston - Henry Grew,00350000,55,45,44,40,34,33,0,0,0,19.3
+00500020,Canton - Dean S Luce,00500000,88,94,97,80,92,103,0,0,0,19.3
+00790505,Dracut - Dracut Senior High,00790000,0,0,0,0,0,0,0,0,0,19.3
+01010013,Franklin - J F Kennedy Memorial,01010000,51,56,64,74,81,80,0,0,0,19.3
+01280008,Haverhill - Bradford Elementary,01280000,48,76,68,156,132,127,0,0,0,19.3
+01330018,Holbrook - John F Kennedy,01330000,79,105,76,107,0,0,0,0,0,19.3
+01490530,Lawrence - Business Management & Finance High School,01490000,0,0,0,0,0,0,0,0,0,19.3
+01640010,Lynnfield - Huckleberry Hill,01640000,76,74,79,83,73,0,0,0,0,19.3
+01710005,Marshfield - Eames Way School,01710000,27,33,37,47,46,48,0,0,0,19.3
+01740010,Maynard - Green Meadow,01740000,109,124,122,113,0,0,0,0,0,19.3
+01750005,Medfield - Dale Street,01750000,0,0,0,0,197,208,0,0,0,19.3
+02070070,Newton - Lincoln-Eliot,02070000,57,64,53,53,57,53,0,0,0,19.3
+02100025,Northampton - Leeds,02100000,47,55,54,56,63,60,0,0,0,19.3
+02390046,Plymouth - South Elementary,02390000,110,111,112,122,138,0,0,0,0,19.3
+07530405,Quabbin - Quabbin Regional Middle School,07530000,0,0,0,0,0,0,0,200,205,19.3
+02740111,Somerville - E Somerville Community,02740000,66,105,104,87,71,59,62,60,54,19.3
+07660305,Southwick-Tolland-Granville Regional School District - Powder Mill,07660000,0,0,0,0,0,106,103,123,118,19.3
+02910010,Swampscott - Hadley,02910000,57,58,62,55,59,0,0,0,0,19.3
+02930010,Taunton - East Taunton Elementary,02930000,113,111,123,124,128,0,0,0,0,19.3
+03170020,Wellesley - John D Hardy,03170000,40,54,54,60,53,44,0,0,0,19.3
+03350050,Westwood - Westwood Integrated Preschool,03350000,0,0,0,0,0,0,0,0,0,19.3
+03360085,Weymouth - Ralph Talbot,03360000,61,62,66,45,63,0,0,0,0,19.3
+00300305,Beverly - Briscoe Middle,00300000,0,0,0,0,0,0,322,314,283,19.4
+00860010,Easthampton - Maple,00860000,48,38,41,41,37,0,0,0,0,19.4
+01410410,Hudson - David J. Quinn Middle School,01410000,0,0,0,0,0,228,212,243,0,19.4
+01440007,Ipswich - Paul F Doyon Memorial,01440000,55,65,62,75,66,85,0,0,0,19.4
+06900505,King Philip - King Philip Regional High,06900000,0,0,0,0,0,0,0,0,0,19.4
+01550505,Lexington - Lexington High,01550000,0,0,0,0,0,0,0,0,0,19.4
+01550035,Lexington - Maria Hastings,01550000,58,66,79,66,80,78,0,0,0,19.4
+01600002,Lowell - Dr Gertrude Bailey,01600000,97,99,95,96,94,0,0,0,0,19.4
+06980030,Manchester Essex Regional - Manchester Essex Regional Middle School,06980000,0,0,0,0,0,0,132,124,120,19.4
+04640305,Marblehead Community Charter Public - Marblehead Community Charter Public School,04640000,0,0,0,0,46,49,48,40,47,19.4
+07250310,Nashoba - Hale,07250000,0,0,0,0,0,0,88,92,81,19.4
+02070015,Newton - Bowen,02070000,65,100,83,73,80,74,0,0,0,19.4
+02070025,Newton - Cabot,02070000,61,57,79,70,76,75,0,0,0,19.4
+02140005,Northbridge - Northbridge Elementary,02140000,188,201,0,0,0,0,0,0,0,19.4
+07450005,Pentucket - Elmer S Bagnall,07450000,61,52,73,84,82,93,85,0,0,19.4
+02390010,Plymouth - Hedge,02390000,32,33,59,51,25,23,0,0,0,19.4
+02640015,Scituate - Jenkins Elementary School,02640000,57,56,73,66,95,86,113,0,0,19.4
+07750315,Wachusett - Chocksett Middle School,07750000,0,0,0,0,0,94,92,111,113,19.4
+03170050,Wellesley - Ernest F Upham,03170000,36,45,35,43,39,35,0,0,0,19.4
+03360080,Weymouth - William Seach,03360000,62,90,81,84,58,0,0,0,0,19.4
+03470055,Woburn - Malcolm White,03470000,60,61,54,53,44,64,0,0,0,19.4
+03480515,Worcester - North High,03480000,0,0,0,0,0,0,0,0,0,19.4
+03480520,Worcester - South High Community,03480000,0,0,0,0,0,0,0,0,0,19.4
+00300505,Beverly - Beverly High,00300000,0,0,0,0,0,0,0,0,0,19.5
+00350229,Boston - Maurice J Tobin,00350000,77,60,60,60,48,29,42,23,26,19.5
+00350231,Boston - Michael J Perkins,00350000,39,42,45,62,26,23,0,0,0,19.5
+00350258,Boston - William H Ohrenberger,00350000,0,0,0,89,115,104,115,90,98,19.5
+00440007,Brockton - Barrett Russell School,00440000,236,0,0,0,0,0,0,0,0,19.5
+00710305,Danvers - Holten Richmond Middle School,00710000,0,0,0,0,0,0,282,296,296,19.5
+00730030,Dedham - Oakdale,00730000,0,49,60,59,54,64,0,0,0,19.5
+00990020,Foxborough - Vincent M Igo Elementary,00990000,88,81,75,90,66,0,0,0,0,19.5
+06720059,Gateway - Chester Elementary,06720000,20,10,20,22,21,0,0,0,0,19.5
+01510015,Leicester - Leicester Middle,01510000,0,0,0,0,0,0,112,137,133,19.5
+01550305,Lexington - Jonas Clarke Middle,01550000,0,0,0,0,0,0,250,280,294,19.5
+06950505,Lincoln-Sudbury - Lincoln-Sudbury Regional High,06950000,0,0,0,0,0,0,0,0,0,19.5
+01710020,Marshfield - Gov Edward Winslow,01710000,45,65,89,64,80,80,0,0,0,19.5
+02010010,New Bedford - Charles S Ashley,02010000,51,57,49,64,65,66,0,0,0,19.5
+02290027,Peabody - William A Welch Sr,02290000,58,64,43,50,50,48,0,0,0,19.5
+04970205,Pioneer Valley Chinese Immersion Charte - Pioneer Valley Chinese Immersion Charter School,04970000,43,48,44,44,43,45,57,15,20,19.5
+02390015,Plymouth - Manomet Elementary,02390000,51,53,51,62,59,47,0,0,0,19.5
+02460017,Reading - J Warren Killam,02460000,67,69,81,74,87,62,0,0,0,19.5
+02480505,Revere - Revere High,02480000,0,0,0,0,0,0,0,0,0,19.5
+02690010,Sherborn - Pine Hill,02690000,50,60,61,64,69,66,0,0,0,19.5
+02770005,Southbridge - Charlton Street,02770000,0,86,95,82,97,76,0,0,0,19.5
+02810180,Springfield - Warner,02810000,44,60,52,43,49,38,0,0,0,19.5
+02910020,Swampscott - Stanley,02910000,54,64,55,60,61,0,0,0,0,19.5
+02930505,Taunton - Taunton High,02930000,0,0,0,0,0,0,0,0,643,19.5
+03010305,Tyngsborough - Tyngsborough Middle,03010000,0,0,0,0,0,0,128,158,146,19.5
+03050005,Wakefield - Dolbeare,03050000,81,79,83,78,77,0,0,0,0,19.5
+03070305,Walpole - Bird Middle,03070000,0,0,0,0,0,0,165,173,175,19.5
+03070015,Walpole - Fisher,03070000,76,80,64,72,75,85,0,0,0,19.5
+03140015,Watertown - Cunniff,03140000,55,47,45,49,53,46,0,0,0,19.5
+03250033,Westfield - Munger Hill,03250000,44,47,58,75,67,61,0,0,0,19.5
+03260505,Westford - Westford Academy,03260000,0,0,0,0,0,0,0,0,0,19.5
+03350017,Westwood - Martha Jones,03350000,38,48,44,55,56,54,0,0,0,19.5
+06000505,Acton-Boxborough - Acton-Boxborough Regional High,06000000,0,0,0,0,0,0,0,0,0,19.6
+00230012,Bedford - Lt Job Lane School,00230000,0,0,0,164,174,202,0,0,0,19.6
+00350080,Boston - Donald Mckay,00350000,64,70,90,85,85,76,82,57,88,19.6
+00350180,Boston - John Winthrop,00350000,61,61,58,54,54,41,0,0,0,19.6
+04810550,Boston Renaissance Charter Public - Boston Renaissance Charter Public School,04810000,116,124,128,127,113,121,96,0,0,19.6
+00400015,Braintree - Highlands,00400000,0,80,70,73,89,74,0,0,0,19.6
+00820505,Duxbury - Duxbury High,00820000,0,0,0,0,0,0,0,0,0,19.6
+00950130,Fall River - Spencer Borden,00950000,72,91,101,81,86,81,0,0,0,19.6
+01010040,Franklin - Annie Sullivan Middle School,01010000,0,0,0,0,0,0,150,151,159,19.6
+01370003,Holyoke - Joseph Metcalf School,01370000,23,0,0,0,0,0,0,0,0,19.6
+01580005,Littleton - Shaker Lane Elementary,01580000,133,124,107,0,0,0,0,0,0,19.6
+01670035,Mansfield - Harold L Qualters Middle,01670000,0,0,0,0,0,0,379,351,359,19.6
+01850010,Milford - Memorial,01850000,161,156,156,0,0,0,0,0,0,19.6
+01890007,Milton - Cunningham School,01890000,82,65,102,74,84,90,0,0,0,19.6
+01890020,Milton - Tucker,01890000,68,68,61,60,53,74,0,0,0,19.6
+07200003,Narragansett - Phillipston Memorial,07200000,17,21,24,21,19,0,0,0,0,19.6
+02010115,New Bedford - John Avery Parker,02010000,51,42,45,32,48,29,0,0,0,19.6
+02200020,Norwood - John P Oldham,02200000,0,55,34,45,46,46,0,0,0,19.6
+02380010,Plainville - Anna Ware Jackson,02380000,89,102,94,108,0,0,0,0,0,19.6
+02390030,Plymouth - Nathaniel Morton Elementary,02390000,111,83,108,108,100,100,0,0,0,19.6
+02480014,Revere - Rumney Marsh Academy,02480000,0,0,0,0,0,0,210,185,183,19.6
+02640305,Scituate - Gates Intermediate School,02640000,0,0,0,0,0,0,0,232,253,19.6
+02740115,Somerville - West Somerville Neighborhood,02740000,46,40,36,33,24,32,32,49,60,19.6
+02920006,Swansea - Elizabeth S Brown,02920000,0,0,0,105,91,99,0,0,0,19.6
+03170045,Wellesley - Schofield,03170000,58,63,58,67,52,50,0,0,0,19.6
+03360065,Weymouth - Lawrence W Pingree,03360000,40,43,47,55,46,0,0,0,0,19.6
+03480240,Worcester - Union Hill School,03480000,67,69,67,71,74,50,51,0,0,19.6
+00350215,Boston - Manassah E Bradley,00350000,37,51,43,43,57,36,0,0,0,19.7
+00360325,Bourne - Bourne Middle School,00360000,0,0,0,0,0,190,182,187,166,19.7
+00880505,Easton - Oliver Ames High,00880000,0,0,0,0,0,0,0,0,0,19.7
+00970340,Fitchburg - McKay Arts Academy,00970000,76,71,73,57,73,75,94,69,68,19.7
+01280050,Haverhill - Dr Paul Nettle,01280000,0,0,0,0,0,105,138,134,115,19.7
+01440015,Ipswich - Winthrop,01440000,52,64,63,78,69,85,0,0,0,19.7
+01720005,Mashpee - Kenneth Coombs School,01720000,106,122,123,0,0,0,0,0,0,19.7
+02010105,New Bedford - Carlos Pacheco,02010000,72,62,66,54,58,40,0,0,0,19.7
+02180010,Norton - L G Nourse Elementary,02180000,72,61,65,67,0,0,0,0,0,19.7
+02200015,Norwood - F A Cleveland,02200000,0,63,75,67,76,57,0,0,0,19.7
+02810045,Springfield - William N. DeBerry,02810000,48,58,46,54,42,44,0,0,0,19.7
+02950505,Tewksbury - Tewksbury Memorial High,02950000,0,0,0,0,0,0,0,0,0,19.7
+07750001,Wachusett - Early Childhood Center,07750000,0,0,0,0,0,0,0,0,0,19.7
+03350012,Westwood - Downey,03350000,29,45,30,48,43,55,0,0,0,19.7
+03440040,Winchester - Muraco Elementary,03440000,57,62,68,81,76,62,0,0,0,19.7
+00030025,Acushnet - Acushnet Elementary School,00030000,96,101,87,105,113,0,0,0,0,19.8
+00160001,Attleboro - A. Irvin Studley Elementary School,00160000,91,78,95,96,79,0,0,0,0,19.8
+00310015,Billerica - Parker,00310000,73,87,85,68,75,68,0,0,0,19.8
+00400033,Braintree - Archie T Morrison,00400000,26,91,86,66,66,65,0,0,0,19.8
+00440010,Brockton - Brookfield,00440000,111,127,119,127,110,99,0,0,0,19.8
+00460040,Brookline - Pierce,00460000,108,112,91,88,84,89,82,71,90,19.8
+00640050,Clinton - Clinton Elementary,00640000,153,192,161,150,0,0,0,0,0,19.8
+04070405,Dudley Street Neighborhood Charter School - Dudley Street Neighborhood Charter School,04070000,44,44,43,44,0,0,0,0,0,19.8
+06580310,Dudley-Charlton Reg - Charlton Middle School,06580000,0,0,0,0,0,175,195,187,191,19.8
+01170015,Hadley - Hadley Elementary,01170000,30,43,40,55,42,44,49,0,0,19.8
+01530040,Leominster - Priest Street,01530000,153,0,0,0,0,0,0,0,0,19.8
+01580305,Littleton - Littleton Middle School,01580000,0,0,0,0,0,0,123,131,112,19.8
+01590025,Longmeadow - Wolf Swamp Road,01590000,44,53,62,59,66,67,0,0,0,19.8
+01640405,Lynnfield - Lynnfield Middle School,01640000,0,0,0,0,0,177,190,167,193,19.8
+01640020,Lynnfield - Summer Street,01640000,86,71,83,85,86,0,0,0,0,19.8
+01680005,Marblehead - Malcolm L Bell,01680000,75,73,92,83,0,0,0,0,0,19.8
+01730010,Mattapoisett - Old Hammondtown,01730000,0,0,0,0,70,82,79,0,0,19.8
+02190020,Norwell - William G Vinal,02190000,75,73,80,85,101,105,0,0,0,19.8
+07500006,Pioneer Valley - Bernardston Elementary,07500000,19,14,22,21,20,22,39,0,0,19.8
+02740015,Somerville - Benjamin G Brown,02740000,40,46,43,40,35,44,39,0,0,19.8
+03040005,Uxbridge - Taft Early Learning Center,03040000,141,127,136,0,0,0,0,0,0,19.8
+04300305,Advanced Math and Science Academy Charter (District) - Advanced Math and Science Academy Charter School,04300000,0,0,0,0,0,0,138,147,145,19.9
+06160305,Ayer Shirley School District - Ayer Shirley Regional Middle School,06160000,0,0,0,0,0,0,141,123,148,19.9
+06220008,Blackstone-Millville - John F Kennedy Elementary,06220000,96,101,97,90,0,0,0,0,0,19.9
+00350012,Boston - Boston Teachers Union School,00350000,24,24,26,31,29,20,47,47,56,19.9
+00350430,Boston - Clarence R Edwards Middle,00350000,0,0,0,0,0,0,121,127,168,19.9
+00350156,Boston - James Otis,00350000,57,57,63,59,63,39,0,0,0,19.9
+00400025,Braintree - Liberty,00400000,0,85,106,70,84,90,0,0,0,19.9
+04310205,Community Day Charter Public School - R. Kingman Webster - Community Day Charter Public School - R. Kingman Webster,04310000,42,39,39,38,0,0,0,0,0,19.9
+00710045,Danvers - Willis E Thorpe,00710000,58,56,47,65,60,51,0,0,0,19.9
+06450025,Dennis-Yarmouth - Station Avenue Elementary,06450000,99,118,110,107,0,0,0,0,0,19.9
+01000015,Framingham - Hemenway,01000000,103,93,103,90,89,88,0,0,0,19.9
+01010405,Franklin - Horace Mann,01010000,0,0,0,0,0,0,152,152,146,19.9
+01030020,Gardner - Waterford Street,01030000,204,108,109,0,0,0,0,0,0,19.9
+01600036,Lowell - Pawtucketville Memorial,01600000,95,94,90,97,90,0,0,0,0,19.9
+01650027,Malden - Forestdale,01650000,73,70,70,64,75,71,64,58,48,19.9
+01690005,Marion - Sippican,01690000,45,54,64,55,61,76,65,0,0,19.9
+02010015,New Bedford - Elizabeth Carter Brooks,02010000,33,48,47,44,46,38,0,0,0,19.9
+02070105,Newton - Memorial Spaulding,02070000,79,69,72,66,77,71,0,0,0,19.9
+02440410,Randolph - Randolph Community Middle,02440000,0,0,0,0,0,0,235,233,222,19.9
+02500005,Rochester - Rochester Memorial,02500000,50,54,63,60,61,73,89,0,0,19.9
+02640007,Scituate - Cushing Elementary,02640000,46,58,51,70,50,72,64,0,0,19.9
+02810190,Springfield - White Street,02810000,67,74,60,56,45,47,0,0,0,19.9
+02880025,Sudbury - General John Nixon Elementary,02880000,47,71,56,69,72,69,0,0,0,19.9
+07750032,Wachusett - Leroy E.Mayo,07750000,73,82,83,87,85,80,0,0,0,19.9
+03090020,Ware - Stanley M Koziol Elementary School,03090000,90,101,115,107,0,0,0,0,0,19.9
+03260007,Westford - Day Elementary,03260000,0,0,0,120,137,118,0,0,0,19.9
+03420080,Wilmington - West Intermediate,03420000,0,0,0,0,120,137,0,0,0,19.9
+03480160,Worcester - Lincoln Street,03480000,53,43,43,42,34,28,21,0,0,19.9
+00070005,Amesbury - Amesbury Elementary,00070000,87,83,74,86,74,0,0,0,0,20
+00350390,Boston - Blackstone,00350000,72,99,107,98,84,69,0,0,0,20
+04260205,Community Day Charter Public School - Gateway - Community Day Charter Public School - Gateway,04260000,41,40,39,39,0,0,0,0,0,20
+00870013,East Longmeadow - Meadow Brook,00870000,165,176,177,0,0,0,0,0,0,20
+01010310,Franklin - Remington Middle,01010000,0,0,0,0,0,0,162,161,150,20
+01770305,Medway - Medway Middle,01770000,0,0,0,0,0,192,163,216,200,20
+01910025,Monson - Quarry Hill Community School,01910000,64,68,62,71,60,0,0,0,0,20
+01990020,Needham - John Eliot,01990000,56,67,71,63,67,65,0,0,0,20
+02070310,Newton - Charles E Brown Middle,02070000,0,0,0,0,0,0,257,242,240,20
+02480003,Revere - A. C. Whelan Elementary School,02480000,86,122,109,122,141,113,0,0,0,20
+02810115,Springfield - Liberty,02810000,49,50,49,48,48,40,0,0,0,20
+07750040,Wachusett - Paxton Center,07750000,41,43,59,66,63,62,66,68,69,20
+03070010,Walpole - Boyden,03070000,53,59,71,83,74,79,0,0,0,20
+03250040,Westfield - Southampton Road,03250000,66,76,72,82,66,77,0,0,0,20
+00310310,Billerica - Locke Middle,00310000,0,0,0,0,0,0,196,223,214,20.1
+00350545,Boston - Boston Latin Academy,00350000,0,0,0,0,0,0,0,271,278,20.1
+00350565,Boston - Quincy Upper School,00350000,0,0,0,0,0,0,131,68,72,20.1
+06250020,Bridgewater-Raynham - Merrill Elementary School,06250000,145,151,0,0,0,0,0,0,0,20.1
+00610310,Chicopee - Fairview Middle,00610000,0,0,0,0,0,0,211,227,247,20.1
+04180305,Christa McAuliffe Charter Public (District) - Christa McAuliffe Charter Public School,04180000,0,0,0,0,0,0,144,138,121,20.1
+04750505,Dorchester Collegiate Academy Charter - Dorchester Collegiate Academy Charter,04750000,0,0,0,0,41,40,29,38,37,20.1
+00860020,Easthampton - Neil A Pepin,00860000,49,33,38,22,44,0,0,0,0,20.1
+00880020,Easton - Moreau Hall,00880000,77,53,86,0,0,0,0,0,0,20.1
+01070305,Gloucester - Ralph B OMaley Middle,01070000,0,0,0,0,0,0,188,203,238,20.1
+06730010,Groton-Dunstable - Florence Roche School,06730000,87,95,105,134,120,0,0,0,0,20.1
+01360007,Holliston - Miller School,01360000,0,0,0,220,199,231,0,0,0,20.1
+01490053,Lawrence - Edward F. Parthum,01490000,64,137,144,120,139,0,0,0,0,20.1
+01490022,Lawrence - Gerard A. Guilmette,01490000,0,145,122,128,145,0,0,0,0,20.1
+01600020,Lowell - Abraham Lincoln,01600000,98,94,93,113,77,0,0,0,0,20.1
+01600330,Lowell - Henry J Robinson Middle,01600000,0,0,0,0,0,154,164,163,173,20.1
+06980010,Manchester Essex Regional - Manchester Memorial Elementary,06980000,43,64,71,68,69,87,0,0,0,20.1
+04920005,Martin Luther King Jr. Charter School of Excellence - Martin Luther King Jr. Charter School of Excellence,04920000,61,62,63,62,60,59,0,0,0,20.1
+01990035,Needham - Hillside Elementary,01990000,57,79,75,72,76,62,0,0,0,20.1
+07350310,North Middlesex - Nissitissit Middle School,07350000,0,0,0,0,0,120,157,148,125,20.1
+02100029,Northampton - R. K. Finn Ryan Road,02100000,33,36,42,39,43,42,0,0,0,20.1
+08530605,Northeast Metropolitan Regional Vocational Technical - Northeast Metro Regional Vocational,08530000,0,0,0,0,0,0,0,0,0,20.1
+02460310,Reading - Walter S Parker Middle,02460000,0,0,0,0,0,0,196,189,208,20.1
+02660005,Sharon - Cottage Street,02660000,66,80,98,90,97,98,0,0,0,20.1
+02660010,Sharon - East Elementary,02660000,63,76,64,74,71,104,0,0,0,20.1
+07750020,Wachusett - Dawson,07750000,68,83,87,78,79,83,0,0,0,20.1
+03260004,Westford - Abbot Elementary,03260000,0,0,0,114,158,118,0,0,0,20.1
+03350010,Westwood - Deerfield School,03350000,41,30,46,45,41,44,0,0,0,20.1
+00010405,Abington - Frolio Middle School,00010000,0,0,0,0,0,0,0,156,149,20.2
+00050010,Agawam - Clifford M Granger,00050000,54,55,64,66,64,0,0,0,0,20.2
+00080020,Amherst - Fort River Elementary,00080000,43,43,65,58,45,60,52,0,0,20.2
+00140405,Ashland - Ashland Middle,00140000,0,0,0,0,0,0,198,194,175,20.2
+00310305,Billerica - Marshall Middle School,00310000,0,0,0,0,0,0,195,270,226,20.2
+00350380,Boston - Young Achievers,00350000,43,58,58,58,54,46,52,48,53,20.2
+00710015,Danvers - Great Oak,00710000,62,58,58,53,64,72,0,0,0,20.2
+00860005,Easthampton - Center School,00860000,22,39,40,44,22,0,0,0,0,20.2
+00880003,Easton - Center School,00880000,89,90,82,0,0,0,0,0,0,20.2
+01010035,Franklin - Davis Thayer,01010000,44,39,39,66,52,60,0,0,0,20.2
+01410030,Hudson - C A Farley,01410000,78,113,108,103,98,0,0,0,0,20.2
+01630030,Lynn - Julia F Callahan,01630000,62,88,83,87,78,57,0,0,0,20.2
+01760068,Medford - John J McGlynn Elementary School,01760000,106,80,83,83,92,97,0,0,0,20.2
+02100020,Northampton - Jackson Street,02100000,48,59,57,43,61,48,0,0,0,20.2
+02260405,Oxford - Oxford Middle,02260000,0,0,0,0,0,144,153,144,160,20.2
+02390005,Plymouth - Cold Spring,02390000,37,42,49,40,35,41,0,0,0,20.2
+02390405,Plymouth - Plymouth Commun Intermediate,02390000,0,0,0,0,0,0,312,344,330,20.2
+02480025,Revere - Abraham Lincoln,02480000,94,115,114,88,90,99,0,0,0,20.2
+02710005,Shrewsbury - Beal School,02710000,225,84,0,0,0,0,0,0,0,20.2
+03350015,Westwood - Paul Hanlon,03350000,36,39,22,46,43,40,0,0,0,20.2
+03440045,Winchester - Ambrose Elementary,03440000,71,66,80,78,89,74,0,0,0,20.2
+03480177,Worcester - Francis J McGrath Elementary,03480000,47,50,33,29,35,30,18,0,0,20.2
+06100010,Ashburnham-Westminster - Meetinghouse School,06100000,72,85,0,0,0,0,0,0,0,20.3
+00730025,Dedham - Greenlodge,00730000,0,70,65,55,55,60,0,0,0,20.3
+00770005,Douglas - Douglas Primary School,00770000,87,82,0,0,0,0,0,0,0,20.3
+06650001,Freetown-Lakeville - Freetown Elementary School,06650000,84,96,80,88,0,0,0,0,0,20.3
+01220305,Hanover - Hanover Middle,01220000,0,0,0,0,0,212,231,198,235,20.3
+01280080,Haverhill - Walnut Square,01280000,38,49,56,0,0,0,0,0,0,20.3
+01530010,Leominster - Southeast School,01530000,115,87,77,102,96,107,0,0,0,20.3
+01620020,Lunenburg - Turkey Hill Middle,01620000,0,0,0,0,115,134,118,114,0,20.3
+01750003,Medfield - Memorial School,01750000,148,170,0,0,0,0,0,0,0,20.3
+02070055,Newton - Franklin,02070000,76,79,66,71,53,68,0,0,0,20.3
+02190405,Norwell - Norwell Middle School,02190000,0,0,0,0,0,0,177,206,200,20.3
+02260010,Oxford - Alfred M Chaffee,02260000,138,134,161,0,0,0,0,0,0,20.3
+02310305,Pembroke - Pembroke Community Middle School,02310000,0,0,0,0,0,0,0,250,274,20.3
+02460002,Reading - Alice M Barrows,02460000,60,61,53,62,63,60,0,0,0,20.3
+07600505,Silver Lake - Silver Lake Regional High,07600000,0,0,0,0,0,0,0,0,0,20.3
+39020900,TEC Connections Academy Commonwealth Virtual School District - TEC Connections Academy Commonwealth Virtual School,39020000,8,9,14,11,13,14,34,30,40,20.3
+07750018,Wachusett - Davis Hill Elementary,07750000,54,60,76,89,88,86,0,0,0,20.3
+03060005,Wales - Wales Elementary,03060000,16,21,22,23,22,20,21,0,0,20.3
+03320005,West Springfield - John Ashley,03320000,242,0,0,0,0,0,0,0,0,20.3
+00200010,Barnstable - Centerville Elementary,00200000,85,88,88,73,0,0,0,0,0,20.4
+00260505,Belmont - Belmont High,00260000,0,0,0,0,0,0,0,0,0,20.4
+00310026,Billerica - Hajjar Elementary,00310000,72,100,78,89,94,82,0,0,0,20.4
+00350257,Boston - Orchard Gardens,00350000,77,83,100,90,95,97,77,81,86,20.4
+00570505,Chelsea - Chelsea High,00570000,0,0,0,0,0,0,0,0,0,20.4
+00670030,Concord - Willard,00670000,63,82,75,80,99,87,0,0,0,20.4
+06500310,Dighton-Rehoboth - Dorothy L Beckwith,06500000,0,0,0,0,0,146,146,141,160,20.4
+00950315,Fall River - Morton Middle,00950000,0,0,0,0,0,0,175,229,200,20.4
+01000039,Framingham - Potter Road,01000000,72,100,96,86,84,63,0,0,0,20.4
+01100025,Grafton - North Grafton Elementary,01100000,121,106,0,0,0,0,0,0,0,20.4
+01390005,Hopkinton - Center,01390000,216,227,0,0,0,0,0,0,0,20.4
+01510010,Leicester - Leicester Primary School,01510000,98,118,108,0,0,0,0,0,0,20.4
+01590005,Longmeadow - Blueberry Hill,01590000,55,97,81,97,83,90,0,0,0,20.4
+01650057,Malden - Salemwood,01650000,145,130,131,102,116,124,95,119,115,20.4
+01670007,Mansfield - Everett W Robinson,01670000,221,249,257,0,0,0,0,0,0,20.4
+01820010,Middleborough - Mary K. Goode Elementary School,01820000,0,128,127,125,112,132,0,0,0,20.4
+01890005,Milton - Collicot,01890000,114,99,96,85,109,91,0,0,0,20.4
+01980043,Natick - Memorial,01980000,98,78,93,86,78,0,0,0,0,20.4
+01990050,Needham - Newman Elementary,01990000,97,123,105,110,89,113,0,0,0,20.4
+02010135,New Bedford - William H Taylor,02010000,48,32,38,45,31,24,0,0,0,20.4
+02360035,Pittsfield - Egremont,02360000,82,79,89,91,92,81,0,0,0,20.4
+02390012,Plymouth - Indian Brook,02390000,71,99,93,139,105,103,0,0,0,20.4
+02810035,Springfield - Daniel B Brunton,02810000,73,84,83,91,71,65,0,0,0,20.4
+03070005,Walpole - Elm Street School,03070000,59,68,81,70,71,78,0,0,0,20.4
+03170025,Wellesley - Hunnewell,03170000,42,46,47,46,52,57,0,0,0,20.4
+03360020,Weymouth - Maria Weston Chapman Middle School,03360000,0,0,0,0,0,0,0,474,492,20.4
+03420060,Wilmington - North Intermediate,03420000,0,0,0,0,142,178,0,0,0,20.4
+03480115,Worcester - Grafton Street,03480000,66,61,56,46,48,48,35,0,0,20.4
+03480145,Worcester - Lake View,03480000,50,50,41,45,30,33,40,0,0,20.4
+06000005,Acton-Boxborough - Blanchard Memorial School,06000000,41,40,52,67,59,59,75,0,0,20.5
+00170305,Auburn - Auburn Middle,00170000,0,0,0,0,0,0,191,196,205,20.5
+06250002,Bridgewater-Raynham - Mitchell Elementary School,06250000,194,235,251,225,0,0,0,0,0,20.5
+00440422,Brockton - Joseph F. Plouffe Academy,00440000,0,0,0,0,0,0,231,221,218,20.5
+00560015,Chelmsford - South Row,00560000,64,85,74,87,79,0,0,0,0,20.5
+01530025,Leominster - Johnny Appleseed,01530000,93,107,124,129,120,132,0,0,0,20.5
+01530320,Leominster - Sky View Middle School,01530000,0,0,0,0,0,0,313,284,270,20.5
+01550010,Lexington - Joseph Estabrook,01550000,65,82,77,77,101,95,0,0,0,20.5
+01630011,Lynn - Aborn,01630000,33,58,44,51,37,35,0,0,0,20.5
+01770015,Medway - Burke/Memorial Elementary School,01770000,0,0,155,163,167,0,0,0,0,20.5
+01770013,Medway - John D Mc Govern Elementary,01770000,137,165,0,0,0,0,0,0,0,20.5
+01820008,Middleborough - Henry B. Burkland Elementary School,01820000,0,121,125,131,135,138,0,0,0,20.5
+01890010,Milton - Glover,01890000,86,109,93,107,81,88,0,0,0,20.5
+01990040,Needham - William Mitchell,01990000,77,75,86,78,87,86,0,0,0,20.5
+02070125,Newton - Williams,02070000,37,44,60,43,41,67,0,0,0,20.5
+02740087,Somerville - Albert F. Argenziano School at Lincoln Park,02740000,45,78,96,77,62,57,46,49,41,20.5
+02780020,South Hadley - Mosier,02780000,0,0,146,141,147,0,0,0,0,20.5
+02780015,South Hadley - Plains Elementary,02780000,137,112,0,0,0,0,0,0,0,20.5
+02840005,Stoneham - Colonial Park,02840000,46,43,36,46,42,0,0,0,0,20.5
+02900003,Sutton - Sutton Early Learning,02900000,99,92,106,0,0,0,0,0,0,20.5
+03010020,Tyngsborough - Tyngsborough Elementary,03010000,103,134,110,115,142,142,0,0,0,20.5
+03260330,Westford - Stony Brook School,03260000,0,0,0,0,0,0,251,241,243,20.5
+03360005,Weymouth - Academy Avenue,03360000,56,85,66,76,64,0,0,0,0,20.5
+06250320,Bridgewater-Raynham - Bridgewater Middle School,06250000,0,0,0,0,0,0,0,241,292,20.6
+00610003,Chicopee - Barry,00610000,70,68,73,78,78,86,0,0,0,20.6
+01600075,Lowell - S Christa McAuliffe Elementary,01600000,95,95,90,97,79,0,0,0,0,20.6
+01630505,Lynn - Classical High,01630000,0,0,0,0,0,0,0,0,0,20.6
+07050405,Masconomet - Masconomet Regional Middle School,07050000,0,0,0,0,0,0,0,327,331,20.6
+04690505,MATCH Charter Public School (District) - MATCH Charter Public School,04690000,54,50,50,48,51,50,90,84,87,20.6
+07100179,Mendon-Upton - Henry P Clough,07100000,72,77,94,89,93,0,0,0,0,20.6
+07250010,Nashoba - Mary Rowlandson Elementary,07250000,73,59,66,84,71,72,0,0,0,20.6
+02070005,Newton - A E Angier,02070000,65,67,65,65,75,64,0,0,0,20.6
+02390305,Plymouth - Plymouth South Middle,02390000,0,0,0,0,0,114,252,232,248,20.6
+02660015,Sharon - Heights Elementary,02660000,83,82,80,95,79,102,0,0,0,20.6
+02850405,Stoughton - ODonnell Middle School,02850000,0,0,0,0,0,0,289,310,328,20.6
+03320025,West Springfield - Memorial,03320000,0,39,55,40,42,39,0,0,0,20.6
+03250036,Westfield - Paper Mill,03250000,72,83,84,83,74,86,0,0,0,20.6
+03360060,Weymouth - Thomas V Nash,03360000,39,55,51,49,48,0,0,0,0,20.6
+03360105,Weymouth - Thomas W. Hamilton Primary School,03360000,66,83,72,101,83,0,0,0,0,20.6
+03440025,Winchester - Vinson-Owen Elementary,03440000,58,78,71,69,83,68,0,0,0,20.6
+00080050,Amherst - Wildwood Elementary,00080000,57,51,64,49,55,66,70,0,0,20.7
+00250009,Bellingham - Clara Macy Elementary,00250000,41,62,41,47,42,0,0,0,0,20.7
+00350240,Boston - Richard J Murphy,00350000,62,67,76,83,132,114,142,79,91,20.7
+00610015,Chicopee - Bowe,00610000,74,78,75,61,65,58,0,0,0,20.7
+00720050,Dartmouth - Dartmouth Middle,00720000,0,0,0,0,0,0,320,328,337,20.7
+06580020,Dudley-Charlton Reg - Charlton Elementary,06580000,142,152,0,0,0,0,0,0,0,20.7
+00860305,Easthampton - White Brook Middle School,00860000,0,0,0,0,0,142,108,115,136,20.7
+00880015,Easton - Parkview Elementary,00880000,90,103,113,0,0,0,0,0,0,20.7
+06750007,Hamilton-Wenham - Bessie Buker Elementary,06750000,41,44,41,39,40,45,0,0,0,20.7
+01310019,Hingham - Plymouth River,01310000,63,88,64,91,78,81,0,0,0,20.7
+01490533,"Lawrence - Math, Science & Technology High School",01490000,0,0,0,0,0,0,0,0,0,20.7
+01630075,Lynn - Lynn Woods,01630000,26,22,24,26,38,32,0,0,0,20.7
+07100001,Mendon-Upton - Memorial School,07100000,68,101,85,89,88,0,0,0,0,20.7
+07350505,North Middlesex - North Middlesex Regional,07350000,0,0,0,0,0,0,0,0,0,20.7
+02460010,Reading - Joshua Eaton,02460000,73,61,81,89,91,76,0,0,0,20.7
+02810165,Springfield - Arthur T Talmadge,02810000,50,58,47,44,47,41,0,0,0,20.7
+02810050,Springfield - Hiram L Dorman,02810000,57,73,43,58,48,54,0,0,0,20.7
+02910005,Swampscott - Clarke,02910000,37,43,41,43,45,0,0,0,0,20.7
+03480095,Worcester - Elm Park Community,03480000,81,75,66,60,57,47,68,0,0,20.7
+00200050,Barnstable - Barnstable United Elementary School,00200000,0,0,0,0,389,383,0,0,0,20.8
+00350691,Boston - Rafael Hernandez,00350000,51,48,45,49,45,38,39,29,28,20.8
+00500017,Canton - John F Kennedy,00500000,104,59,83,82,83,88,0,0,0,20.8
+00500012,Canton - Lt Peter M Hansen,00500000,64,85,70,87,78,95,0,0,0,20.8
+00640305,Clinton - Clinton Middle School,00640000,0,0,0,0,129,121,142,129,136,20.8
+06800005,Hampden-Wilbraham - Green Meadows Elementary,06800000,38,40,45,41,48,0,0,0,0,20.8
+01590305,Longmeadow - Williams Middle,01590000,0,0,0,0,0,0,116,138,140,20.8
+01780020,Melrose - Lincoln,01780000,66,68,68,61,55,48,0,0,0,20.8
+07250025,Nashoba - Florence Sawyer School,07250000,61,62,78,61,75,99,101,85,105,20.8
+02130014,Northborough - Marguerite E Peaslee,02130000,47,36,44,43,53,47,0,0,0,20.8
+02200305,Norwood - Dr. Philip O. Coakley Middle School,02200000,0,0,0,0,0,0,249,249,228,20.8
+02380005,Plainville - Beatrice H Wood Elementary,02380000,0,0,0,0,99,106,85,0,0,20.8
+02620067,Saugus - Douglas Waybright,02620000,18,31,44,38,40,41,0,0,0,20.8
+07670008,Spencer-E Brookfield - East Brookfield Elementary,07670000,24,29,25,27,33,24,28,0,0,20.8
+02810100,Springfield - Indian Orchard Elementary,02810000,109,117,118,102,94,78,0,0,0,20.8
+02880015,Sudbury - Israel Loring School,02880000,52,86,75,90,77,86,0,0,0,20.8
+03150020,Wayland - Loker School,03150000,36,38,45,45,43,0,0,0,0,20.8
+03310015,Westport - Alice A Macomber,03310000,110,109,0,0,0,0,0,0,0,20.8
+00090305,Andover - Doherty Middle,00090000,0,0,0,0,0,0,190,192,192,20.9
+00170010,Auburn - Bryn Mawr,00170000,79,92,81,0,0,0,0,0,0,20.9
+04270010,Barnstable Community Horace Mann Charter Public - Barnstable Community Horace Mann Charter Public School,04270000,75,68,75,73,0,0,0,0,0,20.9
+00440505,Brockton - Brockton High,00440000,0,0,0,0,0,0,0,0,0,20.9
+00440001,Brockton - Dr W Arnone Community School,00440000,140,140,136,123,128,123,0,0,0,20.9
+00500305,Canton - Wm H Galvin Middle,00500000,0,0,0,0,0,0,272,258,268,20.9
+04400205,Community Day Charter Public School - Prospect - Community Day Charter Public School - Prospect,04400000,43,41,42,42,22,23,48,44,45,20.9
+06450050,Dennis-Yarmouth - N H Wixon Innovation School,06450000,0,0,0,0,219,257,0,0,0,20.9
+01030015,Gardner - Helen Mae Sauter Elementary,01030000,0,92,111,68,0,0,0,0,0,20.9
+06900510,King Philip - King Philip Middle School,06900000,0,0,0,0,0,0,0,420,373,20.9
+01450005,Kingston - Kingston Elementary,01450000,129,141,146,0,0,0,0,0,0,20.9
+01600340,Lowell - James Sullivan Middle School,01600000,0,0,0,0,0,151,168,157,169,20.9
+01600360,Lowell - Kathryn P. Stoklosa Middle School,01600000,0,0,0,0,0,171,167,160,176,20.9
+01780305,Melrose - Melrose Middle,01780000,0,0,0,0,0,0,275,293,289,20.9
+02010415,New Bedford - Roosevelt Middle School,02010000,0,0,0,0,0,0,263,262,218,20.9
+02070040,Newton - Countryside,02070000,72,67,67,76,88,96,0,0,0,20.9
+02180015,Norton - J C Solmonese,02180000,98,113,127,110,0,0,0,0,0,20.9
+02260005,Oxford - Clara Barton,02260000,0,0,0,158,148,0,0,0,0,20.9
+02310003,Pembroke - Bryantville Elementary,02310000,73,75,87,80,88,86,107,0,0,20.9
+02710015,Shrewsbury - Calvin Coolidge,02710000,61,89,88,77,88,0,0,0,0,20.9
+04770010,Silver Hill Horace Mann Charter - Silver Hill Horace Mann Charter School,04770000,90,93,100,104,103,103,0,0,0,20.9
+03050310,Wakefield - Galvin Middle School,03050000,0,0,0,0,0,284,293,296,240,20.9
+07800025,Whitman-Hanson - Maquan Elementary,07800000,97,101,110,0,0,0,0,0,0,20.9
+03480202,Worcester - Norrback Avenue,03480000,86,81,64,80,73,76,71,0,0,20.9
+00090003,Andover - Bancroft Elementary,00090000,65,62,80,90,95,70,0,0,0,21
+00250020,Bellingham - South Elementary,00250000,83,74,89,90,100,0,0,0,0,21
+06220015,Blackstone-Millville - A F Maloney,06220000,0,0,0,0,97,109,0,0,0,21
+00400020,Braintree - Mary E Flaherty School,00400000,22,68,69,64,67,88,0,0,0,21
+00830505,East Bridgewater - East Bridgewater JR./SR. High School,00830000,0,0,0,0,0,0,0,195,178,21
+00930018,Everett - Madeline English School,00930000,92,112,102,114,78,92,85,93,106,21
+00950320,Fall River - Matthew J Kuss Middle,00950000,0,0,0,0,0,0,234,258,251,21
+06800025,Hampden-Wilbraham - Mile Tree Elementary,06800000,131,144,0,0,0,0,0,0,0,21
+01370015,Holyoke - Lt Elmer J McMahon Elementary,01370000,44,58,40,49,44,57,39,36,34,21
+01550030,Lexington - Harrington,01550000,60,79,69,75,81,82,0,0,0,21
+01670014,Mansfield - Jordan/Jackson Elementary,01670000,0,0,0,278,310,311,0,0,0,21
+01680015,Marblehead - Elbridge Gerry,01680000,68,76,0,0,0,0,0,0,0,21
+01680020,Marblehead - Glover,01680000,66,73,92,79,0,0,0,0,0,21
+01680010,Marblehead - L H Coffin,01680000,0,0,90,83,0,0,0,0,0,21
+01700008,Marlborough - Francis J Kane,01700000,126,121,147,125,114,0,0,0,0,21
+07350035,North Middlesex - Varnum Brook,07350000,101,106,136,121,115,0,0,0,0,21
+02430315,Quincy - Central Middle,02430000,0,0,0,0,0,0,230,216,195,21
+02510060,Rockland - Jefferson Elementary School,02510000,198,46,43,42,34,0,0,0,0,21
+02810025,Springfield - Brightwood,02810000,46,74,67,66,59,59,0,0,0,21
+02880030,Sudbury - Peter Noyes,02880000,83,74,103,94,87,108,0,0,0,21
+02930027,Taunton - Elizabeth Pole,02930000,112,121,127,135,116,0,0,0,0,21
+07750027,Wachusett - Houghton Elementary,07750000,61,91,81,94,93,0,0,0,0,21
+03050015,Wakefield - Woodville School,03050000,71,67,84,60,62,0,0,0,0,21
+03260045,Westford - John A. Crisafulli Elementary School,03260000,0,0,0,111,126,142,0,0,0,21
+03460015,Winthrop - William P. Gorman/Fort Banks Elementary,03460000,152,143,134,161,0,0,0,0,0,21
+03480140,Worcester - Jacob Hiatt Magnet,03480000,71,64,60,62,63,51,39,0,0,21
+00160035,Attleboro - Thomas Willett Elementary School,00160000,90,96,72,76,63,0,0,0,0,21.1
+06160001,Ayer Shirley School District - Lura A. White Elementary School,06160000,64,44,57,58,61,42,0,0,0,21.1
+00240018,Belchertown - Swift River Elementary,00240000,0,171,172,177,0,0,0,0,0,21.1
+00350278,Boston - Phineas Bates,00350000,34,44,44,47,57,46,0,0,0,21.1
+06580005,Dudley-Charlton Reg - Dudley Elementary,06580000,0,0,113,125,143,0,0,0,0,21.1
+06650002,Freetown-Lakeville - Assawompset Elementary School,06650000,90,100,118,148,0,0,0,0,0,21.1
+01070020,Gloucester - East Gloucester Elementary,01070000,42,40,37,45,49,47,0,0,0,21.1
+01310010,Hingham - Wm L Foster Elementary,01310000,49,91,74,82,83,96,0,0,0,21.1
+01370055,Holyoke - Lt Clayre Sullivan Elementary,01370000,67,75,57,64,65,70,55,62,52,21.1
+01390010,Hopkinton - Elmwood,01390000,0,0,241,224,0,0,0,0,0,21.1
+01600345,Lowell - Dr An Wang School,01600000,0,0,0,0,0,164,167,175,173,21.1
+01700025,Marlborough - Richer,01700000,119,121,115,111,132,0,0,0,0,21.1
+01780017,Melrose - Herbert Clark Hoover,01780000,40,40,45,38,42,47,0,0,0,21.1
+01780050,Melrose - Winthrop,01780000,64,66,62,58,44,47,0,0,0,21.1
+07200020,Narragansett - Templeton Center,07200000,80,84,0,0,0,0,0,0,0,21.1
+02010045,New Bedford - Sgt Wm H Carney Academy,02010000,114,143,127,113,111,96,0,0,0,21.1
+02610025,Sandwich - Oak Ridge,02610000,60,75,69,74,86,87,81,0,0,21.1
+02810120,Springfield - Lincoln,02810000,75,78,70,64,69,61,0,0,0,21.1
+07750305,Wachusett - Mountview Middle,07750000,0,0,0,0,0,0,287,236,259,21.1
+03170048,Wellesley - Sprague Elementary School,03170000,54,65,72,52,86,69,0,0,0,21.1
+03230305,West Bridgewater - Howard School,03230000,0,0,0,0,85,102,98,0,0,21.1
+00080009,Amherst - Crocker Farm Elementary,00080000,40,55,43,60,54,47,62,0,0,21.2
+00230010,Bedford - Lt Elezer Davis,00230000,186,202,179,0,0,0,0,0,0,21.2
+00350227,Boston - Mather,00350000,89,86,94,98,99,74,0,0,0,21.2
+00450005,Brookfield - Brookfield Elementary,00450000,42,37,39,41,50,47,43,0,0,21.2
+00720015,Dartmouth - Joseph Demello,00720000,0,65,89,89,82,99,0,0,0,21.2
+06500005,Dighton-Rehoboth - Dighton Elementary,06500000,80,94,76,89,93,0,0,0,0,21.2
+01280027,Haverhill - Greenleaf,01280000,77,91,80,0,0,0,0,0,0,21.2
+01530030,Leominster - Northwest,01530000,48,143,116,123,105,142,0,0,0,21.2
+01810030,Methuen - Marsh Grammar School,01810000,140,132,140,151,148,130,153,133,143,21.2
+01860025,Millbury - Raymond E. Shaw Elementary,01860000,0,0,0,0,141,140,143,0,0,21.2
+01980031,Natick - Johnson,01980000,45,47,52,53,37,0,0,0,0,21.2
+02040030,Newburyport - Edward G. Molin Elementary School,02040000,0,0,0,0,185,157,0,0,0,21.2
+02040305,Newburyport - Rupert A Nock Middle,02040000,0,0,0,0,0,0,185,172,196,21.2
+02070020,Newton - C C Burr,02070000,70,82,65,68,68,71,0,0,0,21.2
+07530010,Quabbin - Hubbardston Center,07530000,39,45,40,43,44,40,61,0,0,21.2
+02460020,Reading - Wood End Elementary School,02460000,60,43,42,66,60,64,0,0,0,21.2
+02620065,Saugus - Veterans Memorial,02620000,72,93,83,98,93,103,0,0,0,21.2
+03070310,Walpole - Eleanor N Johnson Middle,03070000,0,0,0,0,0,0,141,129,152,21.2
+03070018,Walpole - Old Post Road,03070000,83,69,63,86,88,79,0,0,0,21.2
+03430050,Winchendon - Toy Town Elementary,03430000,0,0,0,93,91,94,0,0,0,21.2
+00350183,Boston - Joseph Lee,00350000,53,58,56,61,72,78,92,64,63,21.3
+00350376,Boston - King K-8,00350000,70,66,64,70,50,27,40,23,24,21.3
+06250300,Bridgewater-Raynham - Williams Intermediate School,06250000,0,0,0,0,248,248,252,0,0,21.3
+00520015,Carver - Carver Elementary School,00520000,126,118,124,126,138,111,0,0,0,21.3
+00820006,Duxbury - Chandler Elementary,00820000,162,207,221,0,0,0,0,0,0,21.3
+01000005,Framingham - King Elementary School,01000000,81,0,0,0,0,0,0,0,0,21.3
+01310020,Hingham - South Elementary,01310000,77,88,89,81,101,94,0,0,0,21.3
+01630045,Lynn - E J Harrington,01630000,97,111,105,104,66,86,0,0,0,21.3
+01680300,Marblehead - Marblehead Veterans Middle School,01680000,0,0,0,0,0,0,0,246,265,21.3
+07250020,Nashoba - Center School,07250000,105,85,101,113,87,113,0,0,0,21.3
+02150015,North Brookfield - North Brookfield Elementary,02150000,36,53,43,49,47,53,39,0,0,21.3
+02170505,North Reading - North Reading High,02170000,0,0,0,0,0,0,0,0,0,21.3
+07780010,Quaboag Regional - West Brookfield Elementary,07780000,38,34,35,40,48,41,49,0,0,21.3
+02510305,Rockland - John W Rogers Middle,02510000,0,0,0,0,0,176,171,209,179,21.3
+02520005,Rockport - Rockport Elementary,02520000,58,62,66,67,66,65,0,0,0,21.3
+02730015,Somerset - South,02730000,51,45,52,51,43,52,0,0,0,21.3
+03050040,Wakefield - Walton,03050000,0,58,43,48,39,0,0,0,0,21.3
+03350025,Westwood - William E Sheehan,03350000,62,51,67,58,65,70,0,0,0,21.3
+07800505,Whitman-Hanson - Whitman Hanson Regional,07800000,0,0,0,0,0,0,0,0,0,21.3
+03480210,Worcester - Quinsigamond,03480000,112,138,129,108,113,85,83,0,0,21.3
+00170025,Auburn - Mary D Stone,00170000,81,80,96,0,0,0,0,0,0,21.4
+00350298,Boston - Roger Clap,00350000,39,31,27,22,23,21,0,0,0,21.4
+00350366,Boston - William E Russell,00350000,58,83,59,45,40,41,0,0,0,21.4
+00720040,Dartmouth - James M. Quinn School,00720000,105,96,113,110,128,110,0,0,0,21.4
+06580305,Dudley-Charlton Reg - Dudley Middle School,06580000,0,0,0,0,0,152,155,169,157,21.4
+00930038,Everett - Lafayette School,00930000,109,96,113,100,116,118,93,110,98,21.4
+00940030,Fairhaven - Leroy Wood,00940000,83,75,82,86,96,77,0,0,0,21.4
+01100005,Grafton - South Grafton Elementary,01100000,125,128,0,0,0,0,0,0,0,21.4
+01220015,Hanover - Sylvester,01220000,0,0,0,131,103,0,0,0,0,21.4
+01280075,Haverhill - Tilton,01280000,62,143,128,106,102,0,0,0,0,21.4
+01550015,Lexington - Fiske,01550000,71,88,84,69,97,85,0,0,0,21.4
+07200005,Narragansett - Baldwinville Elementary,07200000,0,0,63,65,60,0,0,0,0,21.4
+07200305,Narragansett - Narragansett Middle,07200000,0,0,0,0,0,99,106,113,135,21.4
+02070080,Newton - Mason-Rice,02070000,82,95,85,63,72,81,0,0,0,21.4
+02310015,Pembroke - North Pembroke Elementary,02310000,82,77,75,85,85,99,88,0,0,21.4
+02930008,Taunton - Joseph C Chamberlain,02930000,107,120,114,107,98,0,0,0,0,21.4
+03160015,Webster - Park Avenue Elementary,03160000,154,159,141,0,0,0,0,0,0,21.4
+03170005,Wellesley - Katharine Lee Bates,03170000,49,69,69,65,68,64,0,0,0,21.4
+03480215,Worcester - Rice Square,03480000,69,60,77,60,63,58,41,0,0,21.4
+00100045,Arlington - Peirce,00100000,47,44,44,47,43,42,0,0,0,21.5
+06100005,Ashburnham-Westminster - Westminster Elementary,06100000,0,0,85,110,91,69,0,0,0,21.5
+00140010,Ashland - Henry E Warren Elementary,00140000,193,206,199,0,0,0,0,0,0,21.5
+00160315,Attleboro - Cyril K. Brennan Middle School,00160000,0,0,0,0,0,131,140,151,146,21.5
+04490305,Boston Collegiate Charter - Boston Collegiate Charter School,04490000,0,0,0,0,0,103,100,95,94,21.5
+00480303,Burlington - Marshall Simonds Middle,00480000,0,0,0,0,0,0,275,296,284,21.5
+06980020,Manchester Essex Regional - Essex Elementary,06980000,38,44,46,48,48,46,0,0,0,21.5
+01850090,Milford - Woodland,01850000,0,0,0,332,345,0,0,0,0,21.5
+01860017,Millbury - Elmwood Street,01860000,135,126,140,136,0,0,0,0,0,21.5
+02010405,New Bedford - Keith Middle School,02010000,0,0,0,0,0,0,303,292,276,21.5
+03100017,Wareham - Minot Forest,03100000,0,0,0,201,220,0,0,0,0,21.5
+00090020,Andover - South Elementary,00090000,69,73,79,96,96,106,0,0,0,21.6
+06100025,Ashburnham-Westminster - Briggs Elementary,06100000,70,82,88,69,94,87,0,0,0,21.6
+00170015,Auburn - Pakachoag,00170000,0,0,0,78,85,96,0,0,0,21.6
+00440017,Brockton - John F Kennedy,00440000,89,115,114,121,95,96,0,0,0,21.6
+06580030,Dudley-Charlton Reg - Heritage School,06580000,0,0,173,137,172,0,0,0,0,21.6
+06580010,Dudley-Charlton Reg - Mason Road School,06580000,113,111,0,0,0,0,0,0,0,21.6
+01010012,Franklin - Helen Keller Elementary,01010000,44,69,81,61,101,88,0,0,0,21.6
+01010030,Franklin - Oak Street Elementary,01010000,59,71,91,84,66,81,0,0,0,21.6
+01010032,Franklin - Parmenter,01010000,63,56,61,89,68,70,0,0,0,21.6
+01450020,Kingston - Kingston Intermediate,01450000,0,0,0,136,160,172,172,0,0,21.6
+01990005,Needham - Broadmeadow,01990000,76,103,106,93,89,113,0,0,0,21.6
+02010124,New Bedford - Renaissance Community School for the Arts,02010000,52,40,43,44,0,0,0,0,0,21.6
+02200005,Norwood - Balch,02200000,0,67,62,56,51,61,0,0,0,21.6
+04870550,Prospect Hill Academy Charter - Prospect Hill Academy Charter School,04870000,84,88,88,90,97,96,97,94,97,21.6
+02710035,Shrewsbury - Spring Street,02710000,40,65,75,81,88,0,0,0,0,21.6
+02710025,Shrewsbury - Walter J Paton,02710000,20,84,80,87,94,0,0,0,0,21.6
+03050020,Wakefield - Greenwood,03050000,44,46,40,40,66,0,0,0,0,21.6
+00090310,Andover - Andover West Middle,00090000,0,0,0,0,0,0,182,192,193,21.7
+04910550,Atlantis Charter - Atlantis Charter School,04910000,106,115,72,73,72,100,100,100,100,21.7
+00440003,Brockton - Manthala George Jr. School,00440000,116,180,165,160,154,144,0,0,0,21.7
+00610010,Chicopee - Belcher,00610000,96,104,117,0,0,0,0,0,0,21.7
+00940010,Fairhaven - East Fairhaven,00940000,58,64,61,61,64,70,0,0,0,21.7
+01490015,Lawrence - Alexander B Bruce,01490000,0,0,0,87,98,84,93,84,93,21.7
+01630020,Lynn - Brickett Elementary,01630000,0,66,60,55,55,55,0,0,0,21.7
+01630035,Lynn - Cobbet Elementary,01630000,112,107,111,110,75,80,0,0,0,21.7
+01630420,Lynn - Pickering Middle,01630000,0,0,0,0,0,0,210,215,222,21.7
+07450010,Pentucket - Helen R Donaghue School,07450000,0,0,0,67,65,80,92,0,0,21.7
+02810110,Springfield - Kensington International School,02810000,70,61,67,49,61,56,0,0,0,21.7
+02850015,Stoughton - South Elementary,02850000,41,43,47,45,43,40,0,0,0,21.7
+07800315,Whitman-Hanson - Hanson Middle School,07800000,0,0,0,0,0,0,130,148,151,21.7
+00790030,Dracut - Greenmont Avenue,00790000,54,55,55,42,42,60,0,0,0,21.8
+06650305,Freetown-Lakeville - Freetown-Lakeville Middle School,06650000,0,0,0,0,0,0,252,258,265,21.8
+01310005,Hingham - East Elementary School,01310000,56,89,83,90,96,111,0,0,0,21.8
+01630405,Lynn - Breed Middle School,01630000,0,0,0,0,0,0,410,407,380,21.8
+01780025,Melrose - Horace Mann,01780000,44,40,44,42,43,47,0,0,0,21.8
+01980005,Natick - Bennett-Hemenway,01980000,121,146,120,130,105,0,0,0,0,21.8
+01980010,Natick - Brown,01980000,106,98,94,91,94,0,0,0,0,21.8
+02120015,North Attleborough - Roosevelt Avenue,02120000,44,51,48,50,47,49,0,0,0,21.8
+07780005,Quaboag Regional - Warren Elementary,07780000,65,45,58,68,67,62,82,0,0,21.8
+02430305,Quincy - Atlantic Middle,02430000,0,0,0,0,0,0,163,140,182,21.8
+02460005,Reading - Birch Meadow,02460000,62,64,57,71,65,68,0,0,0,21.8
+02480050,Revere - Paul Revere,02480000,78,93,97,79,76,67,0,0,0,21.8
+02510025,Rockland - R Stewart Esten,02510000,0,95,76,70,84,0,0,0,0,21.8
+02580015,Salem - Carlton,02580000,34,36,20,34,34,35,0,0,0,21.8
+02730008,Somerset - North Elementary,02730000,59,76,85,83,106,88,0,0,0,21.8
+02810065,Springfield - Glenwood,02810000,46,50,49,44,49,47,0,0,0,21.8
+02810125,Springfield - Mary A. Dryden Veterans Memorial School,02810000,52,56,54,52,51,42,0,0,0,21.8
+02930315,Taunton - Benjamin Friedman Middle,02930000,0,0,0,0,0,283,245,268,0,21.8
+03360310,Weymouth - Abigail Adams Middle School,03360000,0,0,0,0,0,496,470,0,0,21.8
+03440305,Winchester - McCall Middle,03440000,0,0,0,0,0,0,373,365,335,21.8
+03460020,Winthrop - Arthur T. Cummings Elementary School,03460000,0,0,0,0,142,147,166,155,0,21.8
+00090010,Andover - Henry C Sanborn Elementary,00090000,46,48,61,73,72,66,0,0,0,21.9
+00100030,Arlington - Hardy,00100000,82,69,68,68,46,59,0,0,0,21.9
+00160320,Attleboro - Wamsutta Middle School,00160000,0,0,0,0,0,137,143,131,139,21.9
+00170005,Auburn - Julia Bancroft,00170000,0,0,0,98,108,95,0,0,0,21.9
+06500010,Dighton-Rehoboth - Palmer River,06500000,87,123,118,139,136,0,0,0,0,21.9
+00820004,Duxbury - Alden School,00820000,0,0,0,224,232,243,0,0,0,21.9
+00950145,Fall River - Samuel Watson,00950000,49,56,33,36,54,56,0,0,0,21.9
+06650015,Freetown-Lakeville - George R Austin Intermediate School,06650000,0,0,0,2,234,224,0,0,0,21.9
+01280035,Haverhill - Caleb Dustin Hunking,01280000,0,0,0,0,0,0,139,129,138,21.9
+01390305,Hopkinton - Hopkinton Middle School,01390000,0,0,0,0,0,0,307,271,267,21.9
+01490027,Lawrence - Parthum Middle School,01490000,0,0,0,0,0,138,109,135,151,21.9
+01550008,Lexington - Bowman,01550000,87,83,110,98,92,103,0,0,0,21.9
+07100015,Mendon-Upton - Miscoe Hill School,07100000,0,0,0,0,0,201,195,205,215,21.9
+01810055,Methuen - Tenney Grammar School,01810000,122,145,144,145,127,153,139,156,157,21.9
+02010063,New Bedford - Alfred J Gomes,02010000,76,81,79,71,106,100,0,0,0,21.9
+02110018,North Andover - Annie L Sargent School,02110000,93,89,89,90,84,95,0,0,0,21.9
+02950305,Tewksbury - John W. Wynn Middle,02950000,0,0,0,0,0,0,0,316,340,21.9
+35050405,UP Academy Charter School of Dorchester (District) - UP Academy Charter School of Dorchester,35050000,62,96,104,102,74,79,50,0,0,21.9
+03150005,Wayland - Claypit Hill School,03150000,74,78,92,87,86,106,0,0,0,21.9
+06000010,Acton-Boxborough - Merriam School,06000000,57,67,67,65,93,95,73,0,0,22
+00300055,Beverly - Ayers/Ryal Side School,00300000,100,87,84,68,88,76,0,0,0,22
+01370045,Holyoke - E N White Elementary,01370000,44,50,42,47,48,61,41,43,48,22
+01550006,Lexington - Bridge,01550000,90,88,97,99,101,112,0,0,0,22
+01780035,Melrose - Roosevelt,01780000,62,63,65,63,64,72,0,0,0,22
+01980305,Natick - J F Kennedy Middle School,01980000,0,0,0,0,0,156,174,187,143,22
+02110001,North Andover - Atkinson,02110000,69,76,74,62,69,74,0,0,0,22
+02110020,North Andover - Thomson,02110000,54,71,45,51,46,56,0,0,0,22
+02480056,Revere - Garfield Elementary School,02480000,116,129,143,118,100,94,0,0,0,22
+02610305,Sandwich - Sandwich STEM Academy,02610000,0,0,0,0,0,0,0,259,261,22
+02900305,Sutton - Sutton Middle School,02900000,0,0,0,0,0,0,122,117,154,22
+00070010,Amesbury - Charles C Cashman Elementary,00070000,83,93,93,106,91,0,0,0,0,22.1
+00090025,Andover - West Elementary,00090000,69,78,89,125,152,137,0,0,0,22.1
+00090350,Andover - Wood Hill Middle School,00090000,0,0,0,0,0,0,158,124,137,22.1
+00240006,Belchertown - Chestnut Hill Community School,00240000,0,0,0,0,196,176,198,0,0,22.1
+00260015,Belmont - Daniel Butler,00260000,72,67,66,62,74,0,0,0,0,22.1
+04160305,Boston Preparatory Charter Public - Boston Preparatory Charter Public School,04160000,0,0,0,0,0,0,58,58,58,22.1
+00930010,Everett - Sumner G. Whittier School,00930000,80,89,78,79,74,79,50,43,46,22.1
+04550050,Hill View Montessori Charter Public - Hill View Montessori Charter Public School,04550000,37,34,32,35,33,34,35,33,33,22.1
+01490085,Lawrence - Spark Academy,01490000,0,0,0,0,0,155,152,128,0,22.1
+01630095,Lynn - Edward A Sisson,01630000,67,80,87,76,78,66,0,0,0,22.1
+01810060,Methuen - Donald P Timony Grammar,01810000,146,149,151,149,147,145,152,139,159,22.1
+02010075,New Bedford - Ellen R Hathaway,02010000,96,60,52,43,42,52,0,0,0,22.1
+02120005,North Attleborough - Allen Avenue,02120000,25,32,51,45,46,0,0,0,0,22.1
+02440015,Randolph - Margaret L Donovan,02440000,73,74,74,73,64,70,0,0,0,22.1
+02810145,Springfield - Mary O Pottenger,02810000,73,84,74,73,74,73,0,0,0,22.1
+02930057,Taunton - H H Galligan,02930000,52,49,53,61,51,0,0,0,0,22.1
+03150015,Wayland - Happy Hollow School,03150000,55,59,70,66,70,88,0,0,0,22.1
+03210045,Westborough - Mill Pond School,03210000,0,0,0,0,242,304,309,0,0,22.1
+03300012,Weston - Field Elementary School,03300000,0,0,0,0,162,174,0,0,0,22.1
+00140015,Ashland - David Mindess,00140000,0,0,0,193,183,212,0,0,0,22.2
+00160040,Attleboro - Hyman Fine Elementary School,00160000,84,90,99,98,87,0,0,0,0,22.2
+00650005,Cohasset - Deer Hill,00650000,0,0,0,117,141,144,0,0,0,22.2
+00820305,Duxbury - Duxbury Middle,00820000,0,0,0,0,0,0,253,267,258,22.2
+01100200,Grafton - Millbury Street Elementary School,01100000,0,0,158,135,145,161,114,0,0,22.2
+04290010,KIPP Academy Lynn Charter - KIPP Academy Lynn Charter School,04290000,0,0,0,0,0,120,121,120,95,22.2
+01600090,Lowell - Bartlett Community Partnership,01600000,51,47,51,62,45,57,58,56,55,22.2
+02730305,Somerset - Somerset Middle School,02730000,0,0,0,0,0,0,204,217,212,22.2
+02930035,Taunton - Hopewell,02930000,66,61,69,73,63,0,0,0,0,22.2
+03480020,Worcester - Belmont Street Community,03480000,92,95,72,69,76,54,36,0,0,22.2
+03480415,Worcester - Forest Grove Middle,03480000,0,0,0,0,0,0,0,488,443,22.2
+06000025,Acton-Boxborough - Paul P Gates Elementary School,06000000,61,44,44,66,72,71,72,0,0,22.3
+00090004,Andover - High Plain Elementary,00090000,56,76,82,95,104,110,0,0,0,22.3
+00570025,Chelsea - William A Berkowitz Elementary,00570000,0,156,154,145,115,0,0,0,0,22.3
+00790045,Dracut - George H. Englesby Elementary School,00790000,76,82,88,78,99,84,0,0,0,22.3
+00930028,Everett - George Keverian School,00930000,90,111,109,113,93,99,114,98,91,22.3
+00950013,Fall River - Letourneau Elementary School,00950000,82,102,103,78,83,81,0,0,0,22.3
+01630055,Lynn - Hood,01630000,83,74,83,80,72,62,0,0,0,22.3
+02010095,New Bedford - Abraham Lincoln,02010000,123,154,140,137,108,103,0,0,0,22.3
+02080005,Norfolk - Freeman-Kennedy School,02080000,0,0,0,118,115,126,135,0,0,22.3
+02730005,Somerset - Chace Street,02730000,39,80,49,61,55,51,0,0,0,22.3
+00100010,Arlington - Brackett,00100000,97,83,68,92,88,69,0,0,0,22.4
+00260035,Belmont - Roger E Wellington,00260000,115,111,101,121,94,0,0,0,0,22.4
+00350540,Boston - Fenway High School,00350000,0,0,0,0,0,0,0,0,0,22.4
+00560005,Chelmsford - Center Elementary School,00560000,72,93,89,101,87,0,0,0,0,22.4
+01490075,Lawrence - John K Tarbox,01490000,0,73,77,72,59,70,0,0,0,22.4
+01980310,Natick - Wilson Middle,01980000,0,0,0,0,0,220,231,242,234,22.4
+02010140,New Bedford - Betsey B Winslow,02010000,70,57,59,47,52,36,0,0,0,22.4
+02070075,Newton - Horace Mann,02070000,65,69,75,83,73,69,0,0,0,22.4
+07350030,North Middlesex - Hawthorne Brook,07350000,0,0,0,0,0,132,124,140,143,22.4
+02310010,Pembroke - Hobomock Elementary,02310000,51,50,71,52,83,69,63,0,0,22.4
+02950023,Tewksbury - John F. Ryan,02950000,0,0,0,0,0,304,296,0,0,22.4
+03230003,West Bridgewater - Rose L Macdonald,03230000,0,92,89,81,0,0,0,0,0,22.4
+06000015,Acton-Boxborough - McCarthy-Towne School,06000000,60,64,68,63,71,69,72,0,0,22.5
+00200025,Barnstable - Hyannis West Elementary,00200000,81,92,94,88,0,0,0,0,0,22.5
+00260305,Belmont - Winthrop L Chenery Middle,00260000,0,0,0,0,0,339,331,323,292,22.5
+04200205,Benjamin Banneker Charter Public (District) - Benjamin Banneker Charter Public School,04200000,67,48,55,52,44,43,38,0,0,22.5
+00350077,Boston - Dennis C Haley,00350000,46,40,61,46,49,46,44,24,0,22.5
+00350370,Boston - William Monroe Trotter,00350000,65,94,88,53,50,39,51,0,0,22.5
+00610050,Chicopee - Selser,00610000,74,75,73,72,69,60,0,0,0,22.5
+00950045,Fall River - John J Doran,00950000,61,64,63,61,73,70,59,44,40,22.5
+04460550,Foxborough Regional Charter - Foxborough Regional Charter School,04460000,96,113,114,110,110,107,113,112,107,22.5
+01100030,Grafton - North Street Elementary School,01100000,0,0,112,101,118,116,100,0,0,22.5
+01490080,Lawrence - Emily G Wetherbee,01490000,62,82,85,76,85,74,87,82,74,22.5
+01490040,Lawrence - Francis M Leahy,01490000,110,103,75,68,99,98,0,0,0,22.5
+04560050,Lowell Community Charter Public - Lowell Community Charter Public School,04560000,98,100,100,95,95,79,82,72,0,22.5
+01630060,Lynn - Ingalls,01630000,107,128,111,156,116,120,0,0,0,22.5
+01630305,Lynn - Thurgood Marshall Mid,01630000,0,0,0,0,0,0,327,327,347,22.5
+02140305,Northbridge - Northbridge Middle,02140000,0,0,0,0,0,216,193,179,185,22.5
+07530030,Quabbin - Ruggles Lane,07530000,70,52,51,69,59,61,56,0,0,22.5
+02710030,Shrewsbury - Oak Middle School,02710000,0,0,0,0,0,0,0,529,478,22.5
+02930305,Taunton - John F Parker Middle,02930000,0,0,0,0,0,141,151,138,0,22.5
+03350305,Westwood - E W Thurston Middle,03350000,0,0,0,0,0,0,272,255,271,22.5
+07800030,Whitman-Hanson - John H Duval,07800000,67,87,94,95,98,93,0,0,0,22.5
+03480090,Worcester - Flagg Street,03480000,61,65,52,65,57,71,42,0,0,22.5
+03480175,Worcester - May Street,03480000,51,50,52,45,44,45,42,0,0,22.5
+00260005,Belmont - Winn Brook,00260000,95,95,95,93,87,0,0,0,0,22.6
+00350116,Boston - Franklin D Roosevelt,00350000,42,42,45,40,49,40,47,46,46,22.6
+00560030,Chelmsford - Byam School,00560000,76,100,98,98,104,0,0,0,0,22.6
+00790020,Dracut - Joseph A Campbell Elementary,00790000,89,93,97,89,94,75,0,0,0,22.6
+00970043,Fitchburg - Reingold Elementary,00970000,127,124,126,139,139,0,0,0,0,22.6
+01810050,Methuen - Comprehensive Grammar School,01810000,109,110,135,105,126,143,138,129,143,22.6
+02760020,Southborough - Margaret A Neary,02760000,0,0,0,0,128,166,0,0,0,22.6
+03040020,Uxbridge - Whitin Elementary School,03040000,0,0,0,144,131,132,0,0,0,22.6
+03100003,Wareham - John William Decas,03100000,238,228,213,0,0,0,0,0,0,22.6
+06000020,Acton-Boxborough - C.T. Douglas Elementary School,06000000,61,64,69,68,72,74,72,0,0,22.7
+06150016,Athol-Royalston - Pleasant Street,06150000,48,44,49,47,43,0,0,0,0,22.7
+00790410,Dracut - Justus C. Richardson Middle School,00790000,0,0,0,0,0,0,317,338,319,22.7
+04700105,Mystic Valley Regional Charter - Mystic Valley Regional Charter School,04700000,128,134,142,134,121,116,109,121,108,22.7
+03230005,West Bridgewater - Spring Street School,03230000,72,0,0,0,0,0,0,0,0,22.7
+03320040,West Springfield - Tatham,03320000,0,39,45,48,45,54,0,0,0,22.7
+06250050,Bridgewater-Raynham - Laliberte Elementary School,06250000,0,0,175,135,178,0,0,0,0,22.8
+00720005,Dartmouth - Andrew B. Cushman School,00720000,71,0,0,0,0,0,0,0,0,22.8
+00950140,Fall River - James Tansey,00950000,49,59,55,50,51,51,0,0,0,22.8
+01510005,Leicester - Leicester Memorial Elementary,01510000,0,0,0,129,110,158,0,0,0,22.8
+01600030,Lowell - Charles W Morey,01600000,96,99,91,96,91,0,0,0,0,22.8
+01650003,Malden - Beebe,01650000,113,96,128,93,98,99,88,87,98,22.8
+02110010,North Andover - Franklin,02110000,75,76,67,96,96,94,0,0,0,22.8
+02650007,Seekonk - George R Martin,02650000,50,51,85,77,90,82,0,0,0,22.8
+02710305,Shrewsbury - Sherwood Middle School,02710000,0,0,0,0,0,487,469,0,0,22.8
+07670010,Spencer-E Brookfield - Lake Street,07670000,110,108,0,0,0,0,0,0,0,22.8
+02920015,Swansea - Gardner,02920000,76,86,103,0,0,0,0,0,0,22.8
+04800405,UP Academy Charter School of Boston - UP Academy Charter School of Boston,04800000,0,0,0,0,0,0,165,139,164,22.8
+00350141,Boston - Hugh Roe ODonnell,00350000,43,45,44,44,50,46,0,0,0,22.9
+00440078,Brockton - Oscar F Raymond,00440000,112,127,134,122,128,132,92,86,106,22.9
+00710032,Danvers - Ivan G Smith,00710000,38,48,50,66,44,50,0,0,0,22.9
+00720030,Dartmouth - George H Potter,00720000,68,61,70,71,66,100,0,0,0,22.9
+01390015,Hopkinton - Hopkins Elementary School,01390000,0,0,0,0,274,265,0,0,0,22.9
+01630005,Lynn - Washington Elementary School,01630000,71,111,91,51,69,57,0,0,0,22.9
+02460305,Reading - Arthur W Coolidge Middle,02460000,0,0,0,0,0,0,160,157,159,22.9
+02810085,Springfield - Homer Street,02810000,75,91,98,66,70,69,0,0,0,22.9
+06000405,Acton-Boxborough - Raymond J Grey Junior High,06000000,0,0,0,0,0,0,0,428,479,23
+00350243,Boston - Nathan Hale,00350000,20,24,22,48,22,22,0,0,0,23
+06800050,Hampden-Wilbraham - Stony Hill School,06800000,0,0,164,161,0,0,0,0,0,23
+01280100,Haverhill - Consentino Middle School,01280000,19,49,41,52,32,147,214,228,220,23
+01380010,Hopedale - Memorial,01380000,66,87,83,85,90,98,91,0,0,23
+01600315,Lowell - James S Daley Middle School,01600000,0,0,0,0,0,161,162,153,168,23
+01650013,Malden - Ferryway,01650000,104,104,117,94,100,99,100,100,89,23
+07170005,Mohawk Trail - Buckland-Shelburne Regional,07170000,37,29,35,20,24,29,14,0,0,23
+03480423,Worcester - Sullivan Middle,03480000,0,0,0,0,0,0,49,406,393,23
+06000030,Acton-Boxborough - Luther Conant School,06000000,40,68,67,66,73,73,72,0,0,23.1
+00260010,Belmont - Mary Lee Burbank,00260000,71,68,70,71,71,0,0,0,0,23.1
+01030001,Gardner - Elm Street School,01030000,0,0,0,144,171,194,0,0,0,23.1
+01530007,Leominster - Fall Brook,01530000,81,118,125,116,114,103,0,0,0,23.1
+02170005,North Reading - L D Batchelder,02170000,57,76,87,68,80,80,0,0,0,23.1
+02650015,Seekonk - Mildred Aitken School,02650000,58,59,71,66,78,79,0,0,0,23.1
+02710020,Shrewsbury - Floral Street School,02710000,0,108,187,217,197,0,0,0,0,23.1
+02930015,Taunton - Mulcahey Elementary School,02930000,107,91,97,76,89,0,0,0,0,23.1
+07750060,Wachusett - Glenwood Elementary School,07750000,0,0,0,124,138,133,0,0,0,23.1
+07800010,Whitman-Hanson - Louise A Conley,07800000,78,99,109,79,88,96,0,0,0,23.1
+03480235,Worcester - Thorndyke Road,03480000,53,66,52,49,51,54,37,0,0,23.1
+04120530,Academy Of the Pacific Rim Charter Public - Academy Of the Pacific Rim Charter Public School,04120000,0,0,0,0,0,77,74,77,78,23.2
+00100050,Arlington - Thompson,00100000,81,68,82,50,55,56,0,0,0,23.2
+00770305,Douglas - Douglas Middle School,00770000,0,0,0,0,0,0,136,150,132,23.2
+00950005,Fall River - North End Elementary,00950000,117,121,122,125,147,111,0,0,0,23.2
+07670040,Spencer-E Brookfield - Wire Village School,07670000,0,0,113,116,108,90,0,0,0,23.2
+06250315,Bridgewater-Raynham - Raynham Middle School,06250000,0,0,0,0,0,179,194,174,187,23.3
+01630040,Lynn - Wm P Connery,01630000,104,120,103,104,81,73,0,0,0,23.3
+02120013,North Attleborough - Joseph W Martin Jr Elementary,02120000,80,89,120,113,98,125,0,0,0,23.3
+02120305,North Attleborough - North Attleborough Middle,02120000,0,0,0,0,0,0,357,396,428,23.3
+02440020,Randolph - Elizabeth G Lyons Elementary,02440000,46,48,47,57,46,56,0,0,0,23.3
+02810015,Springfield - Thomas M Balliet,02810000,43,47,50,51,43,52,0,0,0,23.3
+03160305,Webster - Webster Middle School,03160000,0,0,0,131,157,160,156,0,0,23.3
+00350088,Boston - Edward Everett,00350000,37,44,47,47,45,41,0,0,0,23.4
+00570050,Chelsea - Clark Avenue School,00570000,0,0,0,0,0,130,140,137,141,23.4
+01330025,Holbrook - South,01330000,0,0,0,0,86,115,99,0,0,23.4
+02360055,Pittsfield - Morningside Community School,02360000,60,75,84,68,80,73,0,0,0,23.4
+03040015,Uxbridge - McCloskey Middle School,03040000,0,0,0,0,0,0,164,142,162,23.4
+00100005,Arlington - John A Bishop,00100000,68,72,68,76,72,59,0,0,0,23.5
+04470205,Benjamin Franklin Classical Charter Public - Benjamin Franklin Classical Charter Public School,04470000,50,50,50,50,50,50,50,49,51,23.5
+01490016,Lawrence - South Lawrence East Middle School,01490000,0,0,0,0,0,0,0,0,159,23.5
+01630100,Lynn - Tracy,01630000,0,104,110,66,65,58,0,0,0,23.5
+02140001,Northbridge - W Edward Balmer,02140000,0,0,173,203,193,0,0,0,0,23.5
+02510020,Rockland - Memorial Park,02510000,0,64,47,43,46,0,0,0,0,23.5
+02930007,Taunton - Edmund Hatch Bennett,02930000,56,79,72,79,66,0,0,0,0,23.5
+00560025,Chelmsford - Charles D Harrington,00560000,89,89,86,100,109,0,0,0,0,23.6
+00970016,Fitchburg - Crocker Elementary,00970000,108,102,97,89,100,0,0,0,0,23.6
+01630070,Lynn - Lincoln-Thomson,01630000,55,51,52,40,48,46,0,0,0,23.6
+01630050,Lynn - Robert L Ford,01630000,0,116,112,115,94,89,0,0,0,23.6
+02480305,Revere - Susan B. Anthony Middle School,02480000,0,0,0,0,0,0,188,170,168,23.6
+07800310,Whitman-Hanson - Whitman Middle,07800000,0,0,0,0,0,0,211,181,186,23.6
+00160045,Attleboro - Hill-Roberts Elementary School,00160000,92,93,116,100,82,0,0,0,0,23.7
+00350266,Boston - Dr. William Henderson Lower,00350000,46,26,49,49,23,0,0,0,0,23.7
+00440023,Brockton - Edgar B Davis,00440000,109,130,126,129,124,125,113,115,110,23.7
+00950065,Fall River - William S Greene,00950000,120,115,124,126,139,118,0,0,0,23.7
+01580015,Littleton - Russell St Elementary,01580000,0,0,0,122,126,106,0,0,0,23.7
+01600080,Lowell - Charlotte M Murkland Elementary,01600000,100,93,87,88,96,0,0,0,0,23.7
+01700030,Marlborough - Charles Jaworek School,01700000,151,165,139,137,147,0,0,0,0,23.7
+02870005,Sturbridge - Burgess Elementary,02870000,111,134,127,137,125,144,131,0,0,23.7
+00200045,Barnstable - West Villages Elementary School,00200000,94,104,135,117,0,0,0,0,0,23.8
+00440045,Brockton - Hancock,00440000,98,134,145,135,115,110,0,0,0,23.8
+01440305,Ipswich - Ipswich Middle School,01440000,0,0,0,0,0,0,169,165,148,23.8
+01490049,Lawrence - UP Academy Oliver Middle School,01490000,0,0,0,0,0,0,105,126,101,23.8
+00350575,Boston - OBryant School Math/Science,00350000,0,0,0,0,0,0,0,149,143,23.9
+02880305,Sudbury - Ephraim Curtis Middle,02880000,0,0,0,0,0,0,328,325,357,23.9
+00160305,Attleboro - Robert J. Coelho Middle School,00160000,0,0,0,0,0,191,168,166,150,24
+01490525,Lawrence - Frost Middle School,01490000,0,0,0,0,0,113,134,123,118,24
+01490004,Lawrence - South Lawrence East Elementary School,01490000,0,144,149,136,144,0,0,0,0,24
+00790035,Dracut - Brookside Elementary,00790000,62,77,76,80,77,84,0,0,0,24.1
+00880025,Easton - Richardson - Olmsted School,00880000,0,0,0,272,295,287,0,0,0,24.1
+01100305,Grafton - Grafton Middle,01100000,0,0,0,0,0,0,0,251,247,24.1
+01620010,Lunenburg - Lunenburg Primary School,01620000,111,122,119,128,0,0,0,0,0,24.1
+02180060,Norton - Henri A. Yelle,02180000,0,0,0,0,189,193,0,0,0,24.1
+00950011,Fall River - Mary Fonseca Elementary School,00950000,134,150,136,139,128,117,0,0,0,24.2
+01490018,Lawrence - Robert Frost,01490000,98,123,136,118,114,0,0,0,0,24.2
+02010040,New Bedford - James B Congdon,02010000,73,73,74,63,35,36,0,0,0,24.2
+06800030,Hampden-Wilbraham - Soule Road,06800000,0,0,0,0,168,196,0,0,0,24.3
+02810185,Springfield - Washington,02810000,88,95,79,94,77,70,0,0,0,24.3
+02930042,Taunton - Joseph H Martin,02930000,0,0,0,0,0,265,239,227,0,24.4
+07730405,Triton - Triton Regional Middle School,07730000,0,0,0,0,0,0,0,238,231,24.4
+01490048,Lawrence - Oliver Partnership School,01490000,0,93,97,107,98,94,0,0,0,24.5
+01600310,Lowell - B.F.Butler Middle School,01600000,0,0,0,0,0,140,137,142,143,24.5
+03090305,Ware - Ware Middle School,03090000,0,0,0,0,102,97,114,0,0,24.6
+02900005,Sutton - Sutton Elementary,02900000,0,0,0,109,132,127,0,0,0,24.7
+00930058,Everett - Parlin School,00930000,92,98,108,93,83,86,98,95,124,24.8
+03480050,Worcester - Chandler Elementary Community,03480000,79,86,68,69,64,49,42,0,0,24.8
+00200005,Barnstable - West Barnstable Elementary,00200000,59,68,66,74,0,0,0,0,0,24.9
+01490002,Lawrence - Lawlor Early Childhood Center,01490000,176,0,0,0,0,0,0,0,0,24.9
+01490090,Lawrence - UP Academy Leonard Middle School,01490000,0,0,0,0,0,0,100,117,114,24.9
+00100038,Arlington - Menotomy Preschool,00100000,0,0,0,0,0,0,0,0,0,25
+00440055,Brockton - Huntington,00440000,43,82,99,97,91,82,0,0,0,25
+01630016,Lynn - A Drewicz Elementary,01630000,88,132,81,72,75,63,0,0,0,25
+00570045,Chelsea - Eugene Wright Science and Technology Academy,00570000,0,0,0,0,0,143,121,125,132,25.1
+00570055,Chelsea - Joseph A. Browne School,00570000,0,0,0,0,0,112,122,154,157,25.1
+00830010,East Bridgewater - Gordon W Mitchell,00830000,0,0,0,161,175,191,185,0,0,25.1
+02110015,North Andover - Kittredge,02110000,44,50,49,48,52,54,0,0,0,25.1
+04100205,Excel Academy Charter - Excel Academy Charter School,04100000,0,0,0,0,0,167,168,167,102,25.2
+01280085,Haverhill - John G Whittier,01280000,0,0,0,0,0,131,128,123,117,25.2
+00770015,Douglas - Douglas Elementary School,00770000,0,0,110,134,103,134,0,0,0,25.3
+00010003,Abington - Beaver Brook Elementary School,00010000,0,131,143,174,172,0,0,0,0,25.4
+35090305,Argosy Collegiate Charter School (District) - Argosy Collegiate Charter School,35090000,0,0,0,0,0,0,103,0,0,25.5
+04530005,Holyoke Community Charter - Holyoke Community Charter School,04530000,79,86,79,86,82,57,73,93,69,25.5
+04410505,Sabis International Charter - Sabis International Charter School,04410000,100,108,113,120,128,128,128,136,160,25.5
+00350179,Boston - John W McCormack,00350000,0,0,0,0,0,0,194,199,203,25.6
+01010003,Franklin - Franklin Early Childhood Development Center,01010000,0,0,0,0,0,0,0,0,0,25.8
+04500105,Hilltown Cooperative Charter Public - Hilltown Cooperative Charter Public School,04500000,20,20,20,22,20,22,32,20,17,25.8
+04630205,KIPP Academy Boston Charter School (District) - KIPP Academy Boston Charter School,04630000,72,0,0,0,0,72,72,72,0,25.8
+02110305,North Andover - North Andover Middle,02110000,0,0,0,0,0,0,409,363,416,25.8
+00350560,Boston - Boston Latin,00350000,0,0,0,0,0,0,0,406,412,26
+01820305,Middleborough - John T. Nichols Middle,01820000,0,0,0,0,0,0,272,256,276,26
+04440205,Neighborhood House Charter - Neighborhood House Charter School,04440000,40,42,40,42,42,41,42,38,31,26.1
+07800035,Whitman-Hanson - Indian Head,07800000,0,0,0,120,131,137,0,0,0,26.2
+02480035,Revere - William McKinley,02480000,98,113,99,80,98,76,0,0,0,26.3
+04860105,Seven Hills Charter Public - Seven Hills Charter School,04860000,90,90,84,84,81,72,58,58,50,26.3
+04980405,Veritas Preparatory Charter School - Veritas Preparatory Charter School,04980000,0,0,0,0,0,85,85,76,0,26.3
+01490009,Lawrence - Community Day Arlington,01490000,81,138,136,121,126,0,0,0,0,26.4
+00570035,Chelsea - George F. Kelly Elementary,00570000,0,168,134,145,143,0,0,0,0,26.7
+02810580,Springfield - Gateway to College at Springfield Technical Community College,02810000,0,0,0,0,0,0,0,0,0,26.7
+00830005,East Bridgewater - Central,00830000,142,163,161,0,0,0,0,0,0,26.9
+35030205,Lowell Collegiate Charter School (District) - Lowell Collegiate Charter School,35030000,50,88,89,63,50,0,0,0,0,26.9
+01680016,Marblehead - Village School,01680000,0,0,0,0,231,225,244,0,0,26.9
+00570040,Chelsea - Frank M Sokolowski Elementary,00570000,0,153,144,168,148,0,0,0,0,27.5
+00570030,Chelsea - Edgar A Hooks Elementary,00570000,0,190,149,111,113,0,0,0,0,28.1
+04170205,Bridge Boston Charter School - Bridge Boston Charter School,04170000,40,38,37,35,0,0,0,0,0,28.4
+04320530,Cape Cod Lighthouse Charter - Cape Cod Lighthouse Charter School,04320000,0,0,0,0,0,0,80,80,80,29.2
+00010015,Abington - Woodsdale Elementary School,00010000,0,0,0,0,0,156,174,0,0,30.1
+00960305,Falmouth - Morse Pond School,00960000,0,0,0,0,0,285,290,0,0,30.7
+04670505,New Liberty Charter School of Salem (District) - New Liberty Charter School of Salem,04670000,0,0,0,0,0,0,0,0,0,31.3
+04090205,Alma del Mar Charter School - Alma del Mar Charter School,04090000,39,40,38,44,38,41,0,0,0,39.4
+04840505,Roxbury Preparatory Charter - Roxbury Preparatory Charter School,04840000,0,0,0,0,0,249,244,235,156,39.7
+01050005,Georgetown - Perley Elementary,01050000,86,118,0,0,0,0,0,0,0,49.4
+01050010,Georgetown - Penn Brook,01050000,0,0,94,96,107,112,0,0,0,62.3
