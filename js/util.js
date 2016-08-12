@@ -55,3 +55,42 @@ function money(val, plusSign) {
         function println(elem, str) {
             elem.innerHTML += escapeHtml(str).replace(/\n/g, "<br>") + "<br>";
         };
+
+
+		function compare(a,b) {
+		  if (a < b) return -1;
+		  if (a > b) return 1;
+		  return 0;
+		}
+		
+		function sum(arr) {
+		  return arr.reduce(function(a,b){return a+b;},0);
+		}
+		
+		
+		function queryParams() {
+		var a = window.location.search.substr(1).split('&'); 
+		if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i)
+        {
+            var p=a[i].split('=', 2);
+            if (p.length != 2) continue;
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+    
+		}
+		
+		// f should map [key,value] to [key, value]
+		function objectMap(obj, f) {
+		
+		  var ret = {};
+		  Object.keys(obj).map(function(k){return [k, obj[k]];}).map(f).forEach(function(kv){ ret[kv[0]]=kv[1]; });
+		  return ret;
+		
+		}
+		
+		function caseInsensitiveQueryParams() {
+		  return objectMap(queryParams(), function(kv){return [kv[0].toLowerCase(),kv];});
+		}
