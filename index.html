@@ -59,28 +59,20 @@
   <div class="details"><div class="summary">
 	  <span class="triangleIcon"></span> Simulation details </div>
 	<div class="detailText">
-	  <p>
-	    This page simulates the effect of charter school opening on the finances of public school districts.		
-	  <p>
-    	The public school district is composed of a collection of schools.  
-		Each school is composed of a collection of nine grades (Kindergarten through 8th Grade).  
-		Each grade is composed of a collection of class sections.
-		Each class section is composed of one teacher and a collection of students.
-	    The district has a maximum allowable number of students per class section, and at all times each grade in each school is organized to have the fewest number of sections possible without exceeding this maximum class size.  That is, each school will freely move students between sections in a grade in order to close class sections, but students are not moved across grades or across schools, even if this would result in fewer class sections.
-      <p>
-     	Each district has a total number of students, which are (for simplicity) assumed to be distributed evenly throughout the schools and grades at the start of the simulation.  Each district has a number of support, intervention, and enrichment teachers at the start of the simulation.  These teachers are assumed to have the same yearly salary as the class section teachers, which are all assumed to have the same yearly salary as each other.   
-      <p>		
-	    It is assumed that the charter school will draw a certain number of students from the public school district every year.  For the first year, there will be a larger draw from Kindergarten than from the other grades.  In the second year, there will be a larger draw from 1st grade.  This process continues for each year, targeting each successive grade level, until the ninth year where there will be a larger draw from 8th grade.  Specifically, the simulation tries to draw 60% of students from the targeted grade, and then draws the remainder from all grades equally.  These students are chosen randomly, which means that each run of the simulation may result in slightly different outcomes.
-	  <p>
-	    The district receives funding proportional to the number of students.  Additionally, there is a program designed to cushion the district from funding loss due to students leaving the district.  This program aims to maintain full funding for a student the first year after she leaves the district, and then 25% funding for each of the next five years, before dropping to zero funding entirely starting in the seventh year.  However, this program is itseld only 59% funded, so in fact, the district only receives 59% of each departed student's funding in the first year, and then 59% of 25% = 14.75% funding for the next five years.
-	  <p>
-	    As the simulation progresses, the net loss of funding for departing students quickly becomes greater than the savings in teacher salaries by closing sections.  The district has fixed costs that don't disappear when a student leaves, like the salary of a payroll coordinator, or superintendent. To close the budget gaps, the District will need to cut the extras &mdash; like reading teachers, school counselors, specialists (music/art), pre-kindergarten programming, and any other student service or support.  If the simulation shows that these are completely eliminated, and the budget drops below zero, it means that the district will need to cut costs in ways not accounted for by the simulation.
-	   <hr>
-	   <p>
-	    The simulation allows you to specify values for the model's parameters.  The initial number of support, intervention, and enrichment teachers is assumed to be approximately one per every 59 students in the district.  ... TODO
-	   <p>
-	     Additionally, the simulation allows you to populate the model parameters by choosing the district name from the dropdown menu.  The data for this is based on ... TODO
-	    
+<p>	  This page simulates the effect of charter school opening on the finances of public school districts. When students leave a traditional district to a charter, their per pupil state and local funding follows them and the sending district must find places to cut. (This differs from what would happen if a child leaves a public district for a private school &mdash; in that case, the district has a savings).
+<p> The model uses 2014-2015 State data on each district, including total enrollment, number of schools, teacher salaries, per pupil spending, and maximum class size. Data are available here: <a href="http://profiles.doe.mass.edu/state_report/">http://profiles.doe.mass.edu/state_report/</a> 
+<p>We made the following assumptions to run the model:
+<p><b>How Students Leave:</b> We assume that a new charter school will draw a certain number of students from the public school district every year. Often new schools open with one grade at a time, starting at K or at the start of middle school or high school. For the first year, there will be a larger draw from Kindergarten than from the other grades. In the second year, there will be a larger draw from 1st grade. This process continues for each year, targeting each successive grade level, until the ninth year where there will be a larger draw from 8th grade. Specifically, the simulation tries to draw 60% of students from the targeted grade, and then draws the remainder from all grades equally. These students are chosen randomly (to try to replicate what actually happens), which means that each run of the simulation may result in slightly different outcomes. 
+<p><b>What the District Does:</b> We assume that the district will try to close sections to save money. The district has a maximum allowable number of students per class section. The district will keep the fewest number of sections without exceeding this maximum class size. That is, each school will freely move students between sections in a grade in order to close class sections, but students are not moved across grades or across schools, even if this would result in fewer class sections. 
+<p><b>Other Details:</b> We assume:
+<ul><li>Each section has one teacher. </li>
+<li>Total district K8 enrollment is distributed evenly across grades and schools at the start of the simulation.</li>
+<li>Each district has a number of support, intervention, and enrichment teachers at the start of the simulation. These teachers are assumed to have the same yearly salary as the class section teachers. </li>
+<li>According to State law, districts receive some funding during a transitional period when a student leaves. This program aims to maintain full funding for a student the first year after she leaves the district, and then 25% funding for each of the next five years, before dropping to zero funding entirely starting in the seventh year. However, this program is itself only 59% funded, so in fact, the district only receives 59% of each departed student's funding in the first year, and then 59% of 25% = 14.75% funding for the next five years. </li>
+<li>As the simulation progresses, the net loss of funding for departing students quickly becomes greater than the savings in teacher salaries by closing sections. This is due to the difficulty in having enough students leave from one grade/school to close sections. Also, the district has fixed costs that don't disappear when a student leaves, like the salary of a payroll coordinator, or superintendent. To close the budget gaps, the District will need to cut the extras &mdash; like reading teachers, school counselors, specialists (music/art), pre-kindergarten programming, and any other student service or support. If the simulation shows that these are completely eliminated, and the budget drops below zero, it means that the district will need to cut costs in ways not accounted for by the simulation. </li>
+</ul>
+<p>
+<b>About Us:</b> We (Stephanie Hirsch and Joe Calzaretta) are parents of three children in the Somerville Public Schools. Stephanie Hirsch has spent almost 20 years working in the analysis of finance and operations data at the State and Local level. She studied finance at Harvard Business School and the statistics at the University of Chicago and she believes in strong local government and strong community institutions. Joe is an MIT-trained software engineer and mathematician. Contact us at <a href="mailto:shirsch@sprynet.com">shirsch@sprynet.com</a>  
 	<div class="summary">close details </div>
 	    
 	</div>
