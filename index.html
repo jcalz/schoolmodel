@@ -3,6 +3,11 @@
 
 <head>
   <title>Simulation of Impact of Charter Opening on Traditional District Finances</title>
+  <meta property="og:url" content="http://jcalz.github.io/schoolmodel" />
+  <meta property="og:title" content="Simulation of Impact of Charter Opening on Traditional District Finances" />
+  <meta property="og:description" content="This page simulates the effect of charter school opening on the finances of public school districts. When students
+    leave a traditional district to a charter, their per pupil state and local funding follows them and the sending district must find places to cut."/>
+  <meta property="og:image" content="http://jcalz.github.io/schoolmodel/img/exampleCharts.png" />
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
   </script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
@@ -65,10 +70,18 @@
     .enrollmentTable td:not(:first-child) {
       text-align: center;
     }
+	
+	.highlighted {
+	  font-size: 110%;
+	  font-weight: bold;
+	}
+	
   </style>
 </head>
 
 <body>
+
+  
   <h2>Simulation of Impact of Charter Opening on Traditional District Finances</h2>
   <div class="details">
     <div class="summary">
@@ -156,12 +169,18 @@
   <br>
   <button id="go">Advance year</button>
   <button id="restart">Restart</button>
+  <button class="fb-share-link">Share on Facebook</button>
   <br>
   <div id="charts">
     <div id="specialistChart" class="chart"></div>
     <div id="fundingChart" class="chart"></div>
   </div>
   <div id="output">
+   <div>Year: <span id="currentYear"></span></div>
+   <div>Students lost: <span id="studentsLost"></span></div>
+   <div>Teachers laid off: <span id="teachersLaidOff"></span></div>
+   <div>Sections closed: <span id="sectionsClosed"></span></div>
+   <div class="highlighted">Total funding <span id="gainedOrLost">lost</span>: <span id="totalFundingChange"></span></div>
   </div>
   <div id="enrollmentDetails" class="details">
 
@@ -170,6 +189,10 @@
     <div class="detailText">
       <table id="enrollmentTable" class="enrollmentTable"></table>
     </div>
+	</div>
+
+  
+    
     <script>
       var ioProcessors = {
         naturalNumber: {
@@ -395,6 +418,7 @@
                 });
                 return getSchool(s.schoolName, grades);
               });
+			  numberOfSchools = schools.length;			  
             } else {
               for (var i = 0; i < numberOfSchools; i++) {
                 var grades = [];
@@ -609,8 +633,10 @@
               queryParams[lck] = [lck, JSON.stringify(config[k])];
             });
             history.replaceState(null, "", '?' + $.param(objectMap(queryParams, function(kv) {
-              return kv[1];
+              return kv[1];			  
             })));
+			
+			
             district = getDistrict(config.NUMBER_OF_SCHOOLS_IN_DISTRICT, Math.round(config.INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT /
               config.NUMBER_OF_SCHOOLS_IN_DISTRICT), config.DISTRICT_CODE);
             window.district = district;
@@ -687,23 +713,23 @@
               }
               fundingChartObj.chart.draw(fundingChartObj.data, fundingChartObj.options);
             });
-            var output = $('#output');
-            output.text('');
-            //println(output[0],'OUTPUT:\n'+JSON.stringify(stateObj, null, 2).replace(/ /g,'\xa0'));
-            println(output[0], 'Year: ' + stateObj.year);
-            println(output[0], 'Students lost: ' + stateObj.lostStudents);
-            println(output[0], 'Teachers laid off: ' + stateObj.numberOfTeachersLaidOff);
-            println(output[0], 'Sections closed: ' + stateObj.lostSections);
-            var f = stateObj.spendingChange;
-            println(output[0], 'Total funding ' + (f <= 0 ? 'lost' : 'gained') + ': ' + money(Math.abs(f),
-              false));
-            /*
-            district.schools.map(s => s.getName() + ': ' + gs.map(g => s.getNumberOfStudentsInGrade(g))).join('\n');
-            */
-            if ($('#enrollmentTable').closest('.details').attr('open'))
-              updateEnrollmentTable();
-          }
+	
+		$('#currentYear').text(stateObj.year);
+		$('#studentsLost').text(stateObj.lostStudents);
+		$('#teachersLaidOff').text(stateObj.numberOfTeachersLaidOff);
+		$('#sectionsClosed').text(stateObj.lostSections);
+		var f = stateObj.spendingChange;
+		$('#gainedOrLost').text(f <= 0 ? 'lost' : 'gained');
+		$('#totalFundingChange').text(money(Math.abs(f),false));
 
+		if ($('#enrollmentTable').closest('.details').attr('open'))
+              updateEnrollmentTable();
+          
+		  
+		  }
+
+		  
+		  
           function updateEnrollmentTable() {
             //console.log('making a table');
             //$('#enrollmentTable');
@@ -804,6 +830,12 @@
               el.attr('open', true);
             }
           });
+		  
+		  $('.fb-share-link').click(function(){
+			window.open('https://www.facebook.com/sharer/sharer.php?u='+
+			encodeURIComponent(window.location.href)+'');			
+		  });
+		  
           // run whole simulation in advance
           for (var k = 0; k < unchangingConfig.NUMBER_OF_YEARS; k++) $('#go').click();
         });
