@@ -20,8 +20,8 @@ $.when(schoolsDeferred, districtsDeferred).done(function(schools,districts){
 	if (loc>=0) {school.schoolName = name.substring(loc+3);}
   });
   
-  // get rid of schools with no students
-  schools = schools.filter(function(school){return school.totalEnrollment > 0;});
+  // get rid of schools with fewer than 50 students
+  schools = schools.filter(function(school){return school.totalEnrollment >= 50;});
   
   var schoolsByDistrict = {};
   schools.forEach(function(school){
