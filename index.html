@@ -71,8 +71,6 @@
     .enrollmentTable td:not(:first-child) {
       text-align: center;
     }
-	
-	.highlighted {
     
     .highlighted {
       font-size: 110%;
@@ -829,6 +827,7 @@
         $('.fb-share-link').click(function() {
           completeSimulation();
           uploadChartsToImgur().then(function(linkUrl) {
+            //console.log(linkUrl);
             var title = district.getName() ? district.getName() + ': ' : '';
             var description = $('#totalFunding').text();
             title += 'Simulation of Impact of Charter Opening on Traditional District Finances';
@@ -837,7 +836,7 @@
                 'https://jcalz.github.io/schoolmodel')) +
               '&picture=' + encodeURIComponent(linkUrl) +
               '&title=' + encodeURIComponent(title) +
-              '&description=' + encodeURIComponent(description));
+              '&description=' + encodeURIComponent(description), "_blank");
           });
         });
         completeSimulation();
@@ -865,12 +864,17 @@
           return $.when(sImgPromise, fImgPromise).then(function() {
             var canvasHeight = sImg.height + fImg.height;
             var canvasWidth = Math.max(sImg.width, fImg.width);
+			if (canvasWidth/canvasHeight < 1.91) {
+			  canvasWidth = canvasHeight * 1.91;
+			} else {
+			  canvasHeight = canvasWidth / 1.91;
+			}
             var canvas = $('<canvas>');
             canvas.prop('width', canvasWidth);
             canvas.prop('height', canvasHeight);
             var ctx = canvas[0].getContext('2d');
-            ctx.drawImage(sImg, 0, 0);
-            ctx.drawImage(fImg, 0, sImg.height);
+            ctx.drawImage(sImg, (canvasWidth-sImg.width)/2, (canvasHeight-sImg.height-fImg.height)/2);
+            ctx.drawImage(fImg, (canvasWidth-fImg.width)/2, (canvasHeight-sImg.height+fImg.height)/2);
             var imageData = canvas[0].toDataURL().replace(/.*?base64,/, '');
             return $.ajax({
               url: 'https://api.imgur.com/3/image',
