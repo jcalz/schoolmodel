@@ -9,7 +9,10 @@
     leave a traditional district to a charter, their per pupil state and local funding follows them and the sending district must find places to cut."
   />
   <meta property="og:image" content="http://jcalz.github.io/schoolmodel/img/exampleCharts.png" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-2.2.3.min.js">
+  </script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
   </script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
   </script>
@@ -75,6 +78,14 @@
     .highlighted {
       font-size: 110%;
       font-weight: bold;
+    }
+    
+    .shareDialog .ui-dialog-titlebar {
+      display: none;
+    }
+    
+    .shareDialog {
+      text-align: center;
     }
   </style>
 </head>
@@ -825,18 +836,36 @@
           }
         });
         $('.fb-share-link').click(function() {
+          var button = $(this);
           completeSimulation();
-          uploadChartsToImgur().then(function(linkUrl) {
+          uploadChartsToImgur().then(function(previewImgUrl) {
             //console.log(linkUrl);
             var title = district.getName() ? district.getName() + ': ' : '';
             var description = $('#totalFunding').text();
             title += 'Simulation of Impact of Charter Opening on Traditional District Finances';
-            window.open('https://www.facebook.com/sharer/sharer.php?u=' +
+            var href = 'https://www.facebook.com/sharer/sharer.php?u=' +
               encodeURIComponent(window.location.href.replace(/.*?schoolmodel/,
                 'https://jcalz.github.io/schoolmodel')) +
-              '&picture=' + encodeURIComponent(linkUrl) +
+              '&picture=' + encodeURIComponent(previewImgUrl) +
               '&title=' + encodeURIComponent(title) +
-              '&description=' + encodeURIComponent(description), "_blank");
+              '&description=' + encodeURIComponent(description);
+            var dialog = $('<div>');
+            var closeDialog = function() {
+              dialog.dialog("close");
+              return true;
+            };
+            dialog.append($(
+              '<a target="fbshare"><button>Share on Facebook<br>(opens new window)</button></a>').attr(
+              'href', href).click(closeDialog));
+            dialog.append($('<button>Don\'t Share</button>').click(closeDialog));
+            dialog.on('dialogclose', function() {
+              dialog.remove();
+            });
+            dialog.dialog({
+              modal: true,
+              dialogClass: 'shareDialog',
+              minHeight: 0
+            });
           });
         });
         completeSimulation();
@@ -848,6 +877,7 @@
         }
 
         function uploadChartsToImgur() {
+          //return $.when('http://i.imgur.com/vykoKV9.jpg'); // static image
           // combine both charts into a single image	  
           var sImg = new Image();
           var fImg = new Image();
@@ -864,17 +894,19 @@
           return $.when(sImgPromise, fImgPromise).then(function() {
             var canvasHeight = sImg.height + fImg.height;
             var canvasWidth = Math.max(sImg.width, fImg.width);
-			if (canvasWidth/canvasHeight < 1.91) {
-			  canvasWidth = canvasHeight * 1.91;
-			} else {
-			  canvasHeight = canvasWidth / 1.91;
-			}
+            if (canvasWidth / canvasHeight < 1.91) {
+              canvasWidth = canvasHeight * 1.91;
+            } else {
+              canvasHeight = canvasWidth / 1.91;
+            }
             var canvas = $('<canvas>');
             canvas.prop('width', canvasWidth);
             canvas.prop('height', canvasHeight);
             var ctx = canvas[0].getContext('2d');
-            ctx.drawImage(sImg, (canvasWidth-sImg.width)/2, (canvasHeight-sImg.height-fImg.height)/2);
-            ctx.drawImage(fImg, (canvasWidth-fImg.width)/2, (canvasHeight-sImg.height+fImg.height)/2);
+            ctx.drawImage(sImg, (canvasWidth - sImg.width) / 2, (canvasHeight - sImg.height - fImg.height) /
+              2);
+            ctx.drawImage(fImg, (canvasWidth - fImg.width) / 2, (canvasHeight - sImg.height + fImg.height) /
+              2);
             var imageData = canvas[0].toDataURL().replace(/.*?base64,/, '');
             return $.ajax({
               url: 'https://api.imgur.com/3/image',
@@ -893,7 +925,6 @@
             }
             return previewImageURL;
           });
-          //;
         }
       });
     });
