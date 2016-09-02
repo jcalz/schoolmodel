@@ -48,15 +48,15 @@
       margin: 10px;
     }
     
-    .details:not([open]) .detailText {
+    .details:not([open])>.detailText {
       display: none;
     }
     
-    .details:not([open]) .triangleIcon:before {
+    .details:not([open])>.summary .triangleIcon:before {
       content: "\25ba";
     }
     
-    .details[open] .triangleIcon:before {
+    .details[open]>.summary .triangleIcon:before {
       content: "\25bc";
     }
     
@@ -80,6 +80,10 @@
       font-weight: bold;
     }
     
+    .urgent {
+      color: red;
+    }
+    
     .shareDialog .ui-dialog-titlebar {
       display: none;
     }
@@ -95,85 +99,133 @@
   <h2>Simulation of Impact of Charter Opening on Traditional District Finances</h2>
   <div class="details">
     <div class="summary">
-      <span class="triangleIcon"></span> Simulation details </div>
+      <span class="triangleIcon"></span> Simulation details and FAQs</div>
     <div class="detailText">
-      <p> This page simulates the effect of charter school opening on the finances of public school districts. When students
-        leave a traditional district to a charter, their per pupil state and local funding follows them and the sending district
-        must find places to cut. (This differs from what would happen if a child leaves a public district for a private school
-        &mdash; in that case, the district has a savings).
-        <p> The model uses 2014-2015 State data on each district, including total enrollment, number of schools, teacher salaries,
-          per pupil spending, and maximum class size. Data are available here: <a href="http://profiles.doe.mass.edu/state_report/">http://profiles.doe.mass.edu/state_report/</a>
-          <p>We made the following assumptions to run the model:
-            <p><b>How Students Leave:</b> We assume that a new charter school will draw a certain number of students from the
-              public school district every year. Often new schools open with one grade at a time, starting at K or at the
-              start of middle school or high school. For the first year, there will be a larger draw from Kindergarten than
-              from the other grades. In the second year, there will be a larger draw from 1st grade. This process continues
-              for each year, targeting each successive grade level, until the ninth year where there will be a larger draw
-              from 8th grade. Specifically, the simulation tries to draw 60% of students from the targeted grade, and then
-              draws the remainder from all grades equally. These students are chosen randomly (to try to replicate what actually
-              happens), which means that each run of the simulation may result in slightly different outcomes.
-              <p><b>What the District Does:</b> We assume that the district will try to close sections to save money. The district
-                has a maximum allowable number of students per class section. The district will keep the fewest number of
-                sections without exceeding this maximum class size. That is, each school will freely move students between
-                sections in a grade in order to close class sections, but students are not moved across grades or across
-                schools, even if this would result in fewer class sections.
-                <p><b>Other Details:</b> We assume:
-                  <ul>
-                    <li>Each section has one teacher. </li>
-                    <li>If the district is chosen from the dropdown, the K8 enrollment for each grade in each school in the district
-                      is initially chosen to match the 2014-2015 information published by the state. If the district is not
-                      chosen from the dropdown, the total district K8 enrollment is distributed evenly across grades and
-                      schools at the start of the simulation.
-                      <li>Each district has a number of support, intervention, and enrichment teachers at the start of the simulation.
-                        These teachers are assumed to have the same yearly salary as the class section teachers. </li>
-                      <li>According to State law, districts receive some funding during a transitional period when a student
-                        leaves. This program aims to maintain full funding for a student the first year after she leaves
-                        the district, and then 25% funding for each of the next five years, before dropping to zero funding
-                        entirely starting in the seventh year. However, this program is itself only 59% funded, so in fact,
-                        the district only receives 59% of each departed student's funding in the first year, and then 59%
-                        of 25% = 14.75% funding for the next five years. </li>
-                      <li>As the simulation progresses, the net loss of funding for departing students quickly becomes greater
-                        than the savings in teacher salaries by closing sections. This is due to the difficulty in having
-                        enough students leave from one grade/school to close sections. Also, the district has fixed costs
-                        that don't disappear when a student leaves, like the salary of a payroll coordinator, or superintendent.
-                        To close the budget gaps, the District will need to cut the extras &mdash; like reading teachers,
-                        school counselors, specialists (music/art), pre-kindergarten programming, and any other student service
-                        or support. If the simulation shows that these are completely eliminated, and the budget drops below
-                        zero, it means that the district will need to cut costs in ways not accounted for by the simulation.
-                      </li>
-                  </ul>
-                  <p>
-                    <b>About Us:</b> We (Stephanie Hirsch and Joe Calzaretta) are parents of three children in the Somerville
-                    Public Schools. Stephanie Hirsch has spent almost 20 years working in the analysis of finance and operations
-                    data at the State and Local level. She studied finance at Harvard Business School and the statistics
-                    at the University of Chicago and she believes in strong local government and strong community institutions.
-                    Joe is an MIT-trained software engineer and mathematician. Contact us at <a href="mailto:shirsch@sprynet.com">shirsch@sprynet.com</a>
-                    <div class="summary">close details </div>
+      <div class="details">
+        <div class="summary"><span class="triangleIcon"></span> About the model</div>
+        <div class="detailText">This page simulates the effect of charter school opening on the finances of public school districts. The model uses
+          2014-2015 State data for each district, including total enrollment, number of schools, teacher salaries, per pupil
+          spending, and maximum class size. Data are available here: <a href="http://profiles.doe.mass.edu/state_report/">http://profiles.doe.mass.edu/state_report/</a>. It is based on what has happened to districts in the past when charters opens or expands.</div>
+      </div>
 
+      <div class="details">
+        <div class="summary"><span class="triangleIcon"></span>What happens to funding when a child leaves the district for a charter school?</div>
+        <div
+          class="detailText"> When students leave a traditional district for a charter, the district loses the local tax dollars that pay for that
+          student's education, not just the state aid. (In comparison, when a student goes to a private school, the state
+          aid is lost but the tax dollars &ndash; usually most of the per pupil expenses -- stay with the community.) In
+          a community where most of the school spending is local, that's a very big difference.</div>
     </div>
+
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>What assumptions does the model make?</div>
+      <div class="detailText">
+        <p><span style="text-decoration: underline;">How Students Leave</span><strong>:</strong> Based on prior real-life cases,
+          we assume that a new charter school will draw a certain number of students from the public school district every
+          year. (You can <a href="#charterDrawParameter">change</a> this number in the simulation.) Often new schools open
+          with one grade at a time, starting at K or at the start of middle school or high school. For the first year, there
+          will be a larger draw from Kindergarten than from the other grades. In the second year, there will be a larger
+          draw from 1st grade. This process continues for each year, targeting each successive grade level, until the ninth
+          year where there will be a larger draw from 8th grade. Specifically, the simulation tries to draw 60% of students
+          from the targeted grade, and then draws the remainder from all grades equally. These students are chosen randomly
+          (to try to replicate what actually happens), which means that each run of the simulation may result in slightly
+          different outcomes.</p>
+        <p><span style="text-decoration: underline;">What the District Does</span><strong>:</strong> We assume that the district
+          receives a certain amount of funding for each enrolled student. (You can <a href="#fundingPerStudentParameter">change</a>          this number in the simulation.) We assume that the district will try to close sections to save money, as section
+          teachers cost a certain amount per year (you can <a href="#teacherSalaryParameter">change</a> this number in the
+          simulation.) The district has a maximum allowable number of students per class section (You can <a href="#maximumClassSizeParameter">change</a>          this number in the simulation.) The district will keep the fewest number of sections without exceeding this maximum
+          class size. That is, each school will freely move students between sections in a grade in order to close class
+          sections, but students are not moved across grades or across schools, even if this would result in fewer class
+          sections. We based the maximum class size on the largest class size we found in the district&rsquo;s data for grades
+          K-8 (however you can adjust that number in the model).</p>
+        <p><span style="text-decoration: underline;">Other Details</span><strong>:</strong> We assume:</p>
+        <ul>
+          <li>Each section has one teacher.</li>
+          <li>If the district is chosen from <a href="#districtDropdown">the dropdown</a>, the K-8 enrollment for each grade
+            in each school in the district is initially chosen to match the 2014-2015 information published by the state.
+            (Note that this will differ slightly from actual enrollment, but it will be close). If the district is not chosen
+            from the dropdown, you can choose the <a href="#numberOfSchoolsParameter">number of schools</a> and the <a href="#numberOfStudentsParameter">initial number of students</a>            in the district, and the total district K8 enrollment is distributed evenly across grades and schools at the
+            start of the simulation.</li>
+          <li>Each district is assumed to have a number of support, intervention, and enrichment teachers at the start of the
+            simulation. These teachers are assumed to have the same yearly salary as the class section teachers.</li>
+          <li>According to State law, districts receive some funding during a transitional period when a student leaves. This
+            program aims to maintain full funding for a student the first year after she leaves the district, and then 25%
+            funding for each of the next five years, before dropping to zero funding entirely starting in the seventh year.
+            However, this program is itself only 59% funded, so in fact, the district only receives 59% of each departed
+            student's funding in the first year, and then 59% of 25% = 14.75% funding for the next five years.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>Why is there such a big deficit? </div>
+      <div class="detailText">As the simulation progresses, the net loss of funding for departing students quickly becomes greater than the savings
+        in teacher salaries by closing sections. This is due to the difficulty in having too few students leave from any
+        one grade/school to close sections. Also, the district has fixed costs that don't disappear when a student leaves,
+        like the salary of a payroll coordinator, or superintendent. To close the budget gaps, the district will need to
+        cut the extras &mdash; like reading teachers, school counselors, specialists (music/art), pre-kindergarten programming,
+        and any other student service or support. If the simulation shows that these are completely eliminated, and the budget
+        drops below zero, it means that the district will need to cut costs in ways not accounted for by the simulation.</p>
+      </div>
+    </div>
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>What else can districts do to cover the deficits?</div>
+      <div class="detailText"> Instead of cutting enrichment and support, districts can close schools to cover the annual deficit. However, because
+        no one school will lose all of its students, this means moving students who remain in the shuttered school to a new
+        school. That&rsquo;s a very disruptive and politically difficult, so sometimes doesn&rsquo;t happen as planned. Alternately,
+        a city can cut other city services (e.g. recreation, health and human services, police/fire) to cover increased funding
+        for the schools.</p>
+      </div>
+    </div>
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>How long will the deficits last?</div>
+      <div class="detailText"> With no cap, the deficits may continue until every school has been turned into a privately-run public charter school.</p>
+      </div>
+    </div>
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>Where can I learn more?</div>
+      <div class="detailText"> Continue the discussion on our Q&amp;A blog at: www.</p>
+      </div>
+    </div>
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>How can I see your code and math?</div>
+      <div class="detailText">Take a look here: <a href="https://github.com/jcalz/schoolmodel">http://github.com/jcalz/schoolmodel</a>.</p>
+      </div>
+    </div>
+    <div class="details">
+      <div class="summary"><span class="triangleIcon"></span>About Us:</div>
+      <div class="detailText"> We (Stephanie Hirsch and Joe Calzaretta) are parents of three children in the Somerville Public Schools. Stephanie
+        Hirsch has spent almost 20 years working in the analysis of finance and operations data at the State and Local level.
+        She studied finance at Harvard Business School and the statistics at the University of Chicago and she believes in
+        strong local government and strong community institutions. Joe is an MIT-trained software engineer and mathematician.
+        Contact us at <a href="mailto:charter-simulation@googlegroups.com">charter-simulation@googlegroups.com</a></p>
+      </div>
+    </div>
+    <div class="summary">close details </div>
+
+  </div>
 
   </div>
   <div id="config">
-    <label>School district:
+    <label id="districtDropdown">School district:
 	  <select id="districtSelect"></select>
 	</label>
-    <label>Number of schools in the district:
+    <label id="numberOfSchoolsParameter">Number of schools in the district:
       <input data-var="NUMBER_OF_SCHOOLS_IN_DISTRICT" data-io="naturalNumber">
     </label>
-    <label>Initial number of students in the district:
+    <label id="numberOfStudentsParameter">Initial number of students in the district:
       <input data-var="INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT" data-io="naturalNumber">
     </label>
-    <label>Maximum class size:
+    <label id="maximumClassSizeParameter">Maximum class size:
       <input data-var="MAXIMUM_CLASS_SIZE" data-io="naturalNumber">
     </label>
-    <label>District yearly teacher salary:
+    <label id="teacherSalaryParameter">District yearly teacher salary:
       <input data-var="TEACHER_SALARY" data-io="dollarValue">
     </label>
-    <label>District yearly funding per student:
+    <label id="fundingPerStudentParameter">District yearly funding per student:
       <input data-var="FUNDING_PER_STUDENT" data-io="dollarValue">
     </label>
-    <label>Number of students leaving for charter per year:
-      <input data-var="CHARTER_DRAW_PER_YEAR" data-io="naturalNumber">
+    <label id="charterDrawParameter">Number of students leaving for charter per year:
+     <input data-var="CHARTER_DRAW_PER_YEAR" data-io="naturalNumber">
     </label>
   </div>
   <br>
@@ -191,6 +243,9 @@
     <div>Teachers laid off: <span id="teachersLaidOff"></span></div>
     <div>Sections closed: <span id="sectionsClosed"></span></div>
     <div class="highlighted" id="totalFunding">Total funding <span id="gainedOrLost">lost</span>: <span id="totalFundingChange"></span></div>
+    <div class="highlighted">Cuts made: <span id="cutsMade"></span></div>
+    <div class="urgent highlighted" id="cutsNeededDiv">Additional cuts needed: <span id="cutsNeededAmount"></span></div>
+
   </div>
   <div id="enrollmentDetails" class="details">
 
@@ -485,13 +540,16 @@
                 obj[t] = {
                   'type': res[i].type.typeName,
                   'retainedNumber': 0,
-                  'initialNumber': 0
+                  'initialNumber': 0,
+                  'fundingCut': 0
                 };
                 //keys.push(t);
               }
               obj[t].initialNumber++;
               if (res[i].exists) {
                 obj[t].retainedNumber++;
+              } else {
+                obj[t].fundingCut += res[i].type.getCost();
               }
             }
             return obj;
@@ -514,10 +572,8 @@
             removedStudents[currentYear] += ret;
             return ret;
           }
-          var getAvailableFunds = function() {
+          var getAvailableFundsBeforePayingSectionTeachers = function() {
             var funding = 0;
-            var status = '';
-            status += (getNumberOfStudents() + ' students @ ' + config.FUNDING_PER_STUDENT + ' ea');
             funding += config.FUNDING_PER_STUDENT * getNumberOfStudents();
             for (var i = 0; i < unchangingConfig.FUNDING_FRAC_REMOVED_STUDENT.length; i++) {
               var year = currentYear - i;
@@ -529,16 +585,21 @@
                   removedStudents[year];
               }
             }
-            status += (getNumberOfSections() + ' sections @ -' + config.TEACHER_SALARY + ' ea');
-            funding -= config.TEACHER_SALARY * getNumberOfSections();
-            status += (funding);
-            //console.log(status);
             return funding;
           };
+          var getAvailableFunds = function() {
+            return getAvailableFundsBeforePayingSectionTeachers() - config.TEACHER_SALARY *
+              getNumberOfSections();
+          }
           var initialAvailableFunds = getAvailableFunds();
           var initialNumberOfSections = getNumberOfSections();
+          var initialAvailableFundsBeforePayingSectionTeachers = getAvailableFundsBeforePayingSectionTeachers();
           var getNetAvailableFunds = function() {
             return getAvailableFunds() - initialAvailableFunds;
+          };
+          var getNetAvailableFundsBeforePayingSectionTeachers = function() {
+            return getAvailableFundsBeforePayingSectionTeachers() -
+              initialAvailableFundsBeforePayingSectionTeachers;
           };
           var getNumberOfRemovedTeachers = function() {
             var numRemovedSpecialists = getSpecialists().filter(
@@ -557,6 +618,7 @@
             getNumberOfStudentsInGrade: getNumberOfStudentsInGrade,
             removeStudentsFromGrade: removeStudentsFromGrade,
             getNetAvailableFunds: getNetAvailableFunds,
+            getNetAvailableFundsBeforePayingSectionTeachers: getNetAvailableFundsBeforePayingSectionTeachers,
             getAvailableFundsForSpecialists: getAvailableFundsForSpecialists,
             getNumberOfSections: getNumberOfSections,
             getInitialNumberOfSections: function() {
@@ -594,7 +656,8 @@
               vAxis: {
                 viewWindow: {
                   min: 0
-                }
+                },
+                title: 'Teachers'
               },
               hAxis: {
                 title: 'Year'
@@ -624,6 +687,7 @@
                   max: 0
                 },
                 format: 'short',
+                title: 'Dollars'
               },
               hAxis: {
                 title: 'Year'
@@ -681,10 +745,12 @@
           state.retainedSections = district.getNumberOfSections();
           state.initialSections = district.getInitialNumberOfSections();
           state.lostSections = state.initialSections - state.retainedSections;
-          state.spendingChange = (district.getNetAvailableFunds());
           state.availableFundsForSpecialists = (district.getAvailableFundsForSpecialists());
           state.numberOfTeachersLaidOff = district.getNumberOfRemovedTeachers();
           state.specialists = district.getSpecialistsSummary();
+          state.totalFundingChange = district.getNetAvailableFundsBeforePayingSectionTeachers();
+          state.cutsNeeded = -district.getNetAvailableFunds();
+          state.cutsMade = -state.cutsNeeded - state.totalFundingChange;
           return state;
         }
 
@@ -728,9 +794,17 @@
           $('#studentsLost').text(stateObj.lostStudents);
           $('#teachersLaidOff').text(stateObj.numberOfTeachersLaidOff);
           $('#sectionsClosed').text(stateObj.lostSections);
-          var f = stateObj.spendingChange;
+          var f = stateObj.totalFundingChange;
           $('#gainedOrLost').text(f <= 0 ? 'lost' : 'gained');
           $('#totalFundingChange').text(money(Math.abs(f), false));
+          $('#cutsMade').text(money(Math.abs(stateObj.cutsMade), false));
+          var cutsNeeded = stateObj.cutsNeeded;
+          if (cutsNeeded <= 0) {
+            $('#cutsNeededDiv').hide();
+          } else {
+            $('#cutsNeededAmount').text(money(cutsNeeded, false));
+            $('#cutsNeededDiv').show();
+          }
           if ($('#enrollmentTable').closest('.details').attr('open'))
             updateEnrollmentTable();
         }
@@ -827,11 +901,11 @@
         $('.details .summary').click(function() {
           var el = $(this).closest('.details');
           if (el.attr('open')) {
-            el.find(".detailText").slideUp();
+            el.children(".detailText").slideUp();
             el.removeAttr('open');
           } else {
             if (el[0].populate) el[0].populate();
-            el.find(".detailText").slideDown();
+            el.children(".detailText").slideDown();
             el.attr('open', true);
           }
         });
