@@ -67,6 +67,9 @@ function money(val, plusSign) {
 		  return arr.reduce(function(a,b){return a+b;},0);
 		}
 		
+		function avg(arr) {
+		  return sum(arr)/arr.length;
+		}
 		
 		function queryParams() {
 		var a = window.location.search.substr(1).split('&'); 
