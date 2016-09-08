@@ -2,10 +2,10 @@
 <html>
 
 <head>
-  <title>Simulation of Impact of Charter Opening on Traditional District Finances</title>
+  <title>Projection of Impact of Charter Opening on Traditional District Finances</title>
   <meta property="og:url" content="http://jcalz.github.io/schoolmodel" />
-  <meta property="og:title" content="Simulation of Impact of Charter Opening on Traditional District Finances" />
-  <meta property="og:description" content="This page simulates the effect of charter school opening on the finances of public school districts. When students
+  <meta property="og:title" content="Projection of Impact of Charter Opening on Traditional District Finances" />
+  <meta property="og:description" content="This page simulates the effect of a charter school's expansion or opening on the finances of public school districts. When students
     leave a traditional district to a charter, their per pupil state and local funding follows them and the sending district must find places to cut."
   />
   <meta property="og:image" content="http://jcalz.github.io/schoolmodel/img/exampleCharts.png" />
@@ -61,7 +61,6 @@
     }
     
     .enrollmentTable {
-      font-size: 50%;
       border-collapse: collapse;
     }
     
@@ -71,7 +70,12 @@
       padding: 0.25rem;
     }
     
-    .enrollmentTable td:not(:first-child) {
+	  .enrollmentTable th {
+      font-size: 50%;
+    }
+      
+    .enrollmentTable td {
+      font-size: 85%;
       text-align: center;
     }
     
@@ -96,25 +100,25 @@
 
 <body>
 
-  <h2>Simulation of Impact of Charter Opening on Traditional District Finances</h2>
+  <h2>Projection of Impact of Charter Opening on Traditional District Finances</h2>
   <div class="details">
     <div class="summary">
-      <span class="triangleIcon"></span> Simulation details and FAQs</div>
+      <span class="triangleIcon"></span> Projection details and FAQs</div>
     <div class="detailText">
       <div class="details">
         <div class="summary"><span class="triangleIcon"></span> About the model</div>
-        <div class="detailText">This page simulates the effect of charter school opening on the finances of public school districts. The model uses
-          2014-2015 State data for each district, including total enrollment, number of schools, teacher salaries, per pupil
-          spending, and maximum class size. Data are available here: <a href="http://profiles.doe.mass.edu/state_report/">http://profiles.doe.mass.edu/state_report/</a>. It is based on what has happened to districts in the past when charters opens or expands.</div>
+        <div class="detailText">This page simulates the effect of charter school's expansion or opening on the finances of public school districts. The model uses
+          2014-2015 state data for each district, including total enrollment, number of schools, teacher salaries, per pupil
+          spending, and maximum class size. Data are available here: <a href="http://profiles.doe.mass.edu/state_report/">http://profiles.doe.mass.edu/state_report/</a>. It is based on what has happened to districts in the past when charters open or expand.</div>
       </div>
 
       <div class="details">
         <div class="summary"><span class="triangleIcon"></span>What happens to funding when a child leaves the district for a charter school?</div>
         <div
           class="detailText"> When students leave a traditional district for a charter, the district loses the local tax dollars that pay for that
-          student's education, not just the state aid. (In comparison, when a student goes to a private school, the state
-          aid is lost but the tax dollars &ndash; usually most of the per pupil expenses -- stay with the community.) In
-          a community where most of the school spending is local, that's a very big difference.</div>
+          student's education, not just the state aid. In comparison, when a student goes to a private school, the state
+          aid is lost but the tax dollars &ndash; usually most of the per pupil expenses -- stay with the community.
+          </div>
     </div>
 
     <div class="details">
@@ -122,18 +126,18 @@
       <div class="detailText">
         <p><span style="text-decoration: underline;">How Students Leave</span><strong>:</strong> Based on prior real-life cases,
           we assume that a new charter school will draw a certain number of students from the public school district every
-          year. (You can <a href="#charterDrawParameter">change</a> this number in the simulation.) Often new schools open
+          year. (You can <a href="#charterDrawParameter">change</a> this number in the projection.) Often new schools open
           with one grade at a time, starting at K or at the start of middle school or high school. For the first year, there
           will be a larger draw from Kindergarten than from the other grades. In the second year, there will be a larger
           draw from 1st grade. This process continues for each year, targeting each successive grade level, until the ninth
-          year where there will be a larger draw from 8th grade. Specifically, the simulation tries to draw 60% of students
+          year where there will be a larger draw from 8th grade. Specifically, the projection tries to draw 60% of students
           from the targeted grade, and then draws the remainder from all grades equally. These students are chosen randomly
-          (to try to replicate what actually happens), which means that each run of the simulation may result in slightly
+          (to try to replicate what actually happens), which means that each run of the projection may result in slightly
           different outcomes.</p>
-        <p><span style="text-decoration: underline;">What the District Does</span><strong>:</strong> We assume that the district
-          receives a certain amount of funding for each enrolled student. (You can <a href="#fundingPerStudentParameter">change</a>          this number in the simulation.) We assume that the district will try to close sections to save money, as section
+        <p><span style="text-decoration: underline;">What the District Does</span><strong>:</strong> <!--We assume that the district
+          receives a certain amount of funding for each enrolled student. (You can <a href="#fundingPerStudentParameter">change</a>          this number in the projection.)--> We assume that the district will try to close sections to save money, as section
           teachers cost a certain amount per year (you can <a href="#teacherSalaryParameter">change</a> this number in the
-          simulation.) The district has a maximum allowable number of students per class section (You can <a href="#maximumClassSizeParameter">change</a>          this number in the simulation.) The district will keep the fewest number of sections without exceeding this maximum
+          projection.) The district has a maximum allowable number of students per class section (You can <a href="#maximumClassSizeParameter">change</a>          this number in the projection.) The district will keep the fewest number of sections without exceeding this maximum
           class size. That is, each school will freely move students between sections in a grade in order to close class
           sections, but students are not moved across grades or across schools, even if this would result in fewer class
           sections. We based the maximum class size on the largest class size we found in the district&rsquo;s data for grades
@@ -145,10 +149,10 @@
             in each school in the district is initially chosen to match the 2014-2015 information published by the state.
             (Note that this will differ slightly from actual enrollment, but it will be close). If the district is not chosen
             from the dropdown, you can choose the <a href="#numberOfSchoolsParameter">number of schools</a> and the <a href="#numberOfStudentsParameter">initial number of students</a>            in the district, and the total district K8 enrollment is distributed evenly across grades and schools at the
-            start of the simulation.</li>
+            start of the projection.</li>
           <li>Each district is assumed to have a number of support, intervention, and enrichment teachers at the start of the
-            simulation. These teachers are assumed to have the same yearly salary as the class section teachers.</li>
-          <li>According to State law, districts receive some funding during a transitional period when a student leaves. This
+            projection. These teachers are assumed to have the same yearly salary as the class section teachers.</li>
+          <li>According to state law, districts receive some funding during a transitional period when a student leaves. This
             program aims to maintain full funding for a student the first year after she leaves the district, and then 25%
             funding for each of the next five years, before dropping to zero funding entirely starting in the seventh year.
             However, this program is itself only 59% funded, so in fact, the district only receives 59% of each departed
@@ -158,13 +162,13 @@
     </div>
     <div class="details">
       <div class="summary"><span class="triangleIcon"></span>Why is there such a big deficit? </div>
-      <div class="detailText">As the simulation progresses, the net loss of funding for departing students quickly becomes greater than the savings
-        in teacher salaries by closing sections. This is due to the difficulty in having too few students leave from any
+      <div class="detailText">As the projection progresses, the net loss of funding for departing students quickly becomes greater than the savings
+        in teacher salaries by closing sections. This is because too few students leave from any
         one grade/school to close sections. Also, the district has fixed costs that don't disappear when a student leaves,
-        like the salary of a payroll coordinator, or superintendent. To close the budget gaps, the district will need to
+        like the salary of a payroll coordinator or superintendent. To close the budget gaps, the district will need to
         cut the extras &mdash; like reading teachers, school counselors, specialists (music/art), pre-kindergarten programming,
-        and any other student service or support. If the simulation shows that these are completely eliminated, and the budget
-        drops below zero, it means that the district will need to cut costs in ways not accounted for by the simulation.</p>
+        and any other student service or support. If the projection shows that these are completely eliminated, and the budget
+        drops below zero, it means that the district will need to cut costs in ways not accounted for by the projection.</p>
       </div>
     </div>
     <div class="details">
@@ -183,7 +187,7 @@
     </div>
     <div class="details">
       <div class="summary"><span class="triangleIcon"></span>Where can I learn more?</div>
-      <div class="detailText"> Continue the discussion on our Q&amp;A blog at: www.</p>
+      <div class="detailText">We welcome a lively discussion on the model, as more information will help districs and voters make a decision on Question 2.  Join the discussion at: <a href="https://www.facebook.com/SchoolFundingModel/">https://www.facebook.com/SchoolFundingModel/</a></p>
       </div>
     </div>
     <div class="details">
@@ -194,7 +198,7 @@
     <div class="details">
       <div class="summary"><span class="triangleIcon"></span>About Us:</div>
       <div class="detailText"> We (Stephanie Hirsch and Joe Calzaretta) are parents of three children in the Somerville Public Schools. Stephanie
-        Hirsch has spent almost 20 years working in the analysis of finance and operations data at the State and Local level.
+        Hirsch has spent almost 20 years working in the analysis of finance and operations data at the state and local level.
         She studied finance at Harvard Business School and the statistics at the University of Chicago and she believes in
         strong local government and strong community institutions. Joe is an MIT-trained software engineer and mathematician.
         Contact us at <a href="mailto:charter-simulation@googlegroups.com">charter-simulation@googlegroups.com</a></p>
@@ -328,13 +332,14 @@
           }),
           NUMBER_OF_YEARS: 9
         }
+        // default config values come from averaging over all districts
         var config = {
             DISTRICT_CODE: null,
-            MAXIMUM_CLASS_SIZE: 25,
-            FUNDING_PER_STUDENT: 18165,
-            TEACHER_SALARY: 71541,
-            INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT: 3384,
-            NUMBER_OF_SCHOOLS_IN_DISTRICT: 9,
+            MAXIMUM_CLASS_SIZE: 23,
+            FUNDING_PER_STUDENT: 14999,
+            TEACHER_SALARY: 72695,
+            INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT: 2132,
+            NUMBER_OF_SCHOOLS_IN_DISTRICT: 5,
             CHARTER_DRAW_PER_YEAR: 50
           }
           // replace with values from query param if present
@@ -820,11 +825,10 @@
           var rows = district.schools.concat().sort(function(a, b) {
             return compare(a.getName(), b.getName());
           }).map(function(s) {
-            return [].concat.apply([s.getName()], gradeNames.map(function(n, g) {
-              return [s.getNumberOfStudentsInGrade(g) + " | " + s.getNumberOfSectionsInGrade(g)];
-            })).map(function(txt) {
-              return $('<td/>').text(txt);
-            });
+            return [].concat.apply([$('<th/>').text(s.getName())], gradeNames.map(function(n, g) {
+              return [$('<td/>').text(s.getNumberOfStudentsInGrade(g) + " | " + s.getNumberOfSectionsInGrade(
+                g))];
+            }));            
           }).map(function(cells) {
             return $('<tr/>').append(cells);
           });
@@ -916,7 +920,7 @@
             //console.log(linkUrl);
             var title = district.getName() ? district.getName() + ': ' : '';
             var description = $('#totalFunding').text();
-            title += 'Simulation of Impact of Charter Opening on Traditional District Finances';
+            title += 'Projection of Impact of Charter Opening on Traditional District Finances';
             var href = 'https://www.facebook.com/sharer/sharer.php?u=' +
               encodeURIComponent(window.location.href.replace(/.*?schoolmodel/,
                 'https://jcalz.github.io/schoolmodel')) +
