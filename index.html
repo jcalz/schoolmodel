@@ -60,21 +60,24 @@
       content: "\25bc";
     }
     
-    .enrollmentTable {
+    .enrollmentTable, .fundingTable {
       border-collapse: collapse;
     }
     
     .enrollmentTable td,
-    .enrollmentTable th {
+    .enrollmentTable th,
+    .fundingTable td,
+    .fundingTable th {
       border: 1px solid black;
       padding: 0.25rem;
     }
     
-	  .enrollmentTable th {
+	  .enrollmentTable th,
+      .fundingTable th {
       font-size: 50%;
     }
       
-    .enrollmentTable td {
+    .enrollmentTable td, .fundingTable td {
       font-size: 85%;
       text-align: center;
     }
@@ -257,6 +260,21 @@
       <span class="triangleIcon"></span> Enrollment details </div>
     <div class="detailText">
       <table id="enrollmentTable" class="enrollmentTable"></table>
+    </div>
+  </div>
+  
+  <div id="fundingDetails" class="details">
+    <div class="summary">
+        <span class="triangleIcon"></span> Funding details
+    </div>
+    <div class="detailText">
+        <table id="fundingTable" class="fundingTable">
+            <thead><th>Year</th>
+            <th>Total funding lost</th>
+            <th>Sections closed</th>
+            <th>Additional cuts needed</th></thead>
+            <tbody></tbody>
+        </table>
     </div>
   </div>
 
@@ -708,6 +726,8 @@
             fundingChartObj.data.addRows(fundingChartObj.numRows);
             fundingChartObj.chart = new google.visualization.ColumnChart($('#fundingChart')[0]);
           });
+          // remove rows from funding table
+          $('#fundingTable tbody tr').remove();
           // replace query param with values from config
           var queryParams = caseInsensitiveQueryParams();
           Object.keys(config).forEach(function(k) {
@@ -812,6 +832,13 @@
           }
           if ($('#enrollmentTable').closest('.details').attr('open'))
             updateEnrollmentTable();
+            
+          // update funding table
+          $('<tr>').append($('<td>').text(stateObj.year)).
+            append($('<td>').text(money(-f,false))).
+            append($('<td>').text(stateObj.lostSections)).
+            append($('<td>').text(cutsNeeded<0 ? '\u2014' : money(cutsNeeded,false))).
+            appendTo($('#fundingTable tbody'));
         }
 
         function updateEnrollmentTable() {
