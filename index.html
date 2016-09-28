@@ -172,7 +172,7 @@
           <li>According to state law, districts receive some funding during a transitional period when a student leaves. This
             program aims to maintain full funding for a student the first year after she leaves the district, and then 25%
             funding for each of the next five years, before dropping to zero funding entirely starting in the seventh year.
-            However, this program is itself only 59% funded, so in fact, the district only receives 59% of each departed
+            However, this program is itself only 59% funded (you can <a href="#stateReimbursementPercentageParameter">change</a> this number in the projection), so in fact, the district only receives 59% of each departed
             student's funding in the first year, and then 59% of 25% = 14.75% funding for the next five years.</li>
         </ul>
       </div>
@@ -238,6 +238,9 @@
     </label>
     <label id="charterDrawParameter">Number of students leaving for charter per year:
      <input data-var="CHARTER_DRAW_PER_YEAR" data-io="naturalNumber">
+    </label>
+    <label id="stateReimbursementPercentageParameter">Fraction of reimbursement funded:
+     <input data-var="STATE_REIMBURSEMENT_PERCENTAGE" data-io="percentage">
     </label>
   </div>
   <br>
@@ -309,6 +312,18 @@
           return Math.round(parseFloat(text.replace(/[^\d.]/g, '')));
         }
       },
+      percentage: {
+        display: function(num) {
+          return num.toLocaleString('en-US', {
+            style: 'percent',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+          });
+        },
+        parse: function(text) {
+          return Math.round(parseFloat(text.replace(/[^\d.]/g, '')))/100.;
+        }
+      },
       none: {
         display: function(n) {
           return n;
@@ -350,9 +365,7 @@
           // 
           // actually that's not true... this program is only 59% funded so only
           // 59% of that funding comes in:
-          FUNDING_FRAC_REMOVED_STUDENT: [1, 0.25, 0.25, 0.25, 0.25, 0.25].map(function(x) {
-            return (x * 0.59);
-          }),
+          FUNDING_FRAC_REMOVED_STUDENT: [1, 0.25, 0.25, 0.25, 0.25, 0.25],
           NUMBER_OF_YEARS: 9
         }
         // default to Abington
@@ -363,7 +376,8 @@
             TEACHER_SALARY: 74662,
             INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT: 1403,
             NUMBER_OF_SCHOOLS_IN_DISTRICT: 4,
-            CHARTER_DRAW_PER_YEAR: 50
+            CHARTER_DRAW_PER_YEAR: 50,
+            STATE_REIMBURSEMENT_PERCENTAGE: 0.59
           }
           // replace with values from query param if present
         var queryParams = caseInsensitiveQueryParams();
@@ -605,11 +619,8 @@
             funding += config.FUNDING_PER_STUDENT * getNumberOfStudents();
             for (var i = 0; i < unchangingConfig.FUNDING_FRAC_REMOVED_STUDENT.length; i++) {
               var year = currentYear - i;
-              status += (i + 'years ago, frac student is ' + unchangingConfig.FUNDING_FRAC_REMOVED_STUDENT[
-                i]);
               if (year in removedStudents) {
-                status += (removedStudents[year] + ' removed');
-                funding += config.FUNDING_PER_STUDENT * unchangingConfig.FUNDING_FRAC_REMOVED_STUDENT[i] *
+                funding += config.FUNDING_PER_STUDENT * config.STATE_REIMBURSEMENT_PERCENTAGE *unchangingConfig.FUNDING_FRAC_REMOVED_STUDENT[i] *
                   removedStudents[year];
               }
             }
