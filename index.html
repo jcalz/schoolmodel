@@ -147,9 +147,12 @@
           (to try to replicate what actually happens), which means that each run of the projection may result in slightly
           different outcomes.</p>
         <p><span style="text-decoration: underline;">What the District Does</span><strong>:</strong> <!--We assume that the district
-          receives a certain amount of funding for each enrolled student. (You can <a href="#fundingPerStudentParameter">change</a>          this number in the projection.)--> We assume that the district will try to close sections to save money, as section
-          teachers cost a certain amount per year (you can <a href="#teacherSalaryParameter">change</a> this number in the
-          projection.) The district has a maximum allowable number of students per class section (You can <a href="#maximumClassSizeParameter">change</a>          this number in the projection.) The district will keep the fewest number of sections without exceeding this maximum
+          receives a certain amount of funding for each enrolled student. (You can <a href="#fundingPerStudentParameter">change</a>          this number in the projection.)--> 
+          We assume that the district will try to close sections to save money, as section
+          teachers cost a certain amount per year. (We have added $18K to the teacher salary from the state data to account for benefits.  
+          You can also <a href="#teacherSalaryParameter">change</a> the teacher salary number in the projection. )
+          
+          The district has a maximum allowable number of students per class section (You can <a href="#maximumClassSizeParameter">change</a>          this number in the projection.) The district will keep the fewest number of sections without exceeding this maximum
           class size. That is, each school will freely move students between sections in a grade in order to close class
           sections, but students are not moved across grades or across schools, even if this would result in fewer class
           sections. We based the maximum class size on the largest class size we found in the district&rsquo;s data for grades
@@ -162,9 +165,8 @@
             (Note that this will differ slightly from actual enrollment, but it will be close). If the district is not chosen
             from the dropdown, you can choose the <a href="#numberOfSchoolsParameter">number of schools</a> and the <a href="#numberOfStudentsParameter">initial number of students</a>            in the district, and the total district K8 enrollment is distributed evenly across grades and schools at the
             start of the projection.</li>
-	  <li>The per pupil expenditure shown in the model differs slightly from the amount that districts pay for charter tuitions.
-            In most cases the tuition payment is slightly lower and in some it is higher. For districts that are currently making
-            tuition payments, they can find their payment in this report <a href="http://www.doe.mass.edu/charter/finance/tuition/">
+	  <li>The per pupil expenditure shown in the model has been reduced from the state data by 10% to account for the average effects of state facility aid (about 7%) and the deviation between the amount that districts pay for charter tuitions (about 3%). For districts that are currently making
+            tuition payments, they can find their payment and state facility aid in this report <a href="http://www.doe.mass.edu/charter/finance/tuition/">
             http://www.doe.mass.edu/charter/finance/tuition/</a> and can plug it into the per-pupil spending to get a more precise
             cost projection.</li>
           <li>Each district is assumed to have a number of support, intervention, and enrichment teachers at the start of the
@@ -372,8 +374,8 @@
         var config = {
             DISTRICT_CODE: "00010000",
             MAXIMUM_CLASS_SIZE: 32,
-            FUNDING_PER_STUDENT: 13271,
-            TEACHER_SALARY: 74662,
+            FUNDING_PER_STUDENT: 11944,
+            TEACHER_SALARY: 92662,
             INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT: 1403,
             NUMBER_OF_SCHOOLS_IN_DISTRICT: 4,
             CHARTER_DRAW_PER_YEAR: 50,
@@ -931,8 +933,11 @@
               return s.totalEnrollment;
             }));
             config.MAXIMUM_CLASS_SIZE = d.maxAllowableClassSize;
-            config.FUNDING_PER_STUDENT = Math.round(d.perPupilSpending);
-            config.TEACHER_SALARY = Math.round(d.teacherSalary);
+            // take 10% off per-pupil spending to account for state facility aid (~7%) 
+            // and average discrepancy between charter tuition and per-pupil spending (~3%)
+            config.FUNDING_PER_STUDENT = Math.round(d.perPupilSpending * 0.9);
+            // add $18K for teacher benefits
+            config.TEACHER_SALARY = Math.round(d.teacherSalary + 18000);
             config.INITIAL_NUMBER_OF_STUDENTS_IN_DISTRICT = totalEnrollment;
             config.NUMBER_OF_SCHOOLS_IN_DISTRICT = d.schools.length;
             config.CHARTER_DRAW_PER_YEAR = 50 * Math.ceil(totalEnrollment / 3500);
