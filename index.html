@@ -174,8 +174,9 @@
           <li>According to state law, districts receive some funding during a transitional period when a student leaves. This
             program aims to maintain full funding for a student the first year after she leaves the district, and then 25%
             funding for each of the next five years, before dropping to zero funding entirely starting in the seventh year.
-            However, this program is itself only 59% funded (you can <a href="#stateReimbursementPercentageParameter">change</a> this number in the projection), so in fact, the district only receives 59% of each departed
-            student's funding in the first year, and then 59% of 25% = 14.75% funding for the next five years.</li>
+            (Explained here: <a href="http://www.doe.mass.edu/charter/finance/tuition/Reimbursements.html">http://www.doe.mass.edu/charter/finance/tuition/Reimbursements.html</a>) 
+            However, this program has not been fully funded in recent years, and a significant gap remains in the FY17 Governor’s budget. Thus, the district only receives a fraction of each departed student's reimbursement each year (e.g. 59% of 100% in year one, and 59% of 25% in years 2-6). (The default level is 59%, however you can <a href="#stateReimbursementPercentageParameter">change</a> this number in the projection to model different State funding scenarios).             
+            </li>
         </ul>
       </div>
     </div>
@@ -689,7 +690,7 @@
             specialistChartObj = {};
             specialistChartObj.numRows = unchangingConfig.NUMBER_OF_YEARS + 1;
             specialistChartObj.options = {
-              title: 'Number of Support, Intervention, and Enrichment Teachers',
+              title: 'Illustration 1: Cuts to support and enrichment Teachers\n(Scenario shows how district discretionary spending can be cut to close gaps)',
               isStacked: true,
               legend: {
                 position: 'none'
@@ -718,7 +719,7 @@
             fundingChartObj = {};
             fundingChartObj.numRows = unchangingConfig.NUMBER_OF_YEARS + 1;
             fundingChartObj.options = {
-              title: 'Available Funding for Support, Intervention, Enrichment, and Other Student/District Services',
+              title: 'Illustration 2: Total cuts required from discretionary spending after savings from closed sections.',
               legend: {
                 position: 'none'
               },
