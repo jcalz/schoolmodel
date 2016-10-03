@@ -258,7 +258,7 @@
   <div id="output">
     <div>Year: <span id="currentYear"></span></div>
     <div>Students lost: <span id="studentsLost"></span></div>
-    <div>Teachers laid off: <span id="teachersLaidOff"></span></div>
+    <div>Teacher reduction: <span id="teacherReduction"></span></div>
     <div>Sections closed: <span id="sectionsClosed"></span></div>
     <div class="highlighted" id="totalFunding">Total funding <span id="gainedOrLost">lost</span>: <span id="totalFundingChange"></span></div>
     <div class="highlighted">Cuts made: <span id="cutsMade"></span></div>
@@ -690,7 +690,7 @@
             specialistChartObj = {};
             specialistChartObj.numRows = unchangingConfig.NUMBER_OF_YEARS + 1;
             specialistChartObj.options = {
-              title: 'Illustration 1: Cuts to support and enrichment teachers\n(Scenario shows how district discretionary spending can be cut to close gaps)',
+              title: 'Illustration 1: Number of support and enrichment teachers over time\n(Scenario shows how district discretionary spending can be cut to close gaps)',
               isStacked: true,
               legend: {
                 position: 'none'
@@ -719,15 +719,11 @@
             fundingChartObj = {};
             fundingChartObj.numRows = unchangingConfig.NUMBER_OF_YEARS + 1;
             fundingChartObj.options = {
-              title: 'Illustration 2: Total cuts required from discretionary spending after savings from closed sections.',
+              title: 'Illustration 2: Deficit to close after savings from eliminating sections\n(Strategies can include increasing class size, raising fees, cutting support/enrichment/administration, etc.)',
               legend: {
                 position: 'none'
               },
               vAxis: {
-                viewWindow: {
-                  min: 0,
-                  max: 0
-                },
                 format: 'short',
                 title: 'Dollars'
               },
@@ -790,7 +786,7 @@
           state.initialSections = district.getInitialNumberOfSections();
           state.lostSections = state.initialSections - state.retainedSections;
           state.availableFundsForSpecialists = (district.getAvailableFundsForSpecialists());
-          state.numberOfTeachersLaidOff = district.getNumberOfRemovedTeachers();
+          state.numberOfTeachersRemoved = district.getNumberOfRemovedTeachers();
           state.specialists = district.getSpecialistsSummary();
           state.totalFundingChange = district.getNetAvailableFundsBeforePayingSectionTeachers();
           state.cutsNeeded = -district.getNetAvailableFunds();
@@ -821,22 +817,18 @@
               });
             }
             specialistChartObj.chart.draw(specialistChartObj.data, specialistChartObj.options);
-            if (stateObj.year == 0) {
-              fundingChartObj.options.vAxis.viewWindow.min =
-                stateObj.availableFundsForSpecialists * -1;
-              fundingChartObj.options.vAxis.viewWindow.max = stateObj.availableFundsForSpecialists * 1.5;
-            }
             if (stateObj.year < fundingChartObj.numRows) {
               fundingChartObj.data.setCell(stateObj.year, 0, stateObj.year + '');
-              fundingChartObj.data.setCell(stateObj.year, 1, stateObj.availableFundsForSpecialists);
-              fundingChartObj.data.setCell(stateObj.year, 2, money(stateObj.availableFundsForSpecialists,
+              fundingChartObj.data.setCell(stateObj.year, 1, stateObj.cutsNeeded);
+              fundingChartObj.data.setCell(stateObj.year, 2, money(stateObj.cutsNeeded,
                 false));
+                
             }
             fundingChartObj.chart.draw(fundingChartObj.data, fundingChartObj.options);
           });
           $('#currentYear').text(stateObj.year);
           $('#studentsLost').text(stateObj.lostStudents);
-          $('#teachersLaidOff').text(stateObj.numberOfTeachersLaidOff);
+          $('#teacherReduction').text(stateObj.numberOfTeachersRemoved);
           $('#sectionsClosed').text(stateObj.lostSections);
           var f = stateObj.totalFundingChange;
           $('#gainedOrLost').text(f <= 0 ? 'lost' : 'gained');
